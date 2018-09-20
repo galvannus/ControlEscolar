@@ -1,0 +1,59 @@
+<h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autofocus: true, autocomplete: "Nombre" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name, autocomplete: "Apellidos" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ro, "Rol" %><br />
+
+    <select id="rol" onchange="change()">
+      <option value=""></option>
+      <option value="admin">Administrador</option>
+      <option value="professor">Profesor</option>
+      <option value="control">Control escolar</option>
+    </select>
+    <%= f.hidden_field :role%>
+
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<script type="text/javascript">
+  function change(){
+    let valActual = document.getElementById("rol").value.toString();
+    document.getElementById("user_role").value = valActual;
+  }
+</script>
+
+<%= render "devise/shared/links" %>
