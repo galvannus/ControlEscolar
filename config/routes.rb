@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :groups
+  resources :subjects
+  resources :accounts
+  resources :students
   devise_for :users
   root 'main#index'
 

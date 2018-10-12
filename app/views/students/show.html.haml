@@ -1,0 +1,40 @@
+%p#notice= notice
+
+%p
+  %b Group:
+  = @student.group_id
+%p
+  %b Subject:
+  = @student.subject_id
+%p
+  %b Name:
+  = @student.name
+%p
+  %b Lastname:
+  = @student.lastname
+%p
+  %b Tel1:
+  = @student.tel1
+%p
+  %b Tel2:
+  = @student.tel2
+%p
+  %b Street:
+  = @student.street
+%p
+  %b Numberhome:
+  = @student.numberhome
+%p
+  %b Suburb:
+  = @student.suburb
+%p
+  %b Registrationnumber:
+  = @student.registrationnumber
+%p
+  %b Banknumber:
+  = @student.banknumber
+
+
+= link_to 'Edit', edit_student_path(@student)
+\|
+= link_to 'Back', students_path

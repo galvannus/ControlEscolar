@@ -10,7 +10,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180910174212) do
+ActiveRecord::Schema.define(version: 20181011031755) do
+
+  create_table "accounts", force: :cascade do |t|
+    t.float "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "student_id"
+    t.index ["student_id"], name: "index_accounts_on_student_id"
+  end
+
+  create_table "groups", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "students", force: :cascade do |t|
+    t.integer "group_id"
+    t.integer "subject_id"
+    t.string "name"
+    t.string "lastname"
+    t.string "tel1"
+    t.string "tel2"
+    t.string "street"
+    t.string "numberhome"
+    t.string "suburb"
+    t.string "registrationnumber"
+    t.string "banknumber"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["group_id"], name: "index_students_on_group_id"
+    t.index ["subject_id"], name: "index_students_on_subject_id"
+  end
+
+  create_table "subjects", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

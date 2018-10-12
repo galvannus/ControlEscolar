@@ -1,0 +1,25 @@
+%h1 
+  Listing accounts
+  =@total_amounts
+
+%table
+  %thead
+    %tr
+      %th Amount
+      %th Student
+      %th
+      %th
+      %th
+
+  %tbody
+    - @accounts.each do |account|
+      %tr
+        %td= account.amount
+        %td= account.student.name
+        %td= link_to 'Show', account
+        %td= link_to 'Pagar', edit_account_path(account)
+        %td= link_to 'Destroy', account, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Account', new_account_path
