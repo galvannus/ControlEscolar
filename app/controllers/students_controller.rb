@@ -24,19 +24,25 @@ class StudentsController < ApplicationController
   # POST /students
   # POST /students.json
   def create
-    @student = Student.new(student_params)    
+    @student = Student.new(student_params) 
+    
+    
+    
+
     respond_to do |format|
       if @student.save
-        
 
         #Save mount of account of student
         @account = Account.new
         @account.amount = -2000
         @account.student_id = @student.id
         @account.save
-        
-        
-        format.html { redirect_to @student, notice: "Student was successfully created." }
+
+        @student.reload
+        @student.account_id = @account.id
+        @student.save
+
+        format.html { redirect_to @student, notice: "Student #{@account.id} was successfully created." }
         format.json { render :show, status: :created, location: @student }
       else
         format.html { render :new }

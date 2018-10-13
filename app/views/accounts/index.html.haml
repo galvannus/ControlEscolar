@@ -1,12 +1,14 @@
 %h1 
   Listing accounts
-  =@total_amounts
+  %b{style: "color: red;"}
+    =@total_amounts
 
 %table
   %thead
     %tr
       %th Amount
-      %th Student
+      %th Name
+      %th Last name
       %th
       %th
       %th
@@ -16,6 +18,7 @@
       %tr
         %td= account.amount
         %td= account.student.name
+        %td= account.student.lastname
         %td= link_to 'Show', account
         %td= link_to 'Pagar', edit_account_path(account)
         %td= link_to 'Destroy', account, method: :delete, data: { confirm: 'Are you sure?' }

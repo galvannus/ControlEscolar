@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181011031755) do
+ActiveRecord::Schema.define(version: 20181013013210) do
 
   create_table "accounts", force: :cascade do |t|
     t.float "amount"
@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(version: 20181011031755) do
 
   create_table "students", force: :cascade do |t|
     t.integer "group_id"
-    t.integer "subject_id"
     t.string "name"
     t.string "lastname"
     t.string "tel1"
@@ -40,14 +39,16 @@ ActiveRecord::Schema.define(version: 20181011031755) do
     t.string "banknumber"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "account_id"
+    t.index ["account_id"], name: "index_students_on_account_id"
     t.index ["group_id"], name: "index_students_on_group_id"
-    t.index ["subject_id"], name: "index_students_on_subject_id"
   end
 
   create_table "subjects", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "student_id"
   end
 
   create_table "users", force: :cascade do |t|

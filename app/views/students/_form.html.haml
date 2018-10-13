@@ -11,7 +11,7 @@
     = f.text_field :group_id
   .field
     = f.label :subject
-    = f.text_field :subject_id
+    = f.collection_select(:subjects, Subject.all, :id, :name,{})
   .field
     = f.label :name
     = f.text_field :name
