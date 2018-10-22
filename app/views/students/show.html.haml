@@ -33,6 +33,18 @@
 %p
   %b Banknumber:
   = @student.banknumber
+%p
+  %b Tiene un descuento del:
+  ="#{@student.discount}%"
+%p
+  %b Adeudos a pagar:
+  -@debt = Debt.all
+  -@debt.each do |debt|
+    =debt.name
+%p
+  %b Total a pagar:
+  = @student.account.amount
+
 
 
 = link_to 'Edit', edit_student_path(@student)

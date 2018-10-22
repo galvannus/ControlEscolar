@@ -31,18 +31,22 @@ class StudentsController < ApplicationController
 
     respond_to do |format|
       if @student.save
-
-        #Save mount of account of student
+        
+        #When register a new student -Start
+        #Save amount of account of student
         @account = Account.new
-        @account.amount = -2000
+        @totaldebts = Debt.sum(:amount)
+        @account.amount = @totaldebts
         @account.student_id = @student.id
         @account.save
 
+        #Get the id of the account and save in the student
         @student.reload
         @student.account_id = @account.id
         @student.save
+        #Finish
 
-        format.html { redirect_to @student, notice: "Student #{@account.id} was successfully created." }
+        format.html { redirect_to @student, notice: "Student #{@student.id} was successfully created." }
         format.json { render :show, status: :created, location: @student }
       else
         format.html { render :new }
@@ -56,7 +60,7 @@ class StudentsController < ApplicationController
   def update
     respond_to do |format|
       if @student.update(student_params)
-        format.html { redirect_to @student, notice: 'Student was successfully updated.' }
+        format.html { redirect_to @student, notice: "Student was successfully updated." }
         format.json { render :show, status: :ok, location: @student }
       else
         format.html { render :edit }
@@ -70,7 +74,7 @@ class StudentsController < ApplicationController
   def destroy
     @student.destroy
     respond_to do |format|
-      format.html { redirect_to students_url, notice: 'Student was successfully destroyed.' }
+      format.html { redirect_to students_url, notice: "Student was #{@student.id} successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -83,7 +87,7 @@ class StudentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_params
-      params.require(:student).permit(:group_id, :subject_id, :name, :lastname, :tel1, :tel2, :street, :numberhome, :suburb, :registrationnumber, :banknumber, :account_id)
+      params.require(:student).permit(:discount, :group_id, :subject_id, :name, :lastname, :tel1, :tel2, :street, :numberhome, :suburb, :registrationnumber, :banknumber, :account_id)
     end
     def account_params
       params.require(:account).permit(:amount,:student_id)
