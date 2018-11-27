@@ -8,7 +8,23 @@
 
   .field
     = f.label :amount
-    = f.number_field :amount
+    = text_field_tag :amount1
+    = f.hidden_field :amount
+  
+    
+
 
   .actions
-    = f.submit 'Pagar'
+    = f.submit 'Pagar',onclick: "sumar()"
+
+
+
+:javascript
+  function sumar(){
+    let amountt = document.getElementById("amount1").value
+    let amount2 = document.getElementById("account_amount").value
+    amountt = parseFloat(amountt)
+    amount2 = parseFloat(amount2)
+
+    document.getElementById("account_amount").value = amountt+amount2
+  }

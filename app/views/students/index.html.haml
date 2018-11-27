@@ -3,6 +3,7 @@
 %table
   %thead
     %tr
+      %th Checkbox
       %th Group
       %th Name
       %th Lastname
@@ -13,7 +14,7 @@
       %th Suburb
       %th Registrationnumber
       %th Banknumber
-      %th Amount
+      -#%th Amount
       %th
       %th
       %th
@@ -21,7 +22,8 @@
   %tbody
     - @students.each do |student|
       %tr
-        %td= student.group_id
+        %td= check_box_tag "student_id", student.id , false , id: student.name
+        %td= student.group.name
         %td= student.name
         %td= student.lastname
         %td= student.tel1
@@ -31,11 +33,13 @@
         %td= student.suburb
         %td= student.registrationnumber
         %td= student.banknumber
-        %td= student.account.amount
+        %td=# student.account.amount
         %td= link_to 'Show', student
         %td= link_to 'Edit', edit_student_path(student)
         %td= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
+-#Student.all.each_with_index do |val,index|
+  =# check_box_tag @studente, val.name, false , id: index
 
 = link_to 'New Student', new_student_path

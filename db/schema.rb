@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181021231657) do
+ActiveRecord::Schema.define(version: 20181104235108) do
 
   create_table "accounts", force: :cascade do |t|
     t.float "amount"
@@ -33,6 +33,24 @@ ActiveRecord::Schema.define(version: 20181021231657) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "partials", force: :cascade do |t|
+    t.integer "number_partial"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "scores", force: :cascade do |t|
+    t.decimal "total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "semesters", force: :cascade do |t|
+    t.integer "number_semester"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "students", force: :cascade do |t|
     t.integer "group_id"
     t.string "name"
@@ -48,8 +66,12 @@ ActiveRecord::Schema.define(version: 20181021231657) do
     t.datetime "updated_at", null: false
     t.integer "account_id"
     t.integer "discount"
+    t.integer "subject_id"
+    t.integer "semester_id"
     t.index ["account_id"], name: "index_students_on_account_id"
     t.index ["group_id"], name: "index_students_on_group_id"
+    t.index ["semester_id"], name: "index_students_on_semester_id"
+    t.index ["subject_id"], name: "index_students_on_subject_id"
   end
 
   create_table "subjects", force: :cascade do |t|
@@ -57,6 +79,19 @@ ActiveRecord::Schema.define(version: 20181021231657) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "student_id"
+  end
+
+  create_table "subjectscores", force: :cascade do |t|
+    t.integer "student_id"
+    t.integer "subject_id"
+    t.integer "partial_id"
+    t.integer "score_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["partial_id"], name: "index_subjectscores_on_partial_id"
+    t.index ["score_id"], name: "index_subjectscores_on_score_id"
+    t.index ["student_id"], name: "index_subjectscores_on_student_id"
+    t.index ["subject_id"], name: "index_subjectscores_on_subject_id"
   end
 
   create_table "users", force: :cascade do |t|

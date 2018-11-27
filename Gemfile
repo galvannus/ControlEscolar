@@ -21,6 +21,9 @@ gem 'uglifier', '>= 1.3.0'
 #Agregados
 gem 'haml-rails'
 gem 'devise'
+gem 'select2-rails'
+gem 'bootstrap', '~> 4.1.3'
+gem 'jquery-rails'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

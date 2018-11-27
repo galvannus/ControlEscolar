@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Number semester:
+  = @semester.number_semester
+
+= link_to 'Edit', edit_semester_path(@semester)
+\|
+= link_to 'Back', semesters_path

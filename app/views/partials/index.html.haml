@@ -1,0 +1,21 @@
+%h1 Listing partials
+
+%table
+  %thead
+    %tr
+      %th Number partial
+      %th
+      %th
+      %th
+
+  %tbody
+    - @partials.each do |partial|
+      %tr
+        %td= partial.number_partial
+        %td= link_to 'Show', partial
+        %td= link_to 'Edit', edit_partial_path(partial)
+        %td= link_to 'Destroy', partial, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Partial', new_partial_path

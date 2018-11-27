@@ -6,12 +6,12 @@
         - @student.errors.full_messages.each do |message|
           %li= message
 
-  .field
-    = f.label :group_id
-    = f.text_field :group_id
-  .field
-    = f.label :subject
-    = f.collection_select(:subjects, Subject.all, :id, :name,{})
+  -#.field
+    =# f.label :group_id
+    =# f.text_field :group_id
+  -#.field
+    =# f.label :subject
+    =# f.collection_select(:subjects, Subject.all, :id, :name,{})
   .field
     = f.label :name
     = f.text_field :name

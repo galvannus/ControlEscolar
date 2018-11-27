@@ -1,0 +1,13 @@
+= form_for @partial do |f|
+  - if @partial.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@partial.errors.count, "error")} prohibited this partial from being saved:"
+      %ul
+        - @partial.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :number_partial
+    = f.number_field :number_partial
+  .actions
+    = f.submit 'Save'

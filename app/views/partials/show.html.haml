@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Number partial:
+  = @partial.number_partial
+
+= link_to 'Edit', edit_partial_path(@partial)
+\|
+= link_to 'Back', partials_path
