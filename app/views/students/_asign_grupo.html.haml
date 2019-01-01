@@ -1,0 +1,25 @@
+%h1 Asignar grupo
+-if @estu.present?
+    =@estu
+.row
+    .col-md-12
+        = form_tag  do
+          
+            -#%select.js-example-basic-single{name: "state",multiple: "multiple"}
+                -#%option{:value => "AL"} Alabama madre
+                -#%option{:value => "WY"} Wyoming padre
+            -@students = Student.all
+            =select_tag 'student[]', options_for_select(@students.collect{ |u| [u.name_lastname, u.id]}),{class: "js-example-basic-single",multiple: "multiple"}
+            =hidden_field_tag 'asignar', 3
+            =hidden_field_tag 'grupo', 1
+    
+            = submit_tag("Asignar")
+
+
+:javascript
+    $( "#dropdown" ).select2({
+        theme: "bootstrap"
+    });
+    $(document).ready(function() {
+        $('.js-example-basic-single').select2();
+    });

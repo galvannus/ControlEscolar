@@ -43,6 +43,10 @@ ActiveRecord::Schema.define(version: 20181104235108) do
     t.decimal "total"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "subject_id"
+    t.integer "student_id"
+    t.index ["student_id"], name: "index_scores_on_student_id"
+    t.index ["subject_id"], name: "index_scores_on_subject_id"
   end
 
   create_table "semesters", force: :cascade do |t|
@@ -79,6 +83,7 @@ ActiveRecord::Schema.define(version: 20181104235108) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "student_id"
+    t.index ["student_id"], name: "index_subjects_on_student_id"
   end
 
   create_table "subjectscores", force: :cascade do |t|
@@ -88,6 +93,8 @@ ActiveRecord::Schema.define(version: 20181104235108) do
     t.integer "score_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "firstscore"
+    t.decimal "secondscore"
     t.index ["partial_id"], name: "index_subjectscores_on_partial_id"
     t.index ["score_id"], name: "index_subjectscores_on_score_id"
     t.index ["student_id"], name: "index_subjectscores_on_student_id"

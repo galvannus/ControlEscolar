@@ -1,6 +1,20 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
 
+  def assigment
+    #flash[:notice] = @estudiantes.length if params[:student].present?
+    if params[:grupo].present?
+      redirect_to "/asignar?asignar=#{3}"
+    end
+    if params[:student].present?  
+      @estudiantes = params[:student]
+      @estudiantes.each do |estudiante|
+        @estu = Student.find(estudiante)
+      end
+    end
+
+    
+  end
   # GET /students
   # GET /students.json
   def index

@@ -3,7 +3,7 @@
 %table
   %thead
     %tr
-      %th Checkbox
+      %th Id
       %th Group
       %th Name
       %th Lastname
@@ -22,7 +22,7 @@
   %tbody
     - @students.each do |student|
       %tr
-        %td= check_box_tag "student_id", student.id , false , id: student.name
+        %td= student.id#check_box_tag "student_id", student.id , false , id: student.name
         %td= student.group.name
         %td= student.name
         %td= student.lastname
