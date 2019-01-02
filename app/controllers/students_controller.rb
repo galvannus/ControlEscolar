@@ -6,10 +6,14 @@ class StudentsController < ApplicationController
     if params[:grupo].present?
       redirect_to "/asignar?asignar=#{3}"
     end
+    puts "**************************"
+    puts params
+    puts "**************************"
     if params[:student].present?  
-      @estudiantes = params[:student]
-      @estudiantes.each do |estudiante|
-        @estu = Student.find(estudiante)
+      params[:student].each do |id_student|
+        estudiante = Student.find(id_student)
+        puts estudiante.name
+        puts "Actualizado el grupo" if estudiante.update(group_id: params[:grupo])
       end
     end
 
