@@ -28897,3 +28897,2775 @@ Processing by StudentsController#assigment as HTML
 Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-03 19:57:10 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (22.3ms)
+Completed 200 OK in 11193ms (Views: 11173.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 19:57:26 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (467.8ms)
+  Rendered students/assigment.html.haml within layouts/application (471.6ms)
+Completed 200 OK in 538ms (Views: 532.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:34:14 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (14.5ms)
+  Rendered students/assigment.html.haml within layouts/application (18.8ms)
+Completed 200 OK in 97ms (Views: 94.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:34:48 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (15.2ms)
+  Rendered students/assigment.html.haml within layouts/application (18.3ms)
+Completed 200 OK in 121ms (Views: 118.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:35:06 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (18.8ms)
+  Rendered students/assigment.html.haml within layouts/application (23.3ms)
+Completed 200 OK in 113ms (Views: 109.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:35:40 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/_asign_grupo.html.haml (486.6ms)
+  Rendered students/assigment.html.haml within layouts/application (492.1ms)
+Completed 500 Internal Server Error in 498ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `jorge' for #<#<Class:0x00007fe2c00abf90>:0x00007fe2cb735f40>):
+     5: 			-#%select.js-example-basic-single{name: "state",multiple: "multiple"}
+     6: 				-#%option{:value => "AL"} Alabama madre
+     7: 				-#%option{:value => "WY"} Wyoming padre
+     8: 			=select_tag 'student[]', options_for_select(Student.all.collect{ |u| [u.name_lastname, u.id] if u.name_lastname == jorge}),{class: "js-example-basic-single",multiple: "multiple"}
+     9: 			=hidden_field_tag 'asignar', 3
+    10: 			=select_tag 'grupo', options_for_select(Group.all.collect{ |u| [u.name, u.id]}),{class: "form-tag"}
+    11: 			=submit_tag("Asignar")
+  
+app/views/students/_asign_grupo.html.haml:8:in `block (2 levels) in _app_views_students__asign_grupo_html_haml___4122190755727002661_70306026285640'
+app/views/students/_asign_grupo.html.haml:8:in `collect'
+app/views/students/_asign_grupo.html.haml:8:in `block in _app_views_students__asign_grupo_html_haml___4122190755727002661_70306026285640'
+app/views/students/_asign_grupo.html.haml:4:in `_app_views_students__asign_grupo_html_haml___4122190755727002661_70306026285640'
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70306026337340'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:35:48 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (22.0ms)
+  Rendered students/assigment.html.haml within layouts/application (28.7ms)
+Completed 200 OK in 150ms (Views: 147.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:37:57 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (23.7ms)
+  Rendered students/assigment.html.haml within layouts/application (27.2ms)
+Completed 200 OK in 136ms (Views: 131.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:45:19 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (5.3ms)
+  Rendered students/assigment.html.haml within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ',', expecting ':'
+... == "jorge" ? u.name_lastname , u.id]}),{class: "js-example-...
+...                              ^
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ']', expecting '}'
+...orge" ? u.name_lastname , u.id]}),{class: "js-example-basic-...
+...                              ^):
+  
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ',', expecting ':'
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ']', expecting '}'
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70305930301100'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:47:00 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (6.5ms)
+  Rendered students/assigment.html.haml within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected modifier_if, expecting ']'
+...ollect{ |u| [u.name_lastname if u.name == "jorge", u.id]}),{...
+...                             ^~
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ',', expecting '}'
+..._lastname if u.name == "jorge", u.id]}),{class: "js-example-...
+...                              ^
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ']', expecting ')'
+...ame if u.name == "jorge", u.id]}),{class: "js-example-basic-...
+...                              ^):
+  
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected modifier_if, expecting ']'
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ',', expecting '}'
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ']', expecting ')'
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70306011078800'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:47:21 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (4.8ms)
+  Rendered students/assigment.html.haml within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected modifier_if, expecting ']'
+...ollect{ |u| [u.name_lastname if u.name_lastname == "jorge", ...
+...                             ^~
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ',', expecting '}'
+... if u.name_lastname == "jorge", u.id]}),{class: "js-example-...
+...                              ^
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ']', expecting ')'
+...name_lastname == "jorge", u.id]}),{class: "js-example-basic-...
+...                              ^):
+  
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected modifier_if, expecting ']'
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ',', expecting '}'
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ']', expecting ')'
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70306017975860'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:47:35 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (20.7ms)
+  Rendered students/assigment.html.haml within layouts/application (27.9ms)
+Completed 200 OK in 134ms (Views: 131.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:48:37 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (6.8ms)
+  Rendered students/assigment.html.haml within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected modifier_if, expecting ')'
+... |u| [u.name_lastname, u.id]}if u.name_lastname == "jorge"),...
+...                             ^~
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ',', expecting ')'
+...if u.name_lastname == "jorge"),{class: "js-example-basic-sin...
+...                              ^
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:9: syntax error, unexpected ')', expecting keyword_end
+)).to_s);).to_s);; _hamlout.buffer << ("\n".f...
+               ^
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected modifier_if, expecting ')'
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected ',', expecting ')'
+app/views/students/_asign_grupo.html.haml:9: syntax error, unexpected ')', expecting keyword_end
+app/views/students/_asign_grupo.html.haml:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70305934398640'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:49:23 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (14.4ms)
+  Rendered students/assigment.html.haml within layouts/application (18.0ms)
+Completed 200 OK in 97ms (Views: 94.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:53:05 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (16.0ms)
+  Rendered students/assigment.html.haml within layouts/application (21.0ms)
+Completed 200 OK in 102ms (Views: 98.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:53:22 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (18.3ms)
+  Rendered students/assigment.html.haml within layouts/application (22.1ms)
+Completed 200 OK in 118ms (Views: 114.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:53:31 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (16.2ms)
+  Rendered students/assigment.html.haml within layouts/application (21.1ms)
+Completed 200 OK in 97ms (Views: 93.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:53:38 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (1.1ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (19.6ms)
+  Rendered students/assigment.html.haml within layouts/application (25.3ms)
+Completed 200 OK in 126ms (Views: 121.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:55:54 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (14.0ms)
+  Rendered students/assigment.html.haml within layouts/application (17.3ms)
+Completed 200 OK in 97ms (Views: 94.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:56:06 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (16.5ms)
+  Rendered students/assigment.html.haml within layouts/application (19.8ms)
+Completed 200 OK in 119ms (Views: 116.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:56:19 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (20.7ms)
+  Rendered students/assigment.html.haml within layouts/application (27.1ms)
+Completed 200 OK in 132ms (Views: 129.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:56:50 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (5.5ms)
+  Rendered students/assigment.html.haml within layouts/application (12.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected keyword_else, expecting '}'
+...stname, u.id] if u.id != 5 else }),{class: "js-example-basic...
+...                           ^~~~):
+  
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected keyword_else, expecting '}'
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70305934072080'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:56:56 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (18.9ms)
+  Rendered students/assigment.html.haml within layouts/application (25.7ms)
+Completed 200 OK in 114ms (Views: 111.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:57:24 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (1.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (20.3ms)
+  Rendered students/assigment.html.haml within layouts/application (26.4ms)
+Completed 200 OK in 121ms (Views: 115.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-03 20:57:51 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (16.6ms)
+Completed 200 OK in 112ms (Views: 109.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 20:58:08 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (17.9ms)
+  Rendered students/assigment.html.haml within layouts/application (35.8ms)
+Completed 200 OK in 126ms (Views: 122.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:03:16 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (19.3ms)
+  Rendered students/assigment.html.haml within layouts/application (23.4ms)
+Completed 200 OK in 98ms (Views: 94.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:03:36 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (7.8ms)
+  Rendered students/assigment.html.haml within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting '}'
+...astname, u.id] if u.group != 2a}),{class: "js-example-basic-...
+...                              ^):
+  
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70306023653260'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:03:42 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (22.5ms)
+  Rendered students/assigment.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 123ms (Views: 119.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:03:58 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (6.1ms)
+  Rendered students/assigment.html.haml within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...name, u.id] if u.group != "#{2a}"}),{class: "js-example-basi...
+...                              ^):
+  
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70306008375540'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:04:15 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (29.0ms)
+  Rendered students/assigment.html.haml within layouts/application (32.6ms)
+Completed 200 OK in 127ms (Views: 123.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:05:22 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (26.0ms)
+  Rendered students/assigment.html.haml within layouts/application (33.5ms)
+Completed 200 OK in 132ms (Views: 128.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:05:30 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (26.2ms)
+  Rendered students/assigment.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 125ms (Views: 121.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2019-01-03 21:08:16 -0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered groups/index.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 92ms (Views: 89.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2019-01-03 21:08:19 -0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering groups/show.html.haml within layouts/application
+  Rendered groups/show.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 107ms (Views: 102.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2019-01-03 21:08:21 -0700
+Processing by GroupsController#index as HTML
+  Rendering groups/index.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  Rendered groups/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 111ms (Views: 108.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:08:52 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (19.5ms)
+  Rendered students/assigment.html.haml within layouts/application (24.2ms)
+Completed 200 OK in 106ms (Views: 102.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:09:10 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (23.6ms)
+  Rendered students/assigment.html.haml within layouts/application (29.1ms)
+Completed 200 OK in 121ms (Views: 117.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:20:50 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (24.6ms)
+  Rendered students/assigment.html.haml within layouts/application (27.9ms)
+Completed 200 OK in 109ms (Views: 105.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:21:17 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (7.6ms)
+  Rendered students/assigment.html.haml within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting '}'
+...u.id] if u.group.to_s != "2a" u.name_lastname}),{class: "js-...
+...                              ^
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected '}', expecting ')'
+...p.to_s != "2a" u.name_lastname}),{class: "js-example-basic-s...
+...                              ^):
+  
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected '}', expecting ')'
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70306011595420'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:22:10 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (18.7ms)
+  Rendered students/assigment.html.haml within layouts/application (24.2ms)
+Completed 200 OK in 114ms (Views: 110.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:22:35 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (20.7ms)
+  Rendered students/assigment.html.haml within layouts/application (26.8ms)
+Completed 200 OK in 127ms (Views: 124.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:22:52 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (22.5ms)
+  Rendered students/assigment.html.haml within layouts/application (28.7ms)
+Completed 200 OK in 124ms (Views: 119.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:23:26 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (24.4ms)
+  Rendered students/assigment.html.haml within layouts/application (29.1ms)
+Completed 200 OK in 120ms (Views: 117.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:23:33 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (25.5ms)
+  Rendered students/assigment.html.haml within layouts/application (30.5ms)
+Completed 200 OK in 138ms (Views: 134.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:24:09 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (26.9ms)
+  Rendered students/assigment.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 129ms (Views: 126.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:24:20 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (26.2ms)
+  Rendered students/assigment.html.haml within layouts/application (32.0ms)
+Completed 200 OK in 137ms (Views: 132.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:24:29 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (23.9ms)
+  Rendered students/assigment.html.haml within layouts/application (27.6ms)
+Completed 200 OK in 122ms (Views: 118.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:25:10 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (1.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (27.7ms)
+  Rendered students/assigment.html.haml within layouts/application (32.6ms)
+Completed 200 OK in 140ms (Views: 134.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:25:45 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (6.6ms)
+  Rendered students/assigment.html.haml within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected '}', expecting ']'
+...ct{ |u| [u.name_lastname, u.id}),{class: "js-example-basic-s...
+...                              ^
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:9: syntax error, unexpected ')', expecting '}'
+)).to_s);).to_s);; _hamlout.bu...
+^
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:12: syntax error, unexpected keyword_end, expecting ')'
+...t.buffer << ("\n".freeze);; end;; _hamlout.buffer << ((::Ham...
+...                            ^~~
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:12: syntax error, unexpected keyword_do_block, expecting ')'
+...".freeze);; Student.all.each do |stu|
+...                             ^~
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:17: syntax error, unexpected keyword_end, expecting ')'
+... << ("\n</div>\n".freeze);; end;; _hamlout.buffer << ("</div...
+...                            ^~~
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:17: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:17: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/students/_asign_grupo.html.haml:8: syntax error, unexpected '}', expecting ']'
+app/views/students/_asign_grupo.html.haml:9: syntax error, unexpected ')', expecting '}'
+app/views/students/_asign_grupo.html.haml:12: syntax error, unexpected keyword_end, expecting ')'
+app/views/students/_asign_grupo.html.haml:12: syntax error, unexpected keyword_do_block, expecting ')'
+app/views/students/_asign_grupo.html.haml:17: syntax error, unexpected keyword_end, expecting ')'
+app/views/students/_asign_grupo.html.haml:17: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/students/_asign_grupo.html.haml:17: syntax error, unexpected keyword_end, expecting ')'
+app/views/students/_asign_grupo.html.haml:20: syntax error, unexpected keyword_end, expecting ')'
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70305831238400'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:25:53 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (23.1ms)
+  Rendered students/assigment.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 132ms (Views: 128.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:29:15 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (5.9ms)
+  Rendered students/assigment.html.haml within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:9: syntax error, unexpected '='
+..."#{Haml::Helpers.html_escape((=select_tag 'student[]', optio...
+...                              ^):
+  
+app/views/students/_asign_grupo.html.haml:9: syntax error, unexpected '='
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70306016741680'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:29:44 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (10.0ms)
+  Rendered students/assigment.html.haml within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:9: syntax error, unexpected '='
+..."#{Haml::Helpers.html_escape((=select_tag 'student[]', optio...
+...                              ^):
+  
+app/views/students/_asign_grupo.html.haml:9: syntax error, unexpected '='
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70306007317060'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:30:51 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (20.8ms)
+  Rendered students/assigment.html.haml within layouts/application (25.6ms)
+Completed 200 OK in 109ms (Views: 106.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:31:09 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (7.3ms)
+  Rendered students/assigment.html.haml within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `rstrip' for nil:NilClass):
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:31:14 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (16.3ms)
+  Rendered students/assigment.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 113ms (Views: 110.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:32:01 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (20.1ms)
+  Rendered students/assigment.html.haml within layouts/application (25.6ms)
+Completed 200 OK in 112ms (Views: 108.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:32:07 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (5.9ms)
+  Rendered students/assigment.html.haml within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/app/views/students/_asign_grupo.html.haml:9: syntax error, unexpected '='
+..."#{Haml::Helpers.html_escape((=select_tag 'student[]', optio...
+...                              ^):
+  
+app/views/students/_asign_grupo.html.haml:9: syntax error, unexpected '='
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70306009652700'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:32:39 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (22.4ms)
+  Rendered students/assigment.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 121ms (Views: 117.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-03 21:46:54 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 94ms (Views: 91.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:47:42 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (18.1ms)
+  Rendered students/assigment.html.haml within layouts/application (22.9ms)
+Completed 200 OK in 114ms (Views: 110.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/asignar" for 127.0.0.1 at 2019-01-03 21:50:18 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mwTXhpc3omxP10Rne8CI206zWPSEIWzT73P1wjJffjaEBHeqc+QMpz0v2tlQHDS7yghOaBXpuXgOYF+wlBxHqQ==", "student"=>["2", "3"], "asignar"=>"3", "grupo"=>"1", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=3
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "students" SET "group_id" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["group_id", 1], ["updated_at", "2019-01-04 04:50:18.965483"], ["id", 2]]
+  [1m[35m (148.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "students" SET "group_id" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["group_id", 1], ["updated_at", "2019-01-04 04:50:19.122492"], ["id", 3]]
+  [1m[35m (82.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 302 Found in 248ms (ActiveRecord: 233.4ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 21:50:19 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (13.2ms)
+  Rendered students/assigment.html.haml within layouts/application (18.6ms)
+Completed 200 OK in 105ms (Views: 101.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-03 21:55:24 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 105ms (Views: 102.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-03 21:55:41 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("accounts"."amount") FROM "accounts"[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 4], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 5], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 6], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 7], ["LIMIT", 1]]
+  Rendered accounts/index.html.haml within layouts/application (36.6ms)
+Completed 200 OK in 125ms (Views: 116.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-03 21:56:01 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (17.2ms)
+Completed 200 OK in 121ms (Views: 100.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2019-01-03 21:56:05 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT "debts".* FROM "debts"[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."student_id" = ? LIMIT ?[0m  [["student_id", 2], ["LIMIT", 1]]
+  Rendered students/show.html.haml within layouts/application (26.6ms)
+Completed 200 OK in 116ms (Views: 111.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-03 21:56:10 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("accounts"."amount") FROM "accounts"[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 4], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 5], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 6], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 7], ["LIMIT", 1]]
+  Rendered accounts/index.html.haml within layouts/application (21.6ms)
+Completed 200 OK in 117ms (Views: 112.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/accounts/4/edit" for 127.0.0.1 at 2019-01-03 21:56:19 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering accounts/edit.html.haml within layouts/application
+  Rendered accounts/_form.html.haml (140.9ms)
+  Rendered accounts/edit.html.haml within layouts/application (147.0ms)
+Completed 200 OK in 232ms (Views: 228.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-03 21:56:21 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("accounts"."amount") FROM "accounts"[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 4], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 5], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 6], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 7], ["LIMIT", 1]]
+  Rendered accounts/index.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 118ms (Views: 113.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/asignar?asignar=2" for 127.0.0.1 at 2019-01-03 21:57:02 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"2"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_semestre.haml (2.9ms)
+  Rendered students/assigment.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 94ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-03 21:57:04 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_materia.haml (1.8ms)
+  Rendered students/assigment.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/asignar?asignar=2" for 127.0.0.1 at 2019-01-03 21:57:06 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"2"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_semestre.haml (3.3ms)
+  Rendered students/assigment.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 92ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-03 21:57:07 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_materia.haml (3.5ms)
+  Rendered students/assigment.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 112ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/asignar?asignar=2" for 127.0.0.1 at 2019-01-03 21:57:09 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"2"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_semestre.haml (2.4ms)
+  Rendered students/assigment.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 96ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 22:52:41 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (8.7ms)
+  Rendered students/assigment.html.haml within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: %h1 Asignar grupo
+    2: =current_user.name
+    3: .row
+    4: 	.col-md-12
+    5: 		= form_tag  do
+  
+app/views/students/_asign_grupo.html.haml:2:in `_app_views_students__asign_grupo_html_haml___4122190755727002661_70305831139160'
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70305831318480'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 22:52:50 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (24.8ms)
+  Rendered students/assigment.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 114ms (Views: 111.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-03 22:52:57 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 155ms (Views: 121.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-03 22:53:06 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jabGdUDWK4cqA4ZxqnQXCkCR2SE+s09Wgsm8GDzqDvf9Rq9b9ROxV1GPcwJHKyS7fEtuqO1LV+NVOOWHdpoDjQ==", "user"=>{"email"=>"galvan@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "galvan@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2019-01-04 05:53:07.365031"], ["last_sign_in_at", "2018-10-13 00:58:39.928878"], ["sign_in_count", 7], ["updated_at", "2019-01-04 05:53:07.366191"], ["id", 1]]
+  [1m[35m (90.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 547ms (ActiveRecord: 92.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-03 22:53:07 -0700
+Processing by MainController#index as HTML
+  Rendering main/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered main/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-03 22:53:18 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (17.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 103ms (Views: 99.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 22:53:20 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (19.0ms)
+  Rendered students/assigment.html.haml within layouts/application (23.7ms)
+Completed 200 OK in 121ms (Views: 117.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 22:53:54 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (3.8ms)
+  Rendered students/assigment.html.haml within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h1 and nested within it.):
+    1: %h1 Asignar grupo
+    2: 	=current_user.name
+    3: .row
+    4: 	.col-md-12
+    5: 		= form_tag  do
+  
+app/views/students/_asign_grupo.html.haml:2
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70305963987520'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 22:54:15 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (20.6ms)
+  Rendered students/assigment.html.haml within layouts/application (25.7ms)
+Completed 200 OK in 117ms (Views: 114.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 22:59:08 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (20.0ms)
+  Rendered students/assigment.html.haml within layouts/application (25.9ms)
+Completed 200 OK in 109ms (Views: 105.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 22:59:25 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (19.7ms)
+  Rendered students/assigment.html.haml within layouts/application (24.4ms)
+Completed 200 OK in 102ms (Views: 99.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 22:59:38 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_grupo.html.haml (6.9ms)
+  Rendered students/assigment.html.haml within layouts/application (23.3ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: %h1 "Asignar grupo#{@current_user.name}"
+    2: .row
+    3: 	.col-md-12
+    4: 		= form_tag  do
+  
+app/views/students/_asign_grupo.html.haml:1:in `_app_views_students__asign_grupo_html_haml___4122190755727002661_70305964768720'
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_47196669563520'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 22:59:47 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (17.8ms)
+  Rendered students/assigment.html.haml within layouts/application (20.9ms)
+Completed 200 OK in 95ms (Views: 91.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-03 22:59:50 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("accounts"."amount") FROM "accounts"[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 4], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 5], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 6], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 7], ["LIMIT", 1]]
+  Rendered accounts/index.html.haml within layouts/application (20.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 103ms (Views: 96.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-03 22:59:52 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (21.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 96ms (Views: 93.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-01-03 22:59:53 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ybDNa350kq3YeGAsr2t6YRZqs63hISEs5ECPYmXngCoNqWMHmen9F35jLCow3mKIFmq6mQnFZpxint3tJ/CYzw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 124ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-03 22:59:53 -0700
+Processing by MainController#index as HTML
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-03 23:00:00 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 96ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-03 23:00:08 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jPBPp4noHjLMc8cw5mxNzmhvptjeyAmZHIZrXHN/ugOUbISw9sIjZLvtJYnRv1tEjBGOzIdqo4VeZuYJm8FAIA==", "user"=>{"email"=>"galvan@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "galvan@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2019-01-04 06:00:08.603700"], ["last_sign_in_at", "2019-01-04 05:53:07.365031"], ["sign_in_count", 8], ["updated_at", "2019-01-04 06:00:08.604711"], ["id", 1]]
+  [1m[35m (207.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 478ms (ActiveRecord: 208.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-03 23:00:08 -0700
+Processing by MainController#index as HTML
+  Rendering main/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered main/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 121ms (Views: 118.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-03 23:02:48 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (25.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 112ms (Views: 109.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 23:02:51 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (16.4ms)
+  Rendered students/assigment.html.haml within layouts/application (20.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `rol' for #<User:0x00007fe2c0761560>
+Did you mean?  role):
+    1: %h1 Asignar grupo
+    2: =current_user.rol
+    3: .row
+    4: 	.col-md-12
+    5: 		= form_tag  do
+  
+app/views/students/_asign_grupo.html.haml:2:in `_app_views_students__asign_grupo_html_haml___4122190755727002661_70305934329860'
+app/views/students/assigment.html.haml:8:in `_app_views_students_assigment_html_haml__441883133895630736_70305934477240'
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 23:02:59 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (18.7ms)
+  Rendered students/assigment.html.haml within layouts/application (22.5ms)
+Completed 200 OK in 121ms (Views: 117.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 23:03:52 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (17.3ms)
+  Rendered students/assigment.html.haml within layouts/application (20.6ms)
+Completed 200 OK in 101ms (Views: 97.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 23:03:59 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (26.9ms)
+  Rendered students/assigment.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 132ms (Views: 128.1ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 23:04:29 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (16.0ms)
+  Rendered students/assigment.html.haml within layouts/application (20.5ms)
+Completed 200 OK in 97ms (Views: 94.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 23:04:53 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (16.6ms)
+  Rendered students/assigment.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 111ms (Views: 108.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 23:04:54 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (15.2ms)
+  Rendered students/assigment.html.haml within layouts/application (20.1ms)
+Completed 200 OK in 110ms (Views: 106.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 23:04:55 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (16.4ms)
+  Rendered students/assigment.html.haml within layouts/application (20.5ms)
+Completed 200 OK in 98ms (Views: 95.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 23:05:47 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (17.0ms)
+  Rendered students/assigment.html.haml within layouts/application (21.0ms)
+Completed 200 OK in 97ms (Views: 94.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 23:05:48 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (16.6ms)
+  Rendered students/assigment.html.haml within layouts/application (21.4ms)
+Completed 200 OK in 97ms (Views: 92.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-03 23:05:57 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups"[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_asign_grupo.html.haml (17.1ms)
+  Rendered students/assigment.html.haml within layouts/application (21.2ms)
+Completed 200 OK in 98ms (Views: 94.8ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-01-03 23:06:31 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bPsN/918+3kpmAM4TM0E5QBqc7niNn8dY+fjb+W0ndfO/zRRgqr7WmhwVmb6Hhl8M5EtqJI8YS5JQRhcOpX7pQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-03 23:06:31 -0700
+Processing by MainController#index as HTML
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-03 23:06:34 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 98ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:25:34 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (22.8ms)
+Completed 200 OK in 1374ms (Views: 1343.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:41:43 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Devise::SesionsController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:271:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:271:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:42:03 -0700
+  
+ActionController::RoutingError (uninitialized constant Devise::SesionsController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:271:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:271:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:43:05 -0700
+Processing by Devise::SessionsController#new as HTML
+[Devise] Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 404 Not Found in 1ms
+
+
+  
+AbstractController::ActionNotFound (Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  
+devise (4.4.3) app/controllers/devise_controller.rb:90:in `unknown_action!'
+devise (4.4.3) app/controllers/devise_controller.rb:65:in `assert_is_devise_resource!'
+devise (4.4.3) app/controllers/devise_controller.rb:103:in `require_no_authentication'
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:178:in `block (2 levels) in halting_and_conditional'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:179:in `block in halting_and_conditional'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:43:41 -0700
+Processing by Devise::SessionsController#create as HTML
+[Devise] Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 404 Not Found in 1ms
+
+
+  
+AbstractController::ActionNotFound (Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  
+devise (4.4.3) app/controllers/devise_controller.rb:90:in `unknown_action!'
+devise (4.4.3) app/controllers/devise_controller.rb:65:in `assert_is_devise_resource!'
+devise (4.4.3) app/controllers/devise_controller.rb:103:in `require_no_authentication'
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:178:in `block (2 levels) in halting_and_conditional'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:179:in `block in halting_and_conditional'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:46:31 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:46:41 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:47:03 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:47:57 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:49:12 -0700
+  
+SyntaxError (/home/alejandro/Imágenes/ControlEscolar/config/routes.rb:22: syntax error, unexpected =>
+    get "signup", => "devise/registrations#new"
+                  ^~
+/home/alejandro/Imágenes/ControlEscolar/config/routes.rb:23: syntax error, unexpected =>
+    get "login", => "devise/sessions#new"
+                 ^~
+/home/alejandro/Imágenes/ControlEscolar/config/routes.rb:24: syntax error, unexpected =>
+    get "logout", => "devise/sessions#destroy"
+                  ^~):
+  
+config/routes.rb:22: syntax error, unexpected =>
+config/routes.rb:23: syntax error, unexpected =>
+config/routes.rb:24: syntax error, unexpected =>
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:49:34 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:50:03 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:51:09 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:53:15 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:53:59 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:56:15 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:56:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:56:19 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:56:36 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:59:08 -0700
+Processing by Devise::SessionsController#new as HTML
+[Devise] Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+
+Completed 404 Not Found in 1ms
+
+
+  
+AbstractController::ActionNotFound (Could not find devise mapping for path "/".
+This may happen for two reasons:
+
+1) You forgot to wrap your route inside the scope block. For example:
+
+  devise_scope :user do
+    get "/some/route" => "some_devise_controller"
+  end
+
+2) You are testing a Devise controller bypassing the router.
+   If so, you can explicitly tell Devise which mapping to use:
+
+   @request.env["devise.mapping"] = Devise.mappings[:user]
+
+):
+  
+devise (4.4.3) app/controllers/devise_controller.rb:90:in `unknown_action!'
+devise (4.4.3) app/controllers/devise_controller.rb:65:in `assert_is_devise_resource!'
+devise (4.4.3) app/controllers/devise_controller.rb:103:in `require_no_authentication'
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:178:in `block (2 levels) in halting_and_conditional'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:179:in `block in halting_and_conditional'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:06:33 -0700
+  
+NoMethodError (undefined method `unidentified' for #<ActionDispatch::Routing::Mapper:0x0000559e54e511c0>):
+  
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:08:12 -0700
+  
+NoMethodError (undefined method `unidentified' for #<ActionDispatch::Routing::Mapper:0x0000559e53e3cfa0>):
+  
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:08:36 -0700
+  
+NoMethodError (undefined method `unregistered' for #<ActionDispatch::Routing::Mapper:0x0000559e53c41ca0>):
+  
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:09:23 -0700
+Processing by MainController#unidentified as HTML
+  Rendering main/unidentified.html.haml within layouts/application
+  Rendered main/unidentified.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 406ms (Views: 401.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:10:04 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered main/unauthenticated.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 78ms (Views: 73.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:21:13 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (438.4ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (442.0ms)
+Completed 500 Internal Server Error in 446ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x00007f38b09b7130>:0x00007f38b298a520>):
+    1: <h2>Log in</h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="field">
+    5:     <%= f.label :email %><br />
+    6:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  
+app/views/devise/sessions/_new.html.erb:3:in `_app_views_devise_sessions__new_html_erb__2120852419643207192_69940745546760'
+app/views/main/unauthenticated.html.haml:1:in `_app_views_main_unauthenticated_html_haml___3206908518044434291_69940745623300'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:26:10 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (1385.3ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (1388.6ms)
+Completed 500 Internal Server Error in 1397ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00007f38b28319d0>:0x00007f38b2823bc8>):
+    11:     <%= f.password_field :password, autocomplete: "off" %>
+    12:   </div>
+    13: 
+    14:   <% if devise_mapping.rememberable? -%>
+    15:     <div class="field">
+    16:       <%= f.check_box :remember_me %>
+    17:       <%= f.label :remember_me %>
+  
+app/views/devise/sessions/_new.html.erb:14:in `block in _app_views_devise_sessions__new_html_erb__2120852419643207192_69940744740420'
+app/views/devise/sessions/_new.html.erb:3:in `_app_views_devise_sessions__new_html_erb__2120852419643207192_69940744740420'
+app/views/main/unauthenticated.html.haml:1:in `_app_views_main_unauthenticated_html_haml___3206908518044434291_69940744917420'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:27:22 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (1110.7ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (1114.8ms)
+Completed 500 Internal Server Error in 1123ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00007f38b2582e28>:0x00007f38b25810c8>):
+    11:     <%= f.password_field :password, autocomplete: "off" %>
+    12:   </div>
+    13: 
+    14:   <% if devise_mapping.rememberable? -%>
+    15:     <div class="field">
+    16:       <%= f.check_box :remember_me %>
+    17:       <%= f.label :remember_me %>
+  
+app/views/devise/sessions/_new.html.erb:14:in `block in _app_views_devise_sessions__new_html_erb__2120852419643207192_69940743678400'
+app/views/devise/sessions/_new.html.erb:3:in `_app_views_devise_sessions__new_html_erb__2120852419643207192_69940743678400'
+app/views/main/unauthenticated.html.haml:1:in `_app_views_main_unauthenticated_html_haml___3206908518044434291_69940743510800'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:30:09 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (505.0ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (508.4ms)
+Completed 500 Internal Server Error in 516ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x00007f389c454e40>:0x00007f38a4449dd0>
+Did you mean?  resource):
+    1: <h2>Log in</h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="field">
+    5:     <%= f.label :email %><br />
+    6:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  
+app/views/devise/sessions/_new.html.erb:3:in `_app_views_devise_sessions__new_html_erb__2120852419643207192_69940658560140'
+app/views/main/unauthenticated.html.haml:1:in `_app_views_main_unauthenticated_html_haml___3206908518044434291_69940558341260'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:30:42 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (440.7ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (444.6ms)
+Completed 500 Internal Server Error in 452ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x0000559e55402830>:0x0000559e553ce260>
+Did you mean?  resource):
+    1: <h2>Log in</h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    4:   <div class="field">
+    5:     <%= f.label :email %><br />
+    6:     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  
+app/views/devise/sessions/_new.html.erb:3:in `_app_views_devise_sessions__new_html_erb__2120852419643207192_47069261322300'
+app/views/main/unauthenticated.html.haml:1:in `_app_views_main_unauthenticated_html_haml___3206908518044434291_69940757430800'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:30:57 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (973.3ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (978.9ms)
+Completed 500 Internal Server Error in 990ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00007f38b275be20>:0x00007f38b275a0e8>):
+    11:     <%= f.password_field :password, autocomplete: "off" %>
+    12:   </div>
+    13: 
+    14:   <% if devise_mapping.rememberable? -%>
+    15:     <div class="field">
+    16:       <%= f.check_box :remember_me %>
+    17:       <%= f.label :remember_me %>
+  
+app/views/devise/sessions/_new.html.erb:14:in `block in _app_views_devise_sessions__new_html_erb__2120852419643207192_69940744618820'
+app/views/devise/sessions/_new.html.erb:3:in `_app_views_devise_sessions__new_html_erb__2120852419643207192_69940744618820'
+app/views/main/unauthenticated.html.haml:1:in `_app_views_main_unauthenticated_html_haml___3206908518044434291_69940744446760'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:32:33 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (32.2ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (35.2ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `rememberable?' for nil:NilClass):
+    11:     <%= f.password_field :password, autocomplete: "off" %>
+    12:   </div>
+    13: 
+    14:   <% if devise_mapping.rememberable? -%>
+    15:     <div class="field">
+    16:       <%= f.check_box :remember_me %>
+    17:       <%= f.label :remember_me %>
+  
+app/views/devise/sessions/_new.html.erb:14:in `block in _app_views_devise_sessions__new_html_erb__2120852419643207192_69940757516820'
+app/views/devise/sessions/_new.html.erb:3:in `_app_views_devise_sessions__new_html_erb__2120852419643207192_69940757516820'
+app/views/main/unauthenticated.html.haml:1:in `_app_views_main_unauthenticated_html_haml___3206908518044434291_47069262528600'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:35:12 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/shared/_links.html.erb (945.8ms)
+  Rendered devise/sessions/_new.html.erb (1013.0ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (1016.6ms)
+Completed 500 Internal Server Error in 1024ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00007f38b10d7e88>:0x00007f38b10c95e0>):
+    2:   <%= link_to "Log in", new_session_path(resource_name) %><br />
+    3: <% end -%>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    6:   <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+    7: <% end -%>
+    8: 
+  
+app/views/devise/shared/_links.html.erb:5:in `_app_views_devise_shared__links_html_erb___434141796433551320_69940729825560'
+app/views/devise/sessions/_new.html.erb:20:in `_app_views_devise_sessions__new_html_erb__2120852419643207192_69940732254920'
+app/views/main/unauthenticated.html.haml:1:in `_app_views_main_unauthenticated_html_haml___3206908518044434291_69940732693540'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:35:24 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (3.9ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 118ms (Views: 115.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:39:12 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:39:21 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:39:32 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (25.5ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (29.6ms)
+Completed 200 OK in 115ms (Views: 110.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-04 22:39:36 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (75.3ms)
+Completed 200 OK in 250ms (Views: 178.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-04 22:39:37 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:40:06 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:40:15 -0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:18:in `block (2 levels) in <top (required)>'
+config/routes.rb:17:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2019-01-04 22:40:22 -0700
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (42.7ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (46.3ms)
+Completed 200 OK in 132ms (Views: 127.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-04 22:40:58 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 103ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-04 22:42:03 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("accounts"."amount") FROM "accounts"[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 4], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 5], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 6], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 7], ["LIMIT", 1]]
+  Rendered accounts/index.html.haml within layouts/application (170.5ms)
+Completed 200 OK in 659ms (Views: 244.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/accounts/4/edit" for 127.0.0.1 at 2019-01-04 22:42:09 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering accounts/edit.html.haml within layouts/application
+  Rendered accounts/_form.html.haml (26.5ms)
+  Rendered accounts/edit.html.haml within layouts/application (31.1ms)
+Completed 200 OK in 130ms (Views: 117.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-04 22:42:22 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("accounts"."amount") FROM "accounts"[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.7ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 4], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 5], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 6], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 7], ["LIMIT", 1]]
+  Rendered accounts/index.html.haml within layouts/application (20.4ms)
+Completed 200 OK in 132ms (Views: 127.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/accounts/4/edit" for 127.0.0.1 at 2019-01-04 22:46:34 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering accounts/edit.html.haml within layouts/application
+  Rendered accounts/_form.html.haml (10.1ms)
+  Rendered accounts/edit.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 91ms (Views: 87.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-04 22:46:56 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("accounts"."amount") FROM "accounts"[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 4], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 5], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 6], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 7], ["LIMIT", 1]]
+  Rendered accounts/index.html.haml within layouts/application (19.9ms)
+Completed 200 OK in 110ms (Views: 105.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/accounts/4/edit" for 127.0.0.1 at 2019-01-04 22:46:58 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering accounts/edit.html.haml within layouts/application
+  Rendered accounts/_form.html.haml (10.1ms)
+  Rendered accounts/edit.html.haml within layouts/application (17.5ms)
+Completed 200 OK in 121ms (Views: 116.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-04 22:54:24 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (58.0ms)
+Completed 200 OK in 164ms (Views: 137.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2019-01-04 22:54:31 -0700
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.haml within layouts/application
+  Rendered students/_form.html.haml (25.6ms)
+  Rendered students/new.html.haml within layouts/application (40.7ms)
+Completed 200 OK in 168ms (Views: 117.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-04 22:54:39 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (29.3ms)
+Completed 200 OK in 134ms (Views: 130.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2019-01-04 22:54:43 -0700
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.haml within layouts/application
+  Rendered students/_form.html.haml (22.2ms)
+  Rendered students/new.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 117ms (Views: 114.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-04 22:54:45 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (23.2ms)
+Completed 200 OK in 124ms (Views: 121.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-04 22:54:48 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("accounts"."amount") FROM "accounts"[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 4], ["LIMIT", 1]]
+  [1m[36mStudent Load (2.5ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 5], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 6], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 7], ["LIMIT", 1]]
+  Rendered accounts/index.html.haml within layouts/application (27.1ms)
+Completed 200 OK in 136ms (Views: 127.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/accounts/4/edit" for 127.0.0.1 at 2019-01-04 22:55:39 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering accounts/edit.html.haml within layouts/application
+  Rendered accounts/_form.html.haml (9.0ms)
+  Rendered accounts/edit.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 111ms (Views: 108.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-04 22:59:38 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("accounts"."amount") FROM "accounts"[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 4], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 5], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 6], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."account_id" = ? LIMIT ?[0m  [["account_id", 7], ["LIMIT", 1]]
+  Rendered accounts/index.html.haml within layouts/application (15.9ms)
+Completed 200 OK in 109ms (Views: 104.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/debts" for 127.0.0.1 at 2019-01-04 22:59:58 -0700
+Processing by DebtsController#index as HTML
+  Rendering debts/index.html.haml within layouts/application
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT "debts".* FROM "debts"[0m
+  Rendered debts/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 122ms (Views: 101.5ms | ActiveRecord: 1.1ms)
+
+

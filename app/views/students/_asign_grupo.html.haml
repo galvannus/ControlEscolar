@@ -1,6 +1,5 @@
 %h1 Asignar grupo
--if @estu.present?
-	=@estu
+=current_user.role
 .row
 	.col-md-12
 		= form_tag  do
@@ -9,7 +8,6 @@
 				-#%option{:value => "WY"} Wyoming padre
 			=select_tag 'student[]', options_for_select(Student.all.collect{ |u| [u.name_lastname, u.id]}),{class: "js-example-basic-single",multiple: "multiple"}
 			=hidden_field_tag 'asignar', 3
-			=#hidden_field_tag 'grupo', 1
 			=select_tag 'grupo', options_for_select(Group.all.collect{ |u| [u.name, u.id]}),{class: "form-tag"}
 			=submit_tag("Asignar")
 	-Student.all.each do |stu|
