@@ -10,11 +10,11 @@
 			=hidden_field_tag 'asignar', 3
 			=select_tag 'grupo', options_for_select(Group.all.collect{ |u| [u.name, u.id]}),{class: "form-tag"}
 			=submit_tag("Asignar")
-	-Student.all.each do |stu|
-		.col-md-12
-			=stu.name
+	-#Student.all.each do |stu|
+		-#.col-md-12
+			=#stu.name
 			Grupo >
-			=stu.group.name
+			=s#tu.group.name
 
 
 :javascript

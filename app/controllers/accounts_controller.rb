@@ -43,6 +43,22 @@ class AccountsController < ApplicationController
   def update
     respond_to do |format|
       if @account.update(account_params)
+        if params[:amount_array].present?
+          #Find the actual amount of the student
+          @totalDebts = 0
+          studentAccount = Student.find(2).account.amount
+
+          #Get de array of amount and sums
+          params[:amount_array].each do |allDebts|
+            debt = Debt.find(allDebts)        
+            @totalDebts = (@totalDebts + debt.amount).abs
+            puts @totalDebts
+          end
+          @totalDebts = @totalDebts + studentAccount
+
+          puts "***Account actualizado****" if @account.update(amount: @totalDebts)
+        end
+        
         format.html { redirect_to @account, notice: 'Account was successfully updated.' }
         format.json { render :show, status: :ok, location: @account }
       else

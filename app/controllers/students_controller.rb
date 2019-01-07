@@ -43,14 +43,11 @@ class StudentsController < ApplicationController
   # POST /students.json
   def create
     @student = Student.new(student_params) 
-    
-    
-    
 
     respond_to do |format|
       if @student.save
-        
-        #When register a new student -Start
+        #Start
+        #When register a new student
         #Save amount of account of student
         @account = Account.new
         @totaldebts = Debt.sum(:amount)

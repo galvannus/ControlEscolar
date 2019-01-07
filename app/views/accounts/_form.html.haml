@@ -5,26 +5,71 @@
       %ul
         - @account.errors.full_messages.each do |message|
           %li= message
-
-  .field
-    = f.label :amount
-    = text_field_tag :amount1
-    = f.hidden_field :amount
-  
-    
+  .row
+    .col-md-12
+      = label_tag :abono, "Personalizado", checked: :true
+      %input#myCheck{:onclick => "ocultar()", :type => "checkbox"}/
+      
+  .row
+    .row-md-12
+      .field
+        = f.label :amount  
+        = text_field_tag :amount1, "", class: "hidden"
+        = label_tag :razon, 'Razon',id: "label_razon"
+        = text_field_tag :razon, "", class: "hidden"
+        = select_tag 'amount_array[]', options_for_select(Debt.all.collect{ |u| [u.name, u.id]}),{class: "js-example-basic-single",multiple: "multiple", id: "select"}
+        = f.number_field :amount, class: "hidden"
+        = hidden_field_tag :student_id, params[:student_id]
 
 
   .actions
     = f.submit 'Pagar',onclick: "sumar()"
 
 
+:css
+  .hidden{
+    display: none;
+  }
+
+
 
 :javascript
-  function sumar(){
-    let amountt = document.getElementById("amount1").value
-    let amount2 = document.getElementById("account_amount").value
-    amountt = parseFloat(amountt)
-    amount2 = parseFloat(amount2)
+  function ocultar(){
 
-    document.getElementById("account_amount").value = amountt+amount2
+    let check = document.getElementById('myCheck').checked;
+    if (check === true){
+      document.getElementsByTagName('SPAN')[1].classList.add('hidden');
+      document.getElementById('amount1').classList.remove('hidden');
+      document.getElementById('razon').classList.remove('hidden');
+      document.getElementById('label_razon').classList.remove('hidden');
+    }
+    else{
+      document.getElementsByTagName('SPAN')[1].classList.remove('hidden');
+      document.getElementById('amount1').classList.add('hidden');
+      document.getElementById('razon').classList.add('hidden');
+      document.getElementById('label_razon').classList.add('hidden');
+    }
+    
   }
+
+  function sumar(){
+
+    let amountt = document.getElementById("amount1").value
+    if (amountt != ""){
+      let amount2 = document.getElementById("account_amount").value
+      amountt = parseFloat(amountt)
+      amount2 = parseFloat(amount2)
+      document.getElementById("account_amount").value = amountt+amount2
+    }
+
+  }
+
+
+
+
+  $( "#dropdown" ).select2({
+    theme: "bootstrap"
+  });
+  $(document).ready(function() {
+    $('.js-example-basic-single').select2();
+  });
