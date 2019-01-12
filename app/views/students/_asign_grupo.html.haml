@@ -1,5 +1,5 @@
 %h1 Asignar grupo
-=current_user.role
+=current_user.role if current_user.present?
 .row
 	.col-md-12
 		= form_tag  do

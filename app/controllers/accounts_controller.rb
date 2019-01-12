@@ -11,6 +11,14 @@ class AccountsController < ApplicationController
   # GET /accounts/1
   # GET /accounts/1.json
   def show
+    if params[:debts].present?
+      puts params[:debts].split("__")
+    end
+    respond_to do |format|
+      format.html
+      format.json
+      format.pdf {render template: "accounts/compra", pdf: 'compra' , orientation: 'Landscape', page_size: 'Letter'}
+    end
   end
 
   # GET /accounts/new
@@ -44,22 +52,42 @@ class AccountsController < ApplicationController
     respond_to do |format|
       if @account.update(account_params)
         if params[:amount_array].present?
+
+          @mensualidad = 0
           #Find the actual amount of the student
           @totalDebts = 0
-          studentAccount = Student.find(2).account.amount
+          studentAccount = Student.find(params[:student_id]).account.amount.to_f
 
           #Get de array of amount and sums
+          @paramsDebts = params[:amount_array]
           params[:amount_array].each do |allDebts|
-            debt = Debt.find(allDebts)        
-            @totalDebts = (@totalDebts + debt.amount).abs
+            debt = Debt.find(allDebts)
+            if debt.name == "Mensualidad"
+              @mensualidad = debt.amount.abs
+            end        
+            @totalDebts = (@totalDebts + debt.amount.abs)
             puts @totalDebts
           end
           @totalDebts = @totalDebts + studentAccount
 
+          #Apply discount
+          discount = Student.find(params[:student_id]).discount.to_f
+          if @mensualidad > 0 and discount.present?
+            descuento = (discount / 100) * @mensualidad
+            puts descuento
+            @totalDebts = @totalDebts - descuento
+            puts @totalDebts
+
+          elsif Date.today.wday <= 17 || Date.today.wday >= 1
+            descuento = (10 / 100) * @mensualidad
+            puts descuento
+            @totalDebts = @totalDebts - descuento
+          end
+
           puts "***Account actualizado****" if @account.update(amount: @totalDebts)
         end
         
-        format.html { redirect_to @account, notice: 'Account was successfully updated.' }
+        format.html { redirect_to "/accounts/#{params[:ac_id]}.pdf?debts=#{params[:amount_array].map{|d| d.to_s + "__"}}", notice: 'Account was successfully updated.' }
         format.json { render :show, status: :ok, location: @account }
       else
         format.html { render :edit }

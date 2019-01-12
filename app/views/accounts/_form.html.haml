@@ -15,11 +15,12 @@
       .field
         = f.label :amount  
         = text_field_tag :amount1, "", class: "hidden"
-        = label_tag :razon, 'Razon',id: "label_razon"
+        = label_tag :razon, 'Razon',id: "label_razon",class: "hidden"
         = text_field_tag :razon, "", class: "hidden"
         = select_tag 'amount_array[]', options_for_select(Debt.all.collect{ |u| [u.name, u.id]}),{class: "js-example-basic-single",multiple: "multiple", id: "select"}
         = f.number_field :amount, class: "hidden"
         = hidden_field_tag :student_id, params[:student_id]
+        = hidden_field_tag :ac_id, params[:ac_id]
 
 
   .actions
