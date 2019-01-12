@@ -12,7 +12,10 @@ class AccountsController < ApplicationController
   # GET /accounts/1.json
   def show
     if params[:debts].present?
-      puts params[:debts].split("__")
+      array = params[:debts].split("__")
+      array.each do |aquitoy|
+        puts "recibi: " + aquitoy.to_s
+      end
     end
     respond_to do |format|
       format.html
@@ -60,11 +63,12 @@ class AccountsController < ApplicationController
 
           #Get de array of amount and sums
           @paramsDebts = params[:amount_array]
+          puts @paramsDebts
           params[:amount_array].each do |allDebts|
             debt = Debt.find(allDebts)
             if debt.name == "Mensualidad"
               @mensualidad = debt.amount.abs
-            end        
+            end
             @totalDebts = (@totalDebts + debt.amount.abs)
             puts @totalDebts
           end
@@ -86,8 +90,8 @@ class AccountsController < ApplicationController
 
           puts "***Account actualizado****" if @account.update(amount: @totalDebts)
         end
-        
-        format.html { redirect_to "/accounts/#{params[:ac_id]}.pdf?debts=#{params[:amount_array].map{|d| d.to_s + "__"}}", notice: 'Account was successfully updated.' }
+
+        format.html { redirect_to "/accounts/#{params[:ac_id]}.pdf?debts=#{params[:amount_array].join("__")}", notice: 'Account was successfully updated.' }
         format.json { render :show, status: :ok, location: @account }
       else
         format.html { render :edit }
