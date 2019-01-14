@@ -10,37 +10,47 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181104235108) do
+ActiveRecord::Schema.define(version: 20190113231911) do
 
-  create_table "accounts", force: :cascade do |t|
-    t.float "amount"
+  create_table "accounts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.float "amount", limit: 24
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "student_id"
     t.index ["student_id"], name: "index_accounts_on_student_id"
   end
 
-  create_table "debts", force: :cascade do |t|
+  create_table "debts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
-    t.float "amount"
+    t.float "amount", limit: 24
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "groups", force: :cascade do |t|
+  create_table "groups", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "partials", force: :cascade do |t|
+  create_table "partials", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "number_partial"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "scores", force: :cascade do |t|
-    t.decimal "total"
+  create_table "recordpayments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "user_id"
+    t.decimal "amount", precision: 10
+    t.integer "debt_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["debt_id"], name: "index_recordpayments_on_debt_id"
+    t.index ["user_id"], name: "index_recordpayments_on_user_id"
+  end
+
+  create_table "scores", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.decimal "total", precision: 10
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "subject_id"
@@ -49,13 +59,13 @@ ActiveRecord::Schema.define(version: 20181104235108) do
     t.index ["subject_id"], name: "index_scores_on_subject_id"
   end
 
-  create_table "semesters", force: :cascade do |t|
+  create_table "semesters", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "number_semester"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "students", force: :cascade do |t|
+  create_table "students", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "group_id"
     t.string "name"
     t.string "lastname"
@@ -78,7 +88,16 @@ ActiveRecord::Schema.define(version: 20181104235108) do
     t.index ["subject_id"], name: "index_students_on_subject_id"
   end
 
-  create_table "subjects", force: :cascade do |t|
+  create_table "studentsubjects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "subject_id"
+    t.bigint "student_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["student_id"], name: "index_studentsubjects_on_student_id"
+    t.index ["subject_id"], name: "index_studentsubjects_on_subject_id"
+  end
+
+  create_table "subjects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -86,22 +105,22 @@ ActiveRecord::Schema.define(version: 20181104235108) do
     t.index ["student_id"], name: "index_subjects_on_student_id"
   end
 
-  create_table "subjectscores", force: :cascade do |t|
+  create_table "subjectscores", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "student_id"
     t.integer "subject_id"
     t.integer "partial_id"
     t.integer "score_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.decimal "firstscore"
-    t.decimal "secondscore"
+    t.decimal "firstscore", precision: 10
+    t.decimal "secondscore", precision: 10
     t.index ["partial_id"], name: "index_subjectscores_on_partial_id"
     t.index ["score_id"], name: "index_subjectscores_on_score_id"
     t.index ["student_id"], name: "index_subjectscores_on_student_id"
     t.index ["subject_id"], name: "index_subjectscores_on_subject_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -121,4 +140,6 @@ ActiveRecord::Schema.define(version: 20181104235108) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "studentsubjects", "students"
+  add_foreign_key "studentsubjects", "subjects"
 end

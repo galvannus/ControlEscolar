@@ -1,8 +1,28 @@
 <html>
     <head>
+        <meta http-equiv="Content-Type" content= "text/html; charset=UTF-8"/>
     </head>
     <body>
-        <h1>Hello</h1>
+        <h1>Ticket</h1>
+        <h2><%=Date.today.strftime("%d/%m/%Y")%></h2>
+        <table>
+            <tr>
+                <td><strong>Pago</strong></td>
+                <td><strong>Cantidad</strong></td>
+            </tr>
+            
+        
+            <%if params[:debts].present?%>
+                <%array = params[:debts].split("__")%>
+                <%array.each do |aquitoy|%>
+                    <tr>
+                        <td><%=Debt.find(aquitoy.to_s).name%></td>
+                        <td><%=Debt.find(aquitoy).amount.abs%></td>
+                    </tr>
+                    
+                <%end%>
+            <%end%>
+       </table>
         
     </body>
 </html>

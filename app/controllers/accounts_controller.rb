@@ -11,12 +11,12 @@ class AccountsController < ApplicationController
   # GET /accounts/1
   # GET /accounts/1.json
   def show
-    if params[:debts].present?
-      array = params[:debts].split("__")
-      array.each do |aquitoy|
-        puts "recibi: " + aquitoy.to_s
-      end
-    end
+    #if params[:debts].present?
+      #array = params[:debts].split("__")
+      #array.each do |aquitoy|
+        #puts "recibi: " + aquitoy.to_s
+      #end
+    #end
     respond_to do |format|
       format.html
       format.json
@@ -65,28 +65,38 @@ class AccountsController < ApplicationController
           @paramsDebts = params[:amount_array]
           puts @paramsDebts
           params[:amount_array].each do |allDebts|
+
+            discount = Student.find(params[:student_id]).discount.to_f
             debt = Debt.find(allDebts)
-            if debt.name == "Mensualidad"
+            if debt.name == "Mensualidad" && discount.present?
               @mensualidad = debt.amount.abs
+              puts @mensualidad
+              #if promedio es => 9 discount + 10
+              @mensualidad = (discount / 100) * @mensualidad
+              puts "#{debt.name} #{@mensualidad}"
+
+            elsif Date.today.wday <= 17 || Date.today.wday >= 1
+              @mensualidad = (discount / 100) * @mensualidad
             end
-            @totalDebts = (@totalDebts + debt.amount.abs)
+
+            @totalDebts = (@totalDebts + debt.amount.abs - @mensualidad)
             puts @totalDebts
           end
           @totalDebts = @totalDebts + studentAccount
 
           #Apply discount
-          discount = Student.find(params[:student_id]).discount.to_f
-          if @mensualidad > 0 and discount.present?
-            descuento = (discount / 100) * @mensualidad
-            puts descuento
-            @totalDebts = @totalDebts - descuento
-            puts @totalDebts
+          #discount = Student.find(params[:student_id]).discount.to_f
+          #if @mensualidad > 0 and discount.present?
+            #descuento = (discount / 100) * @mensualidad
+            #puts descuento
+            #@totalDebts = @totalDebts - descuento
+            #puts @totalDebts
 
-          elsif Date.today.wday <= 17 || Date.today.wday >= 1
-            descuento = (10 / 100) * @mensualidad
-            puts descuento
-            @totalDebts = @totalDebts - descuento
-          end
+          #elsif Date.today.wday <= 17 || Date.today.wday >= 1
+            #descuento = (10 / 100) * @mensualidad
+            #puts descuento
+            #@totalDebts = @totalDebts - descuento
+          #end
 
           puts "***Account actualizado****" if @account.update(amount: @totalDebts)
         end

@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @recordpayment.user
+%p
+  %b Amount:
+  = @recordpayment.amount
+%p
+  %b Debt:
+  = @recordpayment.debt
+
+= link_to 'Edit', edit_recordpayment_path(@recordpayment)
+\|
+= link_to 'Back', recordpayments_path

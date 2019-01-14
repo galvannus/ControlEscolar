@@ -1,0 +1,19 @@
+= form_for @recordpayment do |f|
+  - if @recordpayment.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@recordpayment.errors.count, "error")} prohibited this recordpayment from being saved:"
+      %ul
+        - @recordpayment.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :user
+    = f.text_field :user
+  .field
+    = f.label :amount
+    = f.text_field :amount
+  .field
+    = f.label :debt
+    = f.text_field :debt
+  .actions
+    = f.submit 'Save'

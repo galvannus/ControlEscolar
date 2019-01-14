@@ -23,7 +23,7 @@
     - @students.each do |student|
       %tr
         %td= student.id#check_box_tag "student_id", student.id , false , id: student.name
-        %td= student.group.name
+        %td= student.group.name if student.group.present?
         %td= student.name
         %td= student.lastname
         %td= student.tel1

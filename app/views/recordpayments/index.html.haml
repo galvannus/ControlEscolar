@@ -1,0 +1,25 @@
+%h1 Listing recordpayments
+
+%table
+  %thead
+    %tr
+      %th User
+      %th Amount
+      %th Debt
+      %th
+      %th
+      %th
+
+  %tbody
+    - @recordpayments.each do |recordpayment|
+      %tr
+        %td= recordpayment.user
+        %td= recordpayment.amount
+        %td= recordpayment.debt
+        %td= link_to 'Show', recordpayment
+        %td= link_to 'Edit', edit_recordpayment_path(recordpayment)
+        %td= link_to 'Destroy', recordpayment, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Recordpayment', new_recordpayment_path

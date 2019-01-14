@@ -2,21 +2,34 @@ class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
 
   def assigment
-    #flash[:notice] = @estudiantes.length if params[:student].present?
     if params[:grupo].present?
       redirect_to "/asignar?asignar=#{3}"
-    end
-    puts "**************************"
-    puts params
-    puts "**************************"
-    if params[:student].present?  
-      params[:student].each do |id_student|
-        estudiante = Student.find(id_student)
-        puts estudiante.name
-        puts "Actualizado el grupo" if estudiante.update(group_id: params[:grupo])
+      puts "**************************"
+      puts params
+      puts "**************************"
+      if params[:student].present?  
+        params[:student].each do |id_student|
+          estudiante = Student.find(id_student)
+          puts estudiante.name
+          puts "Actualizado el grupo" if estudiante.update(group_id: params[:grupo])
+        end
+      end
+
+    elsif params[:materia].present?
+      redirect_to "/asignar?asignar=#{1}"
+      puts "**************************"
+      puts params
+      puts "**************************"
+      if params[:student].present?  
+        params[:student].each do |id_student|
+          @studentsubject = Studentsubject.new
+          @studentsubject.student_id = id_student
+          @studentsubject.subject_id = params[:materia]
+          @studentsubject.save
+
+        end
       end
     end
-
     
   end
   # GET /students

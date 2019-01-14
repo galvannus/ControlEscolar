@@ -2,10 +2,7 @@
 
 %p
   %b Group:
-  = @student.group_id
-%p
-  %b Subject:
-  =# @student.subjects.name
+  = @student.group.name if @student.group.present?
 %p
   %b Name:
   = @student.name
@@ -36,14 +33,18 @@
 %p
   %b Tiene un descuento del:
   ="#{@student.discount}%"
-%p
-  %b Adeudos a pagar:
-  -@debt = Debt.all
-  -@debt.each do |debt|
-    =debt.name
+-#%p
+  -#%b Adeudos a pagar:
+  -#@debt = Debt.all
+  -#@debt.each do |debt|
+    =#debt.name
 %p
   %b Total a pagar:
   = @student.account.amount
+%p
+  %b Materias:
+  -@student.subjects.each do |materia|
+    =materia.name
 
 
 
