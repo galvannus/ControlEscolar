@@ -49304,3 +49304,959 @@ Processing by StudentsController#show as HTML
 Completed 200 OK in 117ms (Views: 110.5ms | ActiveRecord: 2.9ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-14 20:57:06 -0700
+  [1m[35m (65.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (195.1ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (212.6ms)
+Completed 200 OK in 1490ms (Views: 1446.8ms | ActiveRecord: 25.8ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 20:57:12 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (17.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (6.7ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (157.8ms)
+  Rendered students/assigment.html.haml within layouts/application (162.4ms)
+Completed 200 OK in 311ms (Views: 219.4ms | ActiveRecord: 27.1ms)
+
+
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 20:57:24 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qNORZWbEfsNTYDiocrkPIQGrOAVaM+CL6pLcjPxVIaf9Ht3jKM4BtUz/8npynYL9/D7hQDfknqRbqpRj9S1SsA==", "student"=>["1"], "asignar"=>"1", "materia"=>"1", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (11.4ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (1, 1, '2019-01-15 03:57:24', '2019-01-15 03:57:24')[0m
+  [1m[35m (33.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 302 Found in 123ms (ActiveRecord: 60.1ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 20:57:24 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (9.7ms)
+  Rendered students/assigment.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 103ms (Views: 100.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:00:53 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (1.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (76.7ms)
+Completed 200 OK in 196ms (Views: 146.0ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2019-01-14 21:00:56 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (21.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mSubject Load (22.5ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` INNER JOIN `studentsubjects` ON `subjects`.`id` = `studentsubjects`.`subject_id` WHERE `studentsubjects`.`student_id` = 1[0m
+  Rendered students/show.html.haml within layouts/application (163.3ms)
+Completed 200 OK in 265ms (Views: 200.9ms | ActiveRecord: 60.4ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:01:05 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (18.6ms)
+Completed 200 OK in 110ms (Views: 106.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:09:04 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (43.7ms)
+Completed 200 OK in 152ms (Views: 138.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 21:09:08 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (28.2ms)
+  Rendered students/assigment.html.haml within layouts/application (33.7ms)
+Completed 200 OK in 140ms (Views: 135.8ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 21:09:16 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oArVwtFuLgzXNJrdNzRoCZfG+YaAAQQHw7Bz+D1XSp71x5lEn2RResirUA83EOXValMgw+3WeihyiDsXNC85iQ==", "student"=>["1"], "asignar"=>"1", "materia"=>"1", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (1, 1, '2019-01-15 04:09:16', '2019-01-15 04:09:16')[0m
+  [1m[35m (33.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudentsubject Load (2.2ms)[0m  [1m[34mSELECT `studentsubjects`.* FROM `studentsubjects` WHERE (student_id = ? and )[0m
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 39.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and )' at line 1: SELECT `studentsubjects`.* FROM `studentsubjects` WHERE (student_id = ? and )):
+  
+app/controllers/students_controller.rb:30:in `puts'
+app/controllers/students_controller.rb:30:in `puts'
+app/controllers/students_controller.rb:30:in `block in assigment'
+app/controllers/students_controller.rb:24:in `each'
+app/controllers/students_controller.rb:24:in `assigment'
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 21:12:55 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oArVwtFuLgzXNJrdNzRoCZfG+YaAAQQHw7Bz+D1XSp71x5lEn2RResirUA83EOXValMgw+3WeihyiDsXNC85iQ==", "student"=>["1"], "asignar"=>"1", "materia"=>"1", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (1, 1, '2019-01-15 04:12:55', '2019-01-15 04:12:55')[0m
+  [1m[35m (97.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 103.6ms)
+
+
+  
+ActiveRecord::PreparedStatementInvalid (wrong number of bind variables (2 for 1) in: student_id = ? AND subject_id):
+  
+app/controllers/students_controller.rb:29:in `block in assigment'
+app/controllers/students_controller.rb:24:in `each'
+app/controllers/students_controller.rb:24:in `assigment'
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 21:13:23 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oArVwtFuLgzXNJrdNzRoCZfG+YaAAQQHw7Bz+D1XSp71x5lEn2RResirUA83EOXValMgw+3WeihyiDsXNC85iQ==", "student"=>["1"], "asignar"=>"1", "materia"=>"1", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (1, 1, '2019-01-15 04:13:23', '2019-01-15 04:13:23')[0m
+  [1m[35m (29.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudentsubject Load (0.7ms)[0m  [1m[34mSELECT `studentsubjects`.* FROM `studentsubjects` WHERE (student_id = '1' AND subject_id = '1')[0m
+Completed 302 Found in 96ms (ActiveRecord: 34.2ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 21:13:23 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (10.1ms)
+  Rendered students/assigment.html.haml within layouts/application (14.9ms)
+Completed 200 OK in 109ms (Views: 106.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:14:11 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (46.8ms)
+Completed 200 OK in 146ms (Views: 133.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2019-01-14 21:14:14 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` INNER JOIN `studentsubjects` ON `subjects`.`id` = `studentsubjects`.`subject_id` WHERE `studentsubjects`.`student_id` = 1[0m
+  Rendered students/show.html.haml within layouts/application (68.4ms)
+Completed 200 OK in 159ms (Views: 150.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:20:36 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (20.9ms)
+Completed 200 OK in 116ms (Views: 112.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:20:37 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 101ms (Views: 97.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 21:20:40 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (14.2ms)
+  Rendered students/assigment.html.haml within layouts/application (19.3ms)
+Completed 200 OK in 106ms (Views: 102.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 21:20:55 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3pUFn79yVii5knsHavRKWuZhk0p7TV9q6hXkqdve76qLWEkZ8XgpXqYNsdVq0MeGG/RKDxaaIUVbLaxG0qacvQ==", "student"=>["1"], "asignar"=>"1", "materia"=>"2", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (2, 1, '2019-01-15 04:20:55', '2019-01-15 04:20:55')[0m
+  [1m[35m (41.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudentsubject Load (0.9ms)[0m  [1m[34mSELECT  `studentsubjects`.* FROM `studentsubjects` WHERE (student_id = '1' AND subject_id = '2') LIMIT 11[0m
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 43.7ms)
+
+
+  
+  [1m[36mCACHE Studentsubject Load (0.0ms)[0m  [1m[34mSELECT  `studentsubjects`.* FROM `studentsubjects` WHERE (student_id = '1' AND subject_id = '2') LIMIT 11[0m  [["LIMIT", 11]]
+NoMethodError (undefined method `id' for #<Studentsubject::ActiveRecord_Relation:0x00007fa5a02dcb28>
+Did you mean?  ids):
+  
+app/controllers/students_controller.rb:30:in `block in assigment'
+app/controllers/students_controller.rb:24:in `each'
+app/controllers/students_controller.rb:24:in `assigment'
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 21:21:15 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3pUFn79yVii5knsHavRKWuZhk0p7TV9q6hXkqdve76qLWEkZ8XgpXqYNsdVq0MeGG/RKDxaaIUVbLaxG0qacvQ==", "student"=>["1"], "asignar"=>"1", "materia"=>"2", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (2, 1, '2019-01-15 04:21:16', '2019-01-15 04:21:16')[0m
+  [1m[35m (66.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (34.1ms)[0m  [1m[34mSELECT `studentsubjects`.`id` FROM `studentsubjects` WHERE (student_id = '1' AND subject_id = '2')[0m
+Completed 302 Found in 175ms (ActiveRecord: 106.4ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 21:21:16 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.7ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (13.6ms)
+  Rendered students/assigment.html.haml within layouts/application (18.7ms)
+Completed 200 OK in 123ms (Views: 119.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:24:57 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (29.2ms)
+Completed 200 OK in 127ms (Views: 121.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2019-01-14 21:25:01 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 2 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 2 LIMIT 1[0m
+  [1m[36mSubject Load (0.7ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` INNER JOIN `studentsubjects` ON `subjects`.`id` = `studentsubjects`.`subject_id` WHERE `studentsubjects`.`student_id` = 2[0m
+  Rendered students/show.html.haml within layouts/application (37.2ms)
+Completed 200 OK in 121ms (Views: 114.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:25:05 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (24.4ms)
+Completed 200 OK in 140ms (Views: 136.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/students/3" for 127.0.0.1 at 2019-01-14 21:25:07 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 3 LIMIT 1[0m
+  [1m[36mSubject Load (0.6ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` INNER JOIN `studentsubjects` ON `subjects`.`id` = `studentsubjects`.`subject_id` WHERE `studentsubjects`.`student_id` = 3[0m
+  Rendered students/show.html.haml within layouts/application (14.0ms)
+Completed 200 OK in 113ms (Views: 108.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:25:09 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (1.0ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (25.5ms)
+Completed 200 OK in 120ms (Views: 116.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 21:25:11 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (1.2ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (22.2ms)
+  Rendered students/assigment.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 126ms (Views: 121.8ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 21:25:38 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wh/HOIbgltey2X6eXgLlFd/VTCDg6ZXc+xfXwmtUtrUP0ou+yOrpoa1GtExeJmjJIkCVZY0+6/NKL58tYizFog==", "student"=>["3"], "asignar"=>"1", "materia"=>"1", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.6ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (1.3ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (1, 3, '2019-01-15 04:25:38', '2019-01-15 04:25:38')[0m
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `studentsubjects`.`id` FROM `studentsubjects` WHERE (student_id = '3' AND subject_id = '1')[0m
+Completed 302 Found in 44ms (ActiveRecord: 34.8ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 21:25:38 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (11.1ms)
+  Rendered students/assigment.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 109ms (Views: 106.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:25:52 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 109ms (Views: 105.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-14 21:26:01 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/_asign_grupo.html.haml (10.1ms)
+  Rendered students/assigment.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 108ms (Views: 105.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 21:26:04 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eSncdndUDr8DidEfFqY7Pd7CnxNSxUQ/hZDSb/Prfaks5JDwOV5xyRwWG80WgrbhI1dGVj8SOhA0qJqA+pMOvg==", "student"=>["3"], "asignar"=>"3", "grupo"=>"1", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=3
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (11.1ms)[0m  [1m[33mUPDATE `students` SET `group_id` = 1, `updated_at` = '2019-01-15 04:26:04' WHERE `students`.`id` = 3[0m
+  [1m[35m (49.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 302 Found in 68ms (ActiveRecord: 60.9ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-14 21:26:04 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/_asign_grupo.html.haml (12.1ms)
+  Rendered students/assigment.html.haml within layouts/application (17.2ms)
+Completed 200 OK in 112ms (Views: 109.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:26:06 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (18.7ms)
+Completed 200 OK in 129ms (Views: 125.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/students/3" for 127.0.0.1 at 2019-01-14 21:26:09 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 3 LIMIT 1[0m
+  [1m[36mSubject Load (0.7ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` INNER JOIN `studentsubjects` ON `subjects`.`id` = `studentsubjects`.`subject_id` WHERE `studentsubjects`.`student_id` = 3[0m
+  Rendered students/show.html.haml within layouts/application (18.5ms)
+Completed 200 OK in 111ms (Views: 106.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 21:26:12 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (1.6ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.9ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Group Load (0.1ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (28.3ms)
+Completed 200 OK in 113ms (Views: 108.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 21:26:14 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (10.6ms)
+  Rendered students/assigment.html.haml within layouts/application (17.8ms)
+Completed 200 OK in 130ms (Views: 127.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 21:26:21 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oIfdtY3YQDAVPOhmHx5/PuoRQWvBWfMUO9WqIKr7wvn1SpEzw9I/RgqjIrQfOvLiF4SYLqyOjTuK7eLPo4Ox7g==", "student"=>["3"], "asignar"=>"1", "materia"=>"2", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (2, 3, '2019-01-15 04:26:21', '2019-01-15 04:26:21')[0m
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `studentsubjects`.`id` FROM `studentsubjects` WHERE (student_id = '3' AND subject_id = '2')[0m
+Completed 302 Found in 45ms (ActiveRecord: 34.3ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 21:26:21 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (9.1ms)
+  Rendered students/assigment.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 101ms (Views: 98.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/studentsubjects" for 127.0.0.1 at 2019-01-14 21:27:53 -0700
+Processing by StudentsubjectsController#index as HTML
+  Rendering studentsubjects/index.html.haml within layouts/application
+  [1m[36mStudentsubject Load (0.5ms)[0m  [1m[34mSELECT `studentsubjects`.* FROM `studentsubjects`[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 4 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 4 LIMIT 1[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mStudent Load (1.1ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 4 LIMIT 1[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.1ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.1ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.1ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Subject Load (0.0ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered studentsubjects/index.html.haml within layouts/application (71.9ms)
+Completed 200 OK in 163ms (Views: 150.0ms | ActiveRecord: 5.3ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mStudentsubject Load (0.4ms)[0m  [1m[34mSELECT  `studentsubjects`.* FROM `studentsubjects` LIMIT 11[0m
+  [1m[36mStudentsubject Load (0.7ms)[0m  [1m[34mSELECT  `studentsubjects`.* FROM `studentsubjects` WHERE `studentsubjects`.`id` = 18 LIMIT 1[0m
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 22:39:19 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (61.2ms)
+  Rendered students/assigment.html.haml within layouts/application (65.0ms)
+Completed 200 OK in 164ms (Views: 155.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 22:39:21 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (9.4ms)
+  Rendered students/assigment.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 97ms (Views: 94.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 22:39:26 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (29.6ms)
+Completed 200 OK in 120ms (Views: 115.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/students/3" for 127.0.0.1 at 2019-01-14 22:39:31 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 3 LIMIT 1[0m
+  Rendered students/show.html.haml within layouts/application (32.0ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (Could not find the association :subjectscores in model Student):
+    43:   = @student.account.amount
+    44: %p
+    45:   %b Materias:
+    46:   -@student.subjects.each do |materia|
+    47:     =materia.name
+    48: 
+    49: 
+  
+app/views/students/show.html.haml:46:in `_app_views_students_show_html_haml__3842158213376495205_70174667553680'
+Started GET "/students/3" for 127.0.0.1 at 2019-01-14 22:40:45 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 3 LIMIT 1[0m
+  Rendered students/show.html.haml within layouts/application (37.0ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 4.8ms)
+
+
+  
+ActionView::Template::Error (Cannot have a has_many :through association 'Student#subjects' which goes through 'Student#subjectscores' before the through association is defined.):
+    43:   = @student.account.amount
+    44: %p
+    45:   %b Materias:
+    46:   -@student.subjects.each do |materia|
+    47:     =materia.name
+    48: 
+    49: 
+  
+app/views/students/show.html.haml:46:in `_app_views_students_show_html_haml__3842158213376495205_70174736688080'
+Started GET "/students/3" for 127.0.0.1 at 2019-01-14 22:43:15 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 3 LIMIT 1[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` INNER JOIN `studentsubjects` ON `subjects`.`id` = `studentsubjects`.`subject_id` WHERE `studentsubjects`.`student_id` = 3[0m
+  Rendered students/show.html.haml within layouts/application (71.6ms)
+Completed 200 OK in 186ms (Views: 148.2ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 22:49:13 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (18.5ms)
+Completed 200 OK in 121ms (Views: 117.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/students/3" for 127.0.0.1 at 2019-01-14 22:51:03 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 3 LIMIT 1[0m
+  [1m[36mSubject Load (0.8ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` INNER JOIN `studentsubjects` ON `subjects`.`id` = `studentsubjects`.`subject_id` WHERE `studentsubjects`.`student_id` = 3[0m
+  Rendered students/show.html.haml within layouts/application (22.7ms)
+Completed 200 OK in 120ms (Views: 114.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 22:51:06 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (20.9ms)
+Completed 200 OK in 122ms (Views: 118.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 22:51:09 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (14.2ms)
+  Rendered students/assigment.html.haml within layouts/application (19.7ms)
+Completed 200 OK in 118ms (Views: 115.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 22:51:10 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (10.6ms)
+  Rendered students/assigment.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 100ms (Views: 97.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 22:52:35 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uk6t6wYGjv2X5n9lhlUYztCBa+oikSd74aG9IRAdv540sl04fVGqTMBLiYh8FTJK7NLQqBCjXiYGFrMDwuX2Ew==", "student"=>["3"], "asignar"=>"1", "materia"=>"3", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.8ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (3, 3, '2019-01-15 05:52:35', '2019-01-15 05:52:35')[0m
+  [1m[35m (91.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (43.5ms)[0m  [1m[34mSELECT `studentsubjects`.`id` FROM `studentsubjects` WHERE (student_id = '3' AND subject_id = '3')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 3 LIMIT 1[0m
+  [1m[36mSubject Load (0.6ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 302 Found in 206ms (ActiveRecord: 148.2ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 22:52:35 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (10.1ms)
+  Rendered students/assigment.html.haml within layouts/application (14.0ms)
+Completed 200 OK in 115ms (Views: 112.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 23:00:48 -0700
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (74.8ms)
+Completed 200 OK in 543ms (Views: 512.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 23:00:50 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (1.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (1.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (40.3ms)
+  Rendered students/assigment.html.haml within layouts/application (46.1ms)
+Completed 200 OK in 144ms (Views: 136.8ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 23:00:59 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zvVUihsuZdSs1px2QSeeD69lpaPd+7texo4ShoYmqNmbOBgMVSQaorNJVqRBAxPTUvB85rAsxXF3tlppj17bzg==", "student"=>["1"], "asignar"=>"1", "materia"=>"4", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.6ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 4 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (4, 1, '2019-01-15 06:00:59', '2019-01-15 06:00:59')[0m
+  [1m[35m (29.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `studentsubjects`.`id` FROM `studentsubjects` WHERE (student_id = '1' AND subject_id = '4')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 302 Found in 110ms (ActiveRecord: 35.9ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 23:00:59 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (1.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (12.0ms)
+  Rendered students/assigment.html.haml within layouts/application (16.8ms)
+Completed 200 OK in 118ms (Views: 114.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 23:01:30 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (18.2ms)
+Completed 200 OK in 114ms (Views: 110.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2019-01-14 23:01:32 -0700
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.haml within layouts/application
+  Rendered students/_form.html.haml (37.9ms)
+  Rendered students/new.html.haml within layouts/application (52.3ms)
+Completed 200 OK in 163ms (Views: 145.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2019-01-14 23:02:07 -0700
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ejPvAfGlI9BAgROzK/8vMO5vjYfm60we2UIh3wB2DrDZSvBuQAOoh7YK+eyiScN7B/U6NynLKvDke9nl3cD2HA==", "student"=>{"name"=>"jooo", "lastname"=>"jaa", "tel1"=>"123213", "tel2"=>"123123", "street"=>"ccentro", "numberhome"=>"123", "suburb"=>"vallarata", "discount"=>"", "registrationnumber"=>"12323", "banknumber"=>"123213"}, "commit"=>"Save"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `students` (`name`, `lastname`, `tel1`, `tel2`, `street`, `numberhome`, `suburb`, `registrationnumber`, `banknumber`, `created_at`, `updated_at`) VALUES ('jooo', 'jaa', '123213', '123123', 'ccentro', '123', 'vallarata', '12323', '123213', '2019-01-15 06:02:07', '2019-01-15 06:02:07')[0m
+  [1m[35m (120.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT SUM(`debts`.`amount`) FROM `debts`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `accounts` (`amount`, `created_at`, `updated_at`, `student_id`) VALUES (0.0, '2019-01-15 06:02:07', '2019-01-15 06:02:07', 4)[0m
+  [1m[35m (41.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `students` SET `account_id` = 4 WHERE `students`.`id` = 4[0m
+  [1m[35m (46.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/students/4
+Completed 302 Found in 319ms (ActiveRecord: 269.6ms)
+
+
+Started GET "/students/4" for 127.0.0.1 at 2019-01-14 23:02:07 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 4 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 4 LIMIT 1[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` INNER JOIN `studentsubjects` ON `subjects`.`id` = `studentsubjects`.`subject_id` WHERE `studentsubjects`.`student_id` = 4[0m
+  Rendered students/show.html.haml within layouts/application (48.3ms)
+Completed 200 OK in 137ms (Views: 133.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 23:02:11 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 130ms (Views: 126.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/students/4" for 127.0.0.1 at 2019-01-14 23:02:21 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 4 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 4 LIMIT 1[0m
+  [1m[36mSubject Load (0.6ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` INNER JOIN `studentsubjects` ON `subjects`.`id` = `studentsubjects`.`subject_id` WHERE `studentsubjects`.`student_id` = 4[0m
+  Rendered students/show.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 116ms (Views: 110.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-14 23:02:24 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (1.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (22.2ms)
+Completed 200 OK in 126ms (Views: 121.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 23:02:29 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.7ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (12.3ms)
+  Rendered students/assigment.html.haml within layouts/application (17.0ms)
+Completed 200 OK in 113ms (Views: 110.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/asignar" for 127.0.0.1 at 2019-01-14 23:02:35 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Iu1EDL9yaO5PfeYsEWsSN6cWi3bDnI+U8Nm0GpNKUD13IAiK8XgXmFDiLP4RT5/rWoNSM65L8btB4fz1mjIjKg==", "student"=>["4"], "asignar"=>"1", "materia"=>"1", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 4 LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (1, 4, '2019-01-15 06:02:35', '2019-01-15 06:02:35')[0m
+  [1m[35m (33.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `studentsubjects`.`id` FROM `studentsubjects` WHERE (student_id = '4' AND subject_id = '1')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 4 LIMIT 1[0m
+  [1m[36mSubject Load (0.6ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 302 Found in 57ms (ActiveRecord: 38.1ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-14 23:02:35 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (10.1ms)
+  Rendered students/assigment.html.haml within layouts/application (14.5ms)
+Completed 200 OK in 108ms (Views: 104.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 21:40:28 -0700
+  [1m[35m (42.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by MainController#unauthenticated as HTML
+  Rendering main/unauthenticated.html.haml within layouts/application
+  Rendered devise/sessions/_new.html.erb (161.4ms)
+  Rendered main/unauthenticated.html.haml within layouts/application (178.9ms)
+Completed 200 OK in 1413ms (Views: 1390.8ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-15 21:41:55 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (48.7ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/index.html.haml within layouts/application (226.9ms)
+Completed 200 OK in 374ms (Views: 232.4ms | ActiveRecord: 81.9ms)
+
+
+Started GET "/students/4" for 127.0.0.1 at 2019-01-15 21:42:04 -0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 4 LIMIT 1[0m
+  Rendering students/show.html.haml within layouts/application
+  [1m[36mAccount Load (27.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 4 LIMIT 1[0m
+  [1m[36mSubject Load (11.8ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` INNER JOIN `studentsubjects` ON `subjects`.`id` = `studentsubjects`.`subject_id` WHERE `studentsubjects`.`student_id` = 4[0m
+  Rendered students/show.html.haml within layouts/application (198.4ms)
+Completed 200 OK in 361ms (Views: 200.4ms | ActiveRecord: 93.8ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-15 21:42:07 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (10.0ms)
+  Rendered students/assigment.html.haml within layouts/application (27.9ms)
+Completed 200 OK in 192ms (Views: 111.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/asignar" for 127.0.0.1 at 2019-01-15 21:42:22 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1WOCg0KuRMFkPFClVvCuNekATu5OsrvhQUwES0YPz3Z4Cp9xPinm17uUW8IsTzDhIYE5lRo3Y7lz8dwiNSZYHA==", "student"=>["4"], "asignar"=>"1", "materia"=>"2", "commit"=>"Asignar"}
+Redirected to http://localhost:3000/asignar?asignar=1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 4 LIMIT 1[0m
+  [1m[35mSQL (53.5ms)[0m  [1m[32mINSERT INTO `studentsubjects` (`subject_id`, `student_id`, `created_at`, `updated_at`) VALUES (2, 4, '2019-01-16 04:42:22', '2019-01-16 04:42:22')[0m
+  [1m[35m (86.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `studentsubjects`.`id` FROM `studentsubjects` WHERE (student_id = '4' AND subject_id = '2')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT  `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (24.3ms)[0m  [1m[32mINSERT INTO `subjectscores` (`subject_id`, `created_at`, `updated_at`) VALUES (2, '2019-01-16 04:42:22', '2019-01-16 04:42:22')[0m
+  [1m[35m (46.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 302 Found in 282ms (ActiveRecord: 226.2ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-15 21:42:22 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (9.0ms)
+  Rendered students/assigment.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 93ms (Views: 90.3ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mSubjectscore Load (0.7ms)[0m  [1m[34mSELECT  `subjectscores`.* FROM `subjectscores` LIMIT 11[0m
+Started GET "/subjectscores" for 127.0.0.1 at 2019-01-15 21:50:07 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/subjectscores"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'

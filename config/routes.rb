@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'subjectscore/new'
+
+  get 'subjectscore/create'
+
   resources :studentsubjects
   resources :recordpayments
   resources :partials
