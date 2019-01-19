@@ -69,6 +69,6 @@ class StudentsubjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def studentsubject_params
-      params.require(:studentsubject).permit(:subject_id, :student_id)
+      params.require(:studentsubject).permit(:secondmodulescore, :firstsmodulescore, :subject_id, :student_id)
     end
 end

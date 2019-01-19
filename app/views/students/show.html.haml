@@ -45,7 +45,10 @@
   %b Materias:
   -@student.subjects.each do |materia|
     =materia.name
-
+%p
+  %b Total a pagar:
+  - @student.studentsubjects.each do |mod|
+    =mod.firstsmodulescore
 
 
 = link_to 'Edit', edit_student_path(@student)

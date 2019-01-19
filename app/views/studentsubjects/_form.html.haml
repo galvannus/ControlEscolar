@@ -6,11 +6,13 @@
         - @studentsubject.errors.full_messages.each do |message|
           %li= message
 
+    = f.hidden_field :subject
+    = f.hidden_field :student
   .field
-    = f.label :subject
-    = f.text_field :subject
+    = f.label :firstsmodulescore, 'Calificación modulo 1'
+    = f.text_field :firstsmodulescore
   .field
-    = f.label :student
-    = f.text_field :student
+    = f.label :secondmodulescore, 'Calificación modulo 2'
+    = f.text_field :secondmodulescore
   .actions
     = f.submit 'Save'

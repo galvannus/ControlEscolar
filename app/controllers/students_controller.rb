@@ -27,13 +27,13 @@ class StudentsController < ApplicationController
           @studentsubject.subject_id = params[:materia]
           @studentsubject.save
 
-          @materia = Studentsubject.where("student_id = ? AND subject_id = ?", id_student, params[:materia])
-          puts @materia.ids
-          @subjectscore = Subjectscore.new
+          #@materia = Studentsubject.where("student_id = ? AND subject_id = ?", id_student, params[:materia])
+          #puts @materia.ids
+          #@subjectscore = Subjectscore.new
           #@subjectscore.student_id = id_student
-          @subjectscore.subject_id = params[:materia]
-          puts @subjectscore.save
-          @subjectscore.save
+          #@subjectscore.subject_id = params[:materia]
+          #puts @subjectscore.save
+          #@subjectscore.save
         end
       end
     end
