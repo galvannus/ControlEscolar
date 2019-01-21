@@ -37,6 +37,41 @@ class StudentsController < ApplicationController
         end
       end
     end
+
+  end
+  
+  def panelcontrol
+    if params[:student].present?
+      @estudiante = Student.search(params[:student])
+    end
+
+    if params[:grupo].present?
+      redirect_to "/panel"
+      puts "**************************"
+      puts params
+      puts "**************************"
+      if params[:student].present?  
+        params[:student].each do |id_student|
+          estudiante = Student.find(id_student)
+          puts estudiante.name
+          puts "Actualizado el grupo" if estudiante.update(group_id: params[:grupo])
+        end
+      end
+
+    elsif params[:materia].present?
+      redirect_to "/panel"
+      puts "**************************"
+      puts params
+      puts "**************************"
+      if params[:student].present?  
+        params[:student].each do |id_student|
+          @studentsubject = Studentsubject.new
+          @studentsubject.student_id = id_student
+          @studentsubject.subject_id = params[:materia]
+          @studentsubject.save
+        end
+      end
+    end
     
   end
   # GET /students
@@ -122,7 +157,7 @@ class StudentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_params
-      params.require(:student).permit(:discount, :group_id, :subject_id, :name, :lastname, :tel1, :tel2, :street, :numberhome, :suburb, :registrationnumber, :banknumber, :account_id)
+      params.require(:student).permit(:search, :discount, :group_id, :subject_id, :name, :lastname, :tel1, :tel2, :street, :numberhome, :suburb, :registrationnumber, :banknumber, :account_id)
     end
     def account_params
       params.require(:account).permit(:amount,:student_id)

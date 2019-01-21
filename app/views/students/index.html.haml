@@ -1,10 +1,10 @@
-%h1 Listing students
+%h1 Lista de estudiantes
 
 %table
   %thead
     %tr
-      %th Id
-      %th Group
+      -#%th Id
+      -#%th Group
       %th Name
       %th Lastname
       %th Tel1
@@ -22,8 +22,8 @@
   %tbody
     - @students.each do |student|
       %tr
-        %td= student.id#check_box_tag "student_id", student.id , false , id: student.name
-        %td= student.group.name if student.group.present?
+        -#%td= student.id#check_box_tag "student_id", student.id , false , id: student.name
+        -#%td= student.group.name if student.group.present?
         %td= student.name
         %td= student.lastname
         %td= student.tel1
@@ -33,13 +33,14 @@
         %td= student.suburb
         %td= student.registrationnumber
         %td= student.banknumber
-        %td=# student.account.amount
+        -#%td= student.account.amount
         %td= link_to 'Show', student
         %td= link_to 'Edit', edit_student_path(student)
-        %td= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to "Pagar", edit_account_path(student.account.id,student_id: student.id,ac_id: student.account.id)
+        -#%td= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 -#Student.all.each_with_index do |val,index|
   =# check_box_tag @studente, val.name, false , id: index
 
-= link_to 'New Student', new_student_path
+= link_to 'Nuevo estudiante', new_student_path

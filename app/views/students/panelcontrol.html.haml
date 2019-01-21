@@ -1,0 +1,61 @@
+%h3 Lista de estudiantes
+.row
+  .col-md-6
+    %table.table.table-hover
+      %thead
+        %tr.bg-dark.text-light
+          %th{scope: "col"} Nombre
+          %th{scope: "col"} Apellido
+          %th{scope: "col"} Tel1
+          %th{scope: "col"}
+          %th{scope: "col"} Acciones
+          %th{scope: "col"}
+
+      %tbody
+        -if @estudiante.present?
+          - @estudiante.each do |student|
+            %tr
+              %td= student.name
+              %td= student.lastname
+              %td= student.tel1
+              %td= link_to 'Ver', student
+              %td.text-center= link_to 'Modificar', edit_student_path(student)
+              %td= link_to "Pagar", edit_account_path(student.account.id,student_id: student.id,ac_id: student.account.id)
+              -#%td= link_to 'Eliminar', student, method: :delete, data: { confirm: 'Are you sure?' }
+  .col-md-6
+    =form_tag("/panel", method: "get") do
+      =label_tag :student, "Buscar"
+      =text_field_tag :student, params[:student]
+      =submit_tag "Search", name: nil
+-#Student.all.each_with_index do |val,index|
+  =# check_box_tag @studente, val.name, false , id: index
+
+= link_to 'Nuevo estudiante', new_student_path
+%br
+.row
+  .col-md-6
+    %h3 Asignar materia
+  .col-md-6
+    %h3 Asignar grupo
+.row
+  .col-md-6
+    = form_tag  do
+      =select_tag 'student[]', options_for_select(Student.all.collect{ |u| [u.name_lastname, u.id]}),{class: "js-example-basic-single",multiple: "multiple"}
+      =hidden_field_tag 'asignar', 1
+      =select_tag 'materia', options_for_select(Subject.all.collect{ |u| [u.name, u.id]}),{class: "form-tag"}
+      =submit_tag("Asignar")
+
+  .col-md-6
+    = form_tag  do
+      =select_tag 'student[]', options_for_select(Student.all.collect{ |u| [u.name_lastname, u.id]}),{class: "js-example-basic-single",multiple: "multiple"}
+      =hidden_field_tag 'asignar', 3
+      =select_tag 'grupo', options_for_select(Group.all.collect{ |u| [u.name, u.id]}),{class: "form-tag"}
+      =submit_tag("Asignar")
+
+:javascript
+  $( "#dropdown" ).select2({
+    theme: "bootstrap"
+  });
+  $(document).ready(function() {
+    $('.js-example-basic-single').select2();
+  });

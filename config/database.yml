@@ -14,15 +14,15 @@ default: &default
 
 development:
   <<: *default
-  database: controlescolar_development
+  database: controlescolar_development2
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: controlescolar_test
+  database: controlescolar_test2
 
 production:
   <<: *default
-  database: controlescolar_production
+  database: controlescolar_production2

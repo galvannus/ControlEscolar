@@ -12,4 +12,13 @@ class Student < ApplicationRecord
   def name_lastname
     "#{name} #{lastname}"
   end
+
+  def self.search(student)
+    if student
+      where('lastname LIKE ?', "%#{student}%")
+    #else
+      #@estudiante = Student.all
+    end
+  end
+
 end
