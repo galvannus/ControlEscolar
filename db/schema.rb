@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190120053714) do
+ActiveRecord::Schema.define(version: 20190122053935) do
 
   create_table "accounts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.float "amount", limit: 24
@@ -54,13 +54,13 @@ ActiveRecord::Schema.define(version: 20190120053714) do
   end
 
   create_table "recordpayments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "user_id"
+    t.string "user_name"
     t.decimal "amount", precision: 10
     t.integer "debt_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["debt_id"], name: "index_recordpayments_on_debt_id"
-    t.index ["user_id"], name: "index_recordpayments_on_user_id"
+    t.index ["user_name"], name: "index_recordpayments_on_user_name"
   end
 
   create_table "scores", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

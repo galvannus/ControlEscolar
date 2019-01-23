@@ -5,6 +5,10 @@ class RecordpaymentsController < ApplicationController
   # GET /recordpayments.json
   def index
     @recordpayments = Recordpayment.all
+    
+    if params[:delete_records].present?
+      @recordpayments.delete_all
+    end
   end
 
   # GET /recordpayments/1

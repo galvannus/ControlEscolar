@@ -1,25 +1,22 @@
-%h1 Listing recordpayments
-
+%h1 Pagos realizados
+= link_to 'Eliminar pagos', recordpayments_path(delete_records: 1)
 %table
   %thead
     %tr
-      %th User
-      %th Amount
-      %th Debt
-      %th
-      %th
-      %th
+      %th Personal
+      %th Cantidad
+      %th Fecha y Hora
 
   %tbody
     - @recordpayments.each do |recordpayment|
       %tr
-        %td= recordpayment.user
+        %td= recordpayment.user_name
         %td= recordpayment.amount
-        %td= recordpayment.debt
-        %td= link_to 'Show', recordpayment
-        %td= link_to 'Edit', edit_recordpayment_path(recordpayment)
-        %td= link_to 'Destroy', recordpayment, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= recordpayment.created_at.strftime("%e-%m-%Y at %I:%M %p")
+        -#%td= link_to 'Show', recordpayment
+        -#%td= link_to 'Edit', edit_recordpayment_path(recordpayment)
+        -#%td= link_to 'Destroy', recordpayment, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
-= link_to 'New Recordpayment', new_recordpayment_path
+=# link_to 'New Recordpayment', new_recordpayment_path

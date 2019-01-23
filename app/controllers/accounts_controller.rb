@@ -53,55 +53,59 @@ class AccountsController < ApplicationController
   # PATCH/PUT /accounts/1.json
   def update
     respond_to do |format|
-      if @account.update(account_params)
-        if params[:amount_array].present?
+      if @account.present?#update(account_params)
 
+        #Search the actual amount of the student
+        @studentAccount = Student.find(params[:student_id]).account.amount.to_f
+
+        if params[:razon].present?
+          @pago = params[:amount1].to_f
+          @totalDebts = @pago + @studentAccount
+
+        elsif params[:amount_array].present?
           @mensualidad = 0
-          #Find the actual amount of the student
           @totalDebts = 0
-          studentAccount = Student.find(params[:student_id]).account.amount.to_f
-
-          #Get de array of amount and sums
+          #Search  discount
+          @discount = Student.find(params[:student_id]).discount.to_f
+          
+          #Get de array of amount and sum the values
           @paramsDebts = params[:amount_array]
-          puts @paramsDebts
-          params[:amount_array].each do |allDebts|
+          @paramsDebts.each do |allDebts|
 
-            discount = Student.find(params[:student_id]).discount.to_f
             debt = Debt.find(allDebts)
-            if debt.name == "Mensualidad" && discount.present?
+
+            if debt.name == "Mensualidad" && @discount.present?
               @mensualidad = debt.amount.abs
-              puts @mensualidad
+              puts "Mensualidad #{@mensualidad}"
               #if promedio es => 9 discount + 10
-              @mensualidad = (discount / 100) * @mensualidad
+              @mensualidad = (@discount / 100) * @mensualidad
               puts "#{debt.name} #{@mensualidad}"
 
             elsif Date.today.wday <= 17 || Date.today.wday >= 1
-              @mensualidad = (discount / 100) * @mensualidad
+              @mensualidad = (@discount / 100) * @mensualidad
             end
 
             @totalDebts = (@totalDebts + debt.amount.abs - @mensualidad)
-            puts @totalDebts
+            puts "@totalDebts #{@totalDebts}"
           end
-          @totalDebts = @totalDebts + studentAccount
+        
+          #Save record of payments
+          @recordpayment = Recordpayment.new
+          @recordpayment.amount = @totalDebts
+          @recordpayment.user_name = "#{current_user.name} #{current_user.last_name}"
+          @recordpayment.save
 
-          #Apply discount
-          #discount = Student.find(params[:student_id]).discount.to_f
-          #if @mensualidad > 0 and discount.present?
-            #descuento = (discount / 100) * @mensualidad
-            #puts descuento
-            #@totalDebts = @totalDebts - descuento
-            #puts @totalDebts
-
-          #elsif Date.today.wday <= 17 || Date.today.wday >= 1
-            #descuento = (10 / 100) * @mensualidad
-            #puts descuento
-            #@totalDebts = @totalDebts - descuento
-          #end
-
-          puts "***Account actualizado****" if @account.update(amount: @totalDebts)
+          @totalDebts = @totalDebts + @studentAccount
+          
         end
 
-        format.html { redirect_to "/accounts/#{params[:ac_id]}.pdf?debts=#{params[:amount_array].join("__")}", notice: 'Account was successfully updated.' }
+        puts "***Account actualizado****" if @account.update(amount: @totalDebts)
+
+        if params[:razon].present?
+          format.html { redirect_to @account, notice: "Student was successfully created." }
+        else
+          format.html { redirect_to "/accounts/#{params[:ac_id]}.pdf?debts=#{params[:amount_array].join("__")}", notice: 'Account was successfully updated.' }
+        end
         format.json { render :show, status: :ok, location: @account }
       else
         format.html { render :edit }

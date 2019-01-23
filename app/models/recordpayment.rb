@@ -1,4 +1,4 @@
 class Recordpayment < ApplicationRecord
-  belongs_to :user
-  belongs_to :debt
+  #belongs_to :debt
+  #belongs_to :account
 end

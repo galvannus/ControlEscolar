@@ -55516,3 +55516,2624 @@ Processing by StudentsController#panelcontrol as HTML
 Completed 200 OK in 222ms (Views: 218.6ms | ActiveRecord: 1.7ms)
 
 
+Started GET "/panel" for 127.0.0.1 at 2019-01-21 20:14:03 -0700
+  [1m[35m (42.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (16.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (1.0ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (6.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (179.4ms)
+Completed 200 OK in 1738ms (Views: 1693.3ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-01-21 20:20:35 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.1ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (26.8ms)
+Completed 200 OK in 206ms (Views: 203.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-01-21 20:21:29 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (23.8ms)
+Completed 200 OK in 229ms (Views: 225.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2019-01-21 20:27:04 -0700
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/shared/_links.erb (17.3ms)
+  Rendered /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (157.7ms)
+Completed 200 OK in 420ms (Views: 365.8ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-01-21 20:30:18 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (20.1ms)
+Completed 200 OK in 194ms (Views: 191.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2019-01-21 20:30:20 -0700
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.haml within layouts/application
+  Rendered students/_form.html.haml (28.6ms)
+  Rendered students/new.html.haml within layouts/application (197.0ms)
+Completed 200 OK in 391ms (Views: 386.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-01-21 20:30:25 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 234ms (Views: 230.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-21 20:39:39 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mAccount Load (16.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (167.1ms)
+Completed 200 OK in 372ms (Views: 316.9ms | ActiveRecord: 43.8ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-21 20:39:42 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (1.0ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (35.3ms)
+  Rendered accounts/edit.html.haml within layouts/application (40.6ms)
+Completed 200 OK in 269ms (Views: 262.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-01-21 21:46:57 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (74.8ms)
+Completed 200 OK in 264ms (Views: 252.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-01-21 21:47:00 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (22.6ms)
+Completed 200 OK in 209ms (Views: 205.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/panel?utf8=%E2%9C%93&student=marcial" for 127.0.0.1 at 2019-01-21 21:47:07 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Parameters: {"utf8"=>"✓", "student"=>"marcial"}
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE (lastname LIKE '%marcial%')[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (54.5ms)
+Completed 200 OK in 292ms (Views: 279.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-21 21:47:50 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (25.8ms)
+  Rendered accounts/edit.html.haml within layouts/application (31.1ms)
+Completed 200 OK in 248ms (Views: 240.8ms | ActiveRecord: 2.6ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-21 21:48:19 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GhHmS9tc9VfcIvajXvD4hulq/8zkbw6K5cCea8Sj5e93zCSaNHvix3JKD45lDQF3G9SVhxbxCF4QWqwMmLpMuQ==", "amount1"=>"20", "razon"=>"", "account"=>{"amount"=>"-1480"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (88.9ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = -1480.0, `updated_at` = '2019-01-22 04:48:19' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (32.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 121.9ms)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:110:in `block (2 levels) in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-21 21:49:33 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GhHmS9tc9VfcIvajXvD4hulq/8zkbw6K5cCea8Sj5e93zCSaNHvix3JKD45lDQF3G9SVhxbxCF4QWqwMmLpMuQ==", "amount1"=>"", "razon"=>"", "amount_array"=>["1"], "account"=>{"amount"=>"-1480"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 50.6ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:88:in `block in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started GET "/admin" for 127.0.0.1 at 2019-01-21 21:59:15 -0700
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2019-01-21 21:59:15 -0700
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/shared/_links.erb (1.4ms)
+  Rendered /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (22.2ms)
+Completed 200 OK in 182ms (Views: 157.6ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2019-01-21 22:01:11 -0700
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QSQY/HgV5hgu65WK118nojHeCcb7o+dOAX8MBnkJXyqOuq20JAOWHODevL2W9oQ0UJzZES22qGk/h7BEGPF3zA==", "user"=>{"email"=>"galvannus@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'galvannus@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2019-01-22 05:01:12', `sign_in_count` = 2, `updated_at` = '2019-01-22 05:01:12' WHERE `users`.`id` = 2[0m
+  [1m[35m (31.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 471ms (ActiveRecord: 32.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-01-21 22:01:12 -0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb
+  Rendered /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb (129.7ms)
+Completed 200 OK in 171ms (Views: 154.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-21 22:01:18 -0700
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 269ms (Views: 182.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-01-21 22:01:25 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (75.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 278ms (Views: 270.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/panel?utf8=%E2%9C%93&student=marcial" for 127.0.0.1 at 2019-01-21 22:01:32 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Parameters: {"utf8"=>"✓", "student"=>"marcial"}
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE (lastname LIKE '%marcial%')[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (47.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 260ms (Views: 253.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-21 22:01:35 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (1.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (27.2ms)
+  Rendered accounts/edit.html.haml within layouts/application (33.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 225ms (Views: 215.4ms | ActiveRecord: 3.3ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-21 22:01:48 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b+hVBqs1on+TOTMvJ1PY0g0ISgq52HIsa6BJ5Acj4K4ookSV3+DLpvid2LYXbyzBquOnuMlzxRgTcuUfh0wfMQ==", "amount1"=>"", "razon"=>"", "amount_array"=>["1"], "account"=>{"amount"=>"-1480.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = -480.0, `updated_at` = '2019-01-22 05:01:48' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (34.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=1
+Completed 302 Found in 107ms (ActiveRecord: 40.3ms)
+
+
+Started GET "/accounts/1.pdf?debts=1" for 127.0.0.1 at 2019-01-21 22:01:48 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (2.8ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (8.8ms)
+Completed 200 OK in 3047ms (Views: 8.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-21 22:02:14 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.8ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (6.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 224ms (Views: 214.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-21 22:04:57 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (7.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 190ms (Views: 186.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-21 22:04:59 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (10.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 236ms (Views: 233.3ms | ActiveRecord: 0.9ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mRecordpayment Load (1.3ms)[0m  [1m[34mSELECT  `recordpayments`.* FROM `recordpayments` LIMIT 11[0m
+Started GET "/students" for 127.0.0.1 at 2019-01-21 22:14:21 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (17.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 234ms (Views: 229.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-21 22:14:26 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (15.2ms)
+  Rendered accounts/edit.html.haml within layouts/application (21.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 227ms (Views: 222.5ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-21 22:14:34 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rmLuTTAWtgg0GA41O+UpkqCoLznDcHfxKdc6Acq9A23pKP/eRMPf0V+85awL2d2BB0PCi7PbwMVRBZb6StL88g==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"-480.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (1.9ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 20.0, `updated_at` = '2019-01-22 05:14:34' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (60.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 85ms (ActiveRecord: 66.7ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-21 22:14:34 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.1ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.7ms)
+Completed 200 OK in 1329ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT GET_LOCK('2732024734354050450', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to ChangeRecordpayment (20190122053935)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('2732024734354050450')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('2732024734354050450', 0)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to ChangeRecordpayment (20190122053935)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('2732024734354050450')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('2732024734354050450', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to ChangeRecordpayment (20190122053935)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('2732024734354050450')[0m
+  [1m[35m (2.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT GET_LOCK('2732024734354050450', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to ChangeRecordpayment (20190122053935)
+  [1m[35m (130.0ms)[0m  [1m[35mALTER TABLE `recordpayments` CHANGE `user_id` `user_name` int(11) DEFAULT NULL[0m
+  [1m[35m (96.9ms)[0m  [1m[35mALTER TABLE `recordpayments` RENAME INDEX `index_recordpayments_on_user_id` TO `index_recordpayments_on_user_name`[0m
+  [1m[35m (746.4ms)[0m  [1m[35mALTER TABLE `recordpayments` CHANGE `user_name` `user_name` varchar(255) DEFAULT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190122053935')[0m
+  [1m[35m (51.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('2732024734354050450')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/students" for 127.0.0.1 at 2019-01-21 23:01:51 -0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (68.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 687ms (Views: 657.5ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-21 23:01:55 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (44.9ms)
+  Rendered accounts/edit.html.haml within layouts/application (52.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 307ms (Views: 298.0ms | ActiveRecord: 3.1ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-21 23:02:13 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"keWElM2xZaUT2MIWd/y7zHkb75T73OreeVhy8986TlbWr5UHuWQMfHh8KY9HwE/f3vACJot3XeoBit4IX1WxyQ==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"20.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.6ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 3.9ms)
+
+
+  
+NoMethodError (undefined method `name_lastname' for #<User:0x00007f93b04be0d8>
+Did you mean?  name_was):
+  
+app/controllers/accounts_controller.rb:88:in `block in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-21 23:03:08 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"keWElM2xZaUT2MIWd/y7zHkb75T73OreeVhy8986TlbWr5UHuWQMfHh8KY9HwE/f3vACJot3XeoBit4IX1WxyQ==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"20.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 520.0, `updated_at` = '2019-01-22 06:03:09' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (53.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 194ms (ActiveRecord: 63.8ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-21 23:03:09 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.6ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.7ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (2.0ms)
+Completed 200 OK in 1343ms (Views: 1.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-21 23:09:56 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mAccount Load (0.7ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (17.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 198ms (Views: 191.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-21 23:09:57 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.7ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (14.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 214ms (Views: 210.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-21 23:12:01 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (48.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 273ms (Views: 257.5ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-21 23:12:04 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (24.8ms)
+  Rendered accounts/edit.html.haml within layouts/application (29.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 222ms (Views: 214.9ms | ActiveRecord: 2.6ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-21 23:12:08 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uNN3uuyDZcP6uDnAj00K4ODM+dx74yANEck+siLpk0P/mWYpmFYMGpEc0lm/cf7zRycUbgtIlzlpG5JJooZs3A==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"520.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 1020.0, `updated_at` = '2019-01-22 06:12:08' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (73.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 111ms (ActiveRecord: 79.5ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-21 23:12:08 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.1ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.8ms)
+Completed 200 OK in 1341ms (Views: 0.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 19:36:04 -0700
+  [1m[35m (42.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AccountsController#index as HTML
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (6.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (163.2ms)
+Completed 200 OK in 1999ms (Views: 1897.4ms | ActiveRecord: 49.5ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 19:36:12 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (14.1ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (100.6ms)
+  Rendered accounts/edit.html.haml within layouts/application (117.9ms)
+Completed 200 OK in 510ms (Views: 348.9ms | ActiveRecord: 16.1ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 19:36:18 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dOG6CyVBixh59kEgifMXoSeaeb8q0EiJsoLCyIbe8mYkrtB3IUkfUqDIhkLBwkCQt2DY1PuxJ/IcUCgh+CBj1g==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"1020.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 28.2ms)
+
+
+  
+NoMethodError (undefined method `last_name' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:88:in `block in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 19:36:40 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dOG6CyVBixh59kEgifMXoSeaeb8q0EiJsoLCyIbe8mYkrtB3IUkfUqDIhkLBwkCQt2DY1PuxJ/IcUCgh+CBj1g==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"1020.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (14.5ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 1520.0, `updated_at` = '2019-01-23 02:36:41' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 181ms (ActiveRecord: 54.4ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-22 19:36:41 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.7ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (5.0ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (19.8ms)
+Completed 200 OK in 2861ms (Views: 19.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 19:41:00 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (52.0ms)
+Completed 200 OK in 286ms (Views: 272.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 19:41:02 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (26.4ms)
+  Rendered accounts/edit.html.haml within layouts/application (32.6ms)
+Completed 200 OK in 249ms (Views: 243.4ms | ActiveRecord: 2.1ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 19:41:08 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sVxKjR9uDdBsqiQ6OnejsSPGeu9SF+5O02e0xM5gHwLhEyDxG2aZmrWU41hyRvSAszzbhIN2gTV9tV4tsJ6Osg==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"1520.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 3.1ms)
+
+
+  
+NoMethodError (undefined method `last_name' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:88:in `block in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 19:41:42 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sVxKjR9uDdBsqiQ6OnejsSPGeu9SF+5O02e0xM5gHwLhEyDxG2aZmrWU41hyRvSAszzbhIN2gTV9tV4tsJ6Osg==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"1520.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 2020.0, `updated_at` = '2019-01-23 02:41:42' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (63.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 170ms (ActiveRecord: 71.4ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-22 19:41:43 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.1ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.9ms)
+Completed 200 OK in 1335ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 19:41:59 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.3ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 221ms (Views: 211.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 19:43:12 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.3ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 232ms (Views: 224.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-22 19:51:01 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (46.8ms)
+Completed 200 OK in 278ms (Views: 247.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 19:51:04 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (23.6ms)
+  Rendered accounts/edit.html.haml within layouts/application (28.2ms)
+Completed 200 OK in 235ms (Views: 228.6ms | ActiveRecord: 1.9ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 19:51:09 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CAdvuBxlFGXiNivGeWJwlEt25vuwueMe+bkCfOWvL5hYSAXEGG2ALzsI7KQxUyel24xHkGHYjGVXa+iVm1G+KA==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"2020.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 2520.0, `updated_at` = '2019-01-23 02:51:09' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (53.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 88ms (ActiveRecord: 57.7ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-22 19:51:09 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.0ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.8ms)
+Completed 200 OK in 1329ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 19:53:47 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (22.1ms)
+  Rendered accounts/edit.html.haml within layouts/application (25.7ms)
+Completed 200 OK in 253ms (Views: 234.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 19:53:50 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (48.9ms)
+Completed 200 OK in 256ms (Views: 250.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 19:53:55 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.8ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (15.7ms)
+  Rendered accounts/edit.html.haml within layouts/application (21.8ms)
+Completed 200 OK in 300ms (Views: 295.2ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 19:54:02 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xd++uqSO0NMJpmYc2tzW3Rc66Fn0pxXML2RCdrV71rwNkNTGoIZEmdCYoX6S7YHsh8BJMiXGereBtqify4VHDA==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"2520.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 3.5ms)
+
+
+  
+NoMethodError (undefined method `debug' for #<AccountsController:0x00007f91ba9b0a98>
+Did you mean?  debugger):
+  
+app/controllers/accounts_controller.rb:87:in `block in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 19:54:21 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xd++uqSO0NMJpmYc2tzW3Rc66Fn0pxXML2RCdrV71rwNkNTGoIZEmdCYoX6S7YHsh8BJMiXGereBtqify4VHDA==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"2520.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 7.1ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/accounts_controller.rb:87:in `block in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 19:55:45 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xd++uqSO0NMJpmYc2tzW3Rc66Fn0pxXML2RCdrV71rwNkNTGoIZEmdCYoX6S7YHsh8BJMiXGereBtqify4VHDA==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"2520.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 3020.0, `updated_at` = '2019-01-23 02:55:45' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (62.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 158ms (ActiveRecord: 70.8ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-22 19:55:46 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (2.9ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.8ms)
+Completed 200 OK in 1325ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 19:56:20 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (49.9ms)
+Completed 200 OK in 236ms (Views: 222.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 19:56:23 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (25.6ms)
+  Rendered accounts/edit.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 225ms (Views: 219.2ms | ActiveRecord: 2.1ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 19:56:26 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"THpQQfMJOV4zfigkHqVzt6sq5JQYrI8KKZ3INwlfgbwcNTo99wGtFOpA70ZWlCSGO9BF/8nN4HGHTyLed6EQDA==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"3020.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 3520.0, `updated_at` = '2019-01-23 02:56:26' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (37.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 71ms (ActiveRecord: 41.6ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-22 19:56:26 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.7ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.6ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (1.1ms)
+Completed 200 OK in 1345ms (Views: 0.6ms | ActiveRecord: 1.2ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT  `recordpayments`.* FROM `recordpayments` LIMIT 11[0m
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 20:04:24 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (23.4ms)
+  Rendered accounts/edit.html.haml within layouts/application (27.8ms)
+Completed 200 OK in 360ms (Views: 329.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 20:04:26 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (47.3ms)
+Completed 200 OK in 269ms (Views: 262.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 20:04:30 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (17.5ms)
+  Rendered accounts/edit.html.haml within layouts/application (22.9ms)
+Completed 200 OK in 238ms (Views: 234.0ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 20:04:34 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+DrKqq9MOCVixy6z7cVnFXvw9tKjnE5M9kRQ0b8Q1oKodaDWq0Ssb7v56dGl9DAk6wpXuXL9ITdYlro4we5HMg==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"3520.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.7ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:85:in `block in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 20:04:58 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+DrKqq9MOCVixy6z7cVnFXvw9tKjnE5M9kRQ0b8Q1oKodaDWq0Ssb7v56dGl9DAk6wpXuXL9ITdYlro4we5HMg==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"3520.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 4020.0, `updated_at` = '2019-01-23 03:04:59' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (52.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 141ms (ActiveRecord: 60.3ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-22 20:04:59 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.0ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.9ms)
+Completed 200 OK in 1331ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 20:06:15 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (64.2ms)
+Completed 200 OK in 380ms (Views: 366.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 20:06:18 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (33.2ms)
+  Rendered accounts/edit.html.haml within layouts/application (39.6ms)
+Completed 200 OK in 273ms (Views: 266.8ms | ActiveRecord: 2.1ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 20:06:21 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jWK6/NJG0oT3D0G2Hrg7iknHP1P15hqA17SJwL17SO3dLdCA1k5Gzi4xhtRWiWy72T2eOCSHdft5ZmMpw4XZXQ==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"4020.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (1.0ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `recordpayments` (`amount`, `created_at`, `updated_at`) VALUES (500, '2019-01-23 03:06:21', '2019-01-23 03:06:21')[0m
+  [1m[35m (86.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 4520.0, `updated_at` = '2019-01-23 03:06:22' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (50.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 174ms (ActiveRecord: 142.2ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-22 20:06:22 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.8ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data compra.pdf (1.5ms)
+Completed 200 OK in 1373ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 20:06:45 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (23.4ms)
+  Rendered accounts/edit.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 231ms (Views: 213.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-22 20:06:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/admin/login" for 127.0.0.1 at 2019-01-22 20:07:00 -0700
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/shared/_links.erb (16.5ms)
+  Rendered /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (146.9ms)
+Completed 200 OK in 464ms (Views: 382.9ms | ActiveRecord: 15.7ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2019-01-22 20:07:55 -0700
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b1PF1gl4AlB5y2CZPfYrek883EtBzIiNKGu+7cV7BHqrAs2bgvdKo2gFXGd/bv9C78s9p8GlUfCMEl5eZtwAtA==", "user"=>{"email"=>"galvannus@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'galvannus@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2019-01-23 03:07:55', `last_sign_in_at` = '2019-01-22 05:01:12', `sign_in_count` = 3, `updated_at` = '2019-01-23 03:07:55' WHERE `users`.`id` = 2[0m
+  [1m[35m (28.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 456ms (ActiveRecord: 30.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-01-22 20:07:55 -0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb
+  Rendered /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb (149.2ms)
+Completed 200 OK in 187ms (Views: 174.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-22 20:08:00 -0700
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 232ms (Views: 211.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 20:08:04 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (44.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 239ms (Views: 231.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 20:08:06 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (26.9ms)
+  Rendered accounts/edit.html.haml within layouts/application (32.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 236ms (Views: 231.9ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 20:08:25 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u3a/aFMPSXcxDxN1wfNnCsTAHYgbSC/ceukVPiEq6PCsKyGut0s5YVfIjgyqLTNrj1JXdRBC7zP9LXjufE3bcg==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"4520.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO `recordpayments` (`user_name`, `amount`, `created_at`, `updated_at`) VALUES ('Marcial Galvan', 500, '2019-01-23 03:08:25', '2019-01-23 03:08:25')[0m
+  [1m[35m (209.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 5020.0, `updated_at` = '2019-01-23 03:08:25' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (62.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 309ms (ActiveRecord: 278.2ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-22 20:08:25 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.4ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.8ms)
+Completed 200 OK in 1322ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 20:08:56 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `user' for #<Recordpayment:0x00007f91c502eb90>):
+    13:   %tbody
+    14:     - @recordpayments.each do |recordpayment|
+    15:       %tr
+    16:         %td= recordpayment.user
+    17:         %td= recordpayment.amount
+    18:         %td= recordpayment.debt
+    19:         %td= link_to 'Show', recordpayment
+  
+app/views/recordpayments/index.html.haml:16:in `block in _app_views_recordpayments_index_html_haml___1323756647101168468_70132026371220'
+app/views/recordpayments/index.html.haml:14:in `_app_views_recordpayments_index_html_haml___1323756647101168468_70132026371220'
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 20:10:18 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.9ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (16.1ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `debt' for #<Recordpayment:0x00007f91b99d26d0>
+Did you mean?  debt_id):
+    15:       %tr
+    16:         %td= recordpayment.user_name
+    17:         %td= recordpayment.amount
+    18:         %td= recordpayment.debt
+    19:         %td= link_to 'Show', recordpayment
+    20:         %td= link_to 'Edit', edit_recordpayment_path(recordpayment)
+    21:         %td= link_to 'Destroy', recordpayment, method: :delete, data: { confirm: 'Are you sure?' }
+  
+app/views/recordpayments/index.html.haml:18:in `block in _app_views_recordpayments_index_html_haml___1323756647101168468_70131931970460'
+app/views/recordpayments/index.html.haml:14:in `_app_views_recordpayments_index_html_haml___1323756647101168468_70131931970460'
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 20:10:27 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (7.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 237ms (Views: 233.2ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/recordpayments/1" for 127.0.0.1 at 2019-01-22 20:11:16 -0700
+Processing by RecordpaymentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EpjtyUPBHmfRo9ETtrZGX5n04qcHVWKnjAL4sZ8qUz1xx/sWPrtEKJStnw99K/A30Hi8CTmHW3FFqg0Th+a2Sw==", "id"=>"1"}
+  [1m[36mRecordpayment Load (0.3ms)[0m  [1m[34mSELECT  `recordpayments`.* FROM `recordpayments` WHERE `recordpayments`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM `recordpayments` WHERE `recordpayments`.`id` = 1[0m
+  [1m[35m (71.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recordpayments
+Completed 302 Found in 78ms (ActiveRecord: 72.5ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 20:11:17 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.3ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (5.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 206ms (Views: 201.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 20:41:10 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (18.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 260ms (Views: 249.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 20:42:08 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.8ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (8.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 240ms (Views: 236.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 20:42:53 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.5ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (7.4ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 236ms (Views: 232.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2019-01-22 20:45:42 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.haml within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 2 LIMIT 1[0m
+  Rendered students/index.html.haml within layouts/application (49.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 283ms (Views: 267.9ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 20:45:45 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (24.0ms)
+  Rendered accounts/edit.html.haml within layouts/application (28.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 235ms (Views: 227.8ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 20:45:49 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G7WyZUQH9ou8VuZhEd55H8VQF4FfglFI0WcF+l/OyEsM6CyjoEOGndqRexh6AC1+jsJdfFSIkadWo2gqAqn7yQ==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"5020.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+Completed 500 Internal Server Error in 409ms (ActiveRecord: 3.2ms)
+
+
+  
+NameError (undefined local variable or method `name_lastname' for #<AccountsController:0x00007f91c40b13e8>):
+  
+app/controllers/accounts_controller.rb:89:in `block in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 20:48:52 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G7WyZUQH9ou8VuZhEd55H8VQF4FfglFI0WcF+l/OyEsM6CyjoEOGndqRexh6AC1+jsJdfFSIkadWo2gqAqn7yQ==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"5020.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `recordpayments` (`user_name`, `amount`, `created_at`, `updated_at`) VALUES ('Jorge Alejandro Marcial Galvan', 500, '2019-01-23 03:48:53', '2019-01-23 03:48:53')[0m
+  [1m[35m (115.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 5520.0, `updated_at` = '2019-01-23 03:48:53' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (85.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 303ms (ActiveRecord: 210.6ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-22 20:48:53 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (1.0ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.9ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.9ms)
+Completed 200 OK in 1307ms (Views: 0.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 20:49:00 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (14.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 213ms (Views: 204.4ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 20:49:26 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.3ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (8.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 207ms (Views: 203.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 20:55:21 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.7ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (7.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 212ms (Views: 209.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 20:55:42 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (8.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 241ms (Views: 238.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 20:57:16 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (8.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 193ms (Views: 190.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 21:08:28 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.5ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (10.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 201ms (Views: 197.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/recordpayments" for 127.0.0.1 at 2019-01-22 21:08:40 -0700
+Processing by RecordpaymentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6NoewVjs1eSq7t/vKEaSzVB8vm+oaSJ99TFF8WqD5I2LhQgeJZaPq+/gkfPj2ySlGfDgwZa7G6s8mbBTck8B+w==", "delete"=>"1", "commit"=>"Elimiar pagos"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: recordpayment):
+  
+app/controllers/recordpayments_controller.rb:72:in `recordpayment_params'
+app/controllers/recordpayments_controller.rb:27:in `create'
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 21:10:43 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (18.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 252ms (Views: 241.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 21:22:50 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (18.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 234ms (Views: 224.8ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/recordpayments" for 127.0.0.1 at 2019-01-22 21:22:57 -0700
+Processing by RecordpaymentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wnvS1oS/NPWGJ42TIjjr1tYBx2pI+MV7ejdryp4TZnShJMQJ+cVuusMpw4/ppV2+n42ZxHYq/K2zn55oht+DAg==", "delete_records"=>"1", "commit"=>"Elimiar pagos"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: recordpayment):
+  
+app/controllers/recordpayments_controller.rb:75:in `recordpayment_params'
+app/controllers/recordpayments_controller.rb:30:in `create'
+Started POST "/recordpayments" for 127.0.0.1 at 2019-01-22 21:25:49 -0700
+Processing by RecordpaymentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wnvS1oS/NPWGJ42TIjjr1tYBx2pI+MV7ejdryp4TZnShJMQJ+cVuusMpw4/ppV2+n42ZxHYq/K2zn55oht+DAg==", "delete_records"=>"1", "commit"=>"Elimiar pagos"}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: recordpayment):
+  
+app/controllers/recordpayments_controller.rb:75:in `recordpayment_params'
+app/controllers/recordpayments_controller.rb:30:in `create'
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 21:28:33 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.6ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (29.2ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 248ms (Views: 241.8ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 21:29:04 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (8.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 219ms (Views: 215.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recordpayments?delete_records=1" for 127.0.0.1 at 2019-01-22 21:29:08 -0700
+Processing by RecordpaymentsController#index as HTML
+  Parameters: {"delete_records"=>"1"}
+  [1m[35mSQL (79.2ms)[0m  [1m[31mDELETE FROM `recordpayments`[0m
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.4ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (6.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 299ms (Views: 216.5ms | ActiveRecord: 80.0ms)
+
+
+Started GET "/recordpayments" for 127.0.0.1 at 2019-01-22 21:29:26 -0700
+Processing by RecordpaymentsController#index as HTML
+  Rendering recordpayments/index.html.haml within layouts/application
+  [1m[36mRecordpayment Load (0.5ms)[0m  [1m[34mSELECT `recordpayments`.* FROM `recordpayments`[0m
+  Rendered recordpayments/index.html.haml within layouts/application (7.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 220ms (Views: 217.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2019-01-22 21:30:46 -0700
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-01-22 21:30:46 -0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb
+  Rendered /home/alejandro/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activeadmin-1.4.3/app/views/active_admin/page/index.html.arb (139.5ms)
+Completed 200 OK in 148ms (Views: 142.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-22 21:32:48 -0700
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 211ms (Views: 209.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/asignar?asignar=1" for 127.0.0.1 at 2019-01-22 21:37:31 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"1"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (10.8ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  Rendered students/_asign_materia.haml (83.6ms)
+  Rendered students/assigment.html.haml within layouts/application (100.2ms)
+Completed 200 OK in 316ms (Views: 280.9ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/asignar?asignar=2" for 127.0.0.1 at 2019-01-22 21:37:34 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"2"}
+  Rendering students/assigment.html.haml within layouts/application
+  Rendered students/_asign_semestre.haml (1.9ms)
+  Rendered students/assigment.html.haml within layouts/application (7.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 198ms (Views: 195.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/asignar?asignar=3" for 127.0.0.1 at 2019-01-22 21:37:35 -0700
+Processing by StudentsController#assigment as HTML
+  Parameters: {"asignar"=>"3"}
+  Rendering students/assigment.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (14.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/_asign_grupo.html.haml (75.6ms)
+  Rendered students/assigment.html.haml within layouts/application (81.2ms)
+Completed 200 OK in 277ms (Views: 258.1ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-01-22 21:37:42 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (20.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 232ms (Views: 228.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:00:39 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (45.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 264ms (Views: 250.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:00:43 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (22.3ms)
+  Rendered accounts/edit.html.haml within layouts/application (26.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 235ms (Views: 227.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-01-22 22:00:57 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (57.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 282ms (Views: 275.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:00:59 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (17.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 248ms (Views: 241.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:01:03 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (20.6ms)
+  Rendered accounts/edit.html.haml within layouts/application (26.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 233ms (Views: 227.5ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 22:01:19 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6xsjFVkNqYkWtt3OIECy+w/p4OY5jxZHQeXB/4PUkGk8fJKsSBGsEKdRg5TX1aqp63tfpPs/Laaw/rXo2hhww==", "amount1"=>"20", "razon"=>"Hello", "account"=>{"amount"=>"5540"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 5540.0, `updated_at` = '2019-01-23 05:01:19' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (229.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 230.8ms)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:112:in `block (2 levels) in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:09:15 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (22.4ms)
+  Rendered accounts/edit.html.haml within layouts/application (26.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 280ms (Views: 260.6ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-01-22 22:09:28 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.4ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (80.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 335ms (Views: 327.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:09:30 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (30.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 294ms (Views: 288.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:09:33 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.7ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (17.0ms)
+  Rendered accounts/edit.html.haml within layouts/application (23.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 243ms (Views: 237.3ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 22:09:47 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BT7RPb6QssJ0za3Y2nD8Z9hJ8JN10XcGWiRcTXM1pCkSY0/7WtTC1BIKMKGxrqgGk9u6bn7bt+nd4DGdLlKXqw==", "amount1"=>"20", "razon"=>"hello", "account"=>{"amount"=>"5560"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:112:in `block (2 levels) in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:10:21 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (16.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 253ms (Views: 244.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:10:26 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (20.9ms)
+  Rendered accounts/edit.html.haml within layouts/application (27.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 242ms (Views: 236.9ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 22:10:31 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HAI8o1/utHtkILACHCoQV44cOU+BnhmPNW2cFV3TPskLX6Jlu6rEbQLnLXt39EQ2xY5zsoqU2WCyqfHFALQNSw==", "amount1"=>"", "razon"=>"", "amount_array"=>["2"], "account"=>{"amount"=>"5540.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `recordpayments` (`user_name`, `amount`, `created_at`, `updated_at`) VALUES ('Jorge Alejandro Marcial Galvan', 500, '2019-01-23 05:10:31', '2019-01-23 05:10:31')[0m
+  [1m[35m (46.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 6040.0, `updated_at` = '2019-01-23 05:10:31' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (50.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=2
+Completed 302 Found in 131ms (ActiveRecord: 102.0ms)
+
+
+Started GET "/accounts/1.pdf?debts=2" for 127.0.0.1 at 2019-01-22 22:10:31 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"2", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.1ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.7ms)
+Completed 200 OK in 1348ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:10:36 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (1.7ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (14.3ms)
+  Rendered accounts/edit.html.haml within layouts/application (20.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 253ms (Views: 247.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:10:38 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (14.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 202ms (Views: 195.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:11:56 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (1.1ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (19.7ms)
+  Rendered accounts/edit.html.haml within layouts/application (25.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 247ms (Views: 240.8ms | ActiveRecord: 2.1ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 22:13:31 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZkD2QvBS7VrmByRAPpGv5ickiGfsX9mGgAonYSEIGNhxHWiEFBadTIDAuTlVT/uHbLbCmudVGWkHzkqxfG8rWg==", "amount1"=>"20", "razon"=>"Hello", "account"=>{"amount"=>"6060"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (1.0ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:112:in `block (2 levels) in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:33:40 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (47.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 269ms (Views: 255.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:33:43 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (38.0ms)
+  Rendered accounts/edit.html.haml within layouts/application (44.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 257ms (Views: 250.6ms | ActiveRecord: 2.5ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 22:33:52 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Riyq8VemU6LMCXb2h/uGUP8rwc/LROMwrLkn6+lVElBRcTQ3s+IjtKrO64/sJdIxtLmLMsBOI98rfUo7tDIh0g==", "amount1"=>"", "razon"=>"", "amount_array"=>["1"], "account"=>{"amount"=>"6040.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=1
+Completed 302 Found in 13ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/accounts/1.pdf?debts=1" for 127.0.0.1 at 2019-01-22 22:33:52 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.0ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.8ms)
+Completed 200 OK in 1342ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:34:12 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.6ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (12.4ms)
+  Rendered accounts/edit.html.haml within layouts/application (17.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 221ms (Views: 215.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:34:14 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (15.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 213ms (Views: 207.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:34:56 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (63.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 291ms (Views: 276.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:34:58 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (23.0ms)
+  Rendered accounts/edit.html.haml within layouts/application (29.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 217ms (Views: 211.1ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 22:35:24 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jHsQQA+4/POCz03ZdgOCutH8rfYbENiINHYwqoqcJX2bJo6G6/yM5eQI0KAd3dbbmm7nCxAaGGezsl161/sW/w==", "amount1"=>"", "razon"=>"", "amount_array"=>["1"], "account"=>{"amount"=>"6040.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 1000.0, `updated_at` = '2019-01-23 05:35:24' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (50.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=1
+Completed 302 Found in 67ms (ActiveRecord: 53.5ms)
+
+
+Started GET "/accounts/1.pdf?debts=1" for 127.0.0.1 at 2019-01-22 22:35:24 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.7ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.7ms)
+Completed 200 OK in 1352ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:35:50 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (15.1ms)
+  Rendered accounts/edit.html.haml within layouts/application (21.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 227ms (Views: 222.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:35:52 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (14.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 220ms (Views: 214.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:39:46 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (47.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 247ms (Views: 231.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:39:48 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (27.7ms)
+  Rendered accounts/edit.html.haml within layouts/application (32.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 245ms (Views: 239.0ms | ActiveRecord: 2.4ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 22:39:52 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DLlti6fAGknFObWATFmU8+0FPpvR3z38T78YQgloZjrb3twyttwf0HTe69q7zIyhCZeB2RNvBh2+pGxVUKSGg==", "amount1"=>"", "razon"=>"", "amount_array"=>["1"], "account"=>{"amount"=>"1000.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.9ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.6ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `recordpayments` (`user_name`, `amount`, `created_at`, `updated_at`) VALUES ('Jorge Alejandro Marcial Galvan', 1000, '2019-01-23 05:39:52', '2019-01-23 05:39:52')[0m
+  [1m[35m (115.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 2000.0, `updated_at` = '2019-01-23 05:39:53' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (63.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=1
+Completed 302 Found in 213ms (ActiveRecord: 184.6ms)
+
+
+Started GET "/accounts/1.pdf?debts=1" for 127.0.0.1 at 2019-01-22 22:39:53 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.0ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data compra.pdf (0.8ms)
+Completed 200 OK in 1319ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:39:56 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (12.4ms)
+  Rendered accounts/edit.html.haml within layouts/application (18.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 249ms (Views: 244.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:39:57 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (14.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 217ms (Views: 211.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:44:23 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (21.0ms)
+  Rendered accounts/edit.html.haml within layouts/application (25.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 235ms (Views: 214.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:52:12 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (49.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 291ms (Views: 277.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:52:14 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (13.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 201ms (Views: 195.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:52:16 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (49.4ms)
+  Rendered accounts/edit.html.haml within layouts/application (55.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 258ms (Views: 250.7ms | ActiveRecord: 2.7ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 22:52:24 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+NUv+s7d3vvxWFfpLbd90X9nHDgGchpZjiULOkGE+2rviLE8Kpmu7ZefypBGaSmwNPVWxQ142rYJ4WbqHOPI6A==", "amount1"=>"20", "razon"=>"", "account"=>{"amount"=>"2020"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = NULL, `updated_at` = '2019-01-23 05:52:24' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (59.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 61.6ms)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:118:in `block (2 levels) in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 22:53:16 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+NUv+s7d3vvxWFfpLbd90X9nHDgGchpZjiULOkGE+2rviLE8Kpmu7ZefypBGaSmwNPVWxQ142rYJ4WbqHOPI6A==", "amount1"=>"20", "razon"=>"", "account"=>{"amount"=>"2020"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 4.3ms)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:118:in `block (2 levels) in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:53:35 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (21.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 364ms (Views: 355.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:53:38 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (28.6ms)
+  Rendered accounts/edit.html.haml within layouts/application (40.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 287ms (Views: 277.2ms | ActiveRecord: 2.7ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 22:53:50 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vaQkj1waEhVTdLnENK7qBM6jRmHWp7YIU+oEviZ/preq+bpJuF5iAzWzJL1fcL5lhTEMnN2tdufULmluexiVNQ==", "amount1"=>"20", "razon"=>"hello", "account"=>{"amount"=>""}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 20.0, `updated_at` = '2019-01-23 05:53:50' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (65.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 67.6ms)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:118:in `block (2 levels) in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:54:12 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (18.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 257ms (Views: 250.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 22:54:15 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.7ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (16.9ms)
+  Rendered accounts/edit.html.haml within layouts/application (22.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 227ms (Views: 222.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-01-22 22:54:23 -0700
+Processing by StudentsController#panelcontrol as HTML
+  Rendering students/panelcontrol.html.haml within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects`[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups`[0m
+  Rendered students/panelcontrol.html.haml within layouts/application (49.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 243ms (Views: 237.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:54:25 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (1.8ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (16.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 214ms (Views: 206.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:54:27 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (13.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 201ms (Views: 195.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/accounts/2/edit?ac_id=2&student_id=2" for 127.0.0.1 at 2019-01-22 22:54:29 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"2", "student_id"=>"2", "id"=>"2"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 2 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (13.7ms)
+  Rendered accounts/edit.html.haml within layouts/application (18.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 212ms (Views: 206.2ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/accounts/2" for 127.0.0.1 at 2019-01-22 22:54:41 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w+CH2Y5u5WJMycEiADBG3tj8GTQ9oFyr01GGi9Tuh+db/wZx50hU7uaxEdgntg0v9HwpWJ9uAS4B96AhfXV9VQ==", "amount1"=>"100", "razon"=>"hello", "account"=>{"amount"=>"-1400"}, "student_id"=>"2", "ac_id"=>"2", "commit"=>"Pagar", "id"=>"2"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 2 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 2 LIMIT 1[0m
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 2 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = -1400.0, `updated_at` = '2019-01-23 05:54:41' WHERE `accounts`.`id` = 2[0m
+  [1m[35m (84.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 86.6ms)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:118:in `block (2 levels) in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 22:54:55 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (19.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 212ms (Views: 205.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 23:08:55 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (55.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 293ms (Views: 277.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 23:08:57 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (13.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 242ms (Views: 236.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 23:09:00 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.3ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (41.0ms)
+  Rendered accounts/edit.html.haml within layouts/application (47.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 225ms (Views: 218.2ms | ActiveRecord: 2.5ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 23:09:04 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"85JQbGXuxI0flOyqs00THUEeQNDEdIB1IZnUwplKVRfkz86qgaq0m3lTcdPYk0d8CowKLc9+QJqmXbkSxC1mlQ==", "amount1"=>"", "razon"=>"", "amount_array"=>["1"], "account"=>{"amount"=>"20.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.6ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `recordpayments` (`user_name`, `amount`, `created_at`, `updated_at`) VALUES ('Jorge Alejandro Marcial Galvan', 1000, '2019-01-23 06:09:04', '2019-01-23 06:09:04')[0m
+  [1m[35m (54.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 1020.0, `updated_at` = '2019-01-23 06:09:04' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (49.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=1
+Completed 302 Found in 140ms (ActiveRecord: 109.0ms)
+
+
+Started GET "/accounts/1.pdf?debts=1" for 127.0.0.1 at 2019-01-22 23:09:04 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.5ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (4.2ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (0.7ms)
+Completed 200 OK in 1344ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 23:09:08 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (15.0ms)
+  Rendered accounts/edit.html.haml within layouts/application (19.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 247ms (Views: 241.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 23:09:11 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (10.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 199ms (Views: 192.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 23:25:02 -0700
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (73.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 826ms (Views: 800.7ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 23:25:07 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (30.4ms)
+  Rendered accounts/edit.html.haml within layouts/application (36.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 225ms (Views: 218.5ms | ActiveRecord: 2.4ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 23:25:12 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pO/Fq8CNHSAVn08s+MPL7Z5m/pmVwsO381s6YOEqeE2zslttJMltNnNY0lWTHZ+M1fS0ZJ7IA1h0n1ewvE1Lzw==", "amount1"=>"", "razon"=>"", "amount_array"=>["1"], "account"=>{"amount"=>"1020.0"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDebt Load (0.6ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `recordpayments` (`user_name`, `amount`, `created_at`, `updated_at`) VALUES ('Jorge Alejandro Marcial Galvan', 1000, '2019-01-23 06:25:12', '2019-01-23 06:25:12')[0m
+  [1m[35m (97.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 2020.0, `updated_at` = '2019-01-23 06:25:12' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (63.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1.pdf?debts=1
+Completed 302 Found in 195ms (ActiveRecord: 166.3ms)
+
+
+Started GET "/accounts/1.pdf?debts=1" for 127.0.0.1 at 2019-01-22 23:25:12 -0700
+Processing by AccountsController#show as PDF
+  Parameters: {"debts"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+***************WICKED***************
+  Rendering accounts/compra.erb
+  [1m[36mDebt Load (0.6ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Debt Load (0.0ms)[0m  [1m[34mSELECT  `debts`.* FROM `debts` WHERE `debts`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered accounts/compra.erb (3.7ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data compra.pdf (1.6ms)
+Completed 200 OK in 1341ms (Views: 1.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 23:25:17 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.6ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (13.6ms)
+  Rendered accounts/edit.html.haml within layouts/application (17.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 217ms (Views: 211.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 23:25:19 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (28.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 209ms (Views: 203.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 23:25:24 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.8ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (18.4ms)
+  Rendered accounts/edit.html.haml within layouts/application (27.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 226ms (Views: 220.6ms | ActiveRecord: 1.7ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 23:25:38 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BJUQGRYrDh7KSNIHAjZ3foqE37g8R+u/QBESRJfnhewTyI7f8m9+CKyPT35p6CMfwRaVRTdNK1DH1X+UyoC2bg==", "amount1"=>"20", "razon"=>"Hello", "account"=>{"amount"=>"2040"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (1.3ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.3ms)
+
+
+  
+TypeError (nil can't be coerced into Float):
+  
+app/controllers/accounts_controller.rb:61:in `+'
+app/controllers/accounts_controller.rb:61:in `block in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 23:26:30 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BJUQGRYrDh7KSNIHAjZ3foqE37g8R+u/QBESRJfnhewTyI7f8m9+CKyPT35p6CMfwRaVRTdNK1DH1X+UyoC2bg==", "amount1"=>"20", "razon"=>"Hello", "account"=>{"amount"=>"2040"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 2040.0, `updated_at` = '2019-01-23 06:26:30' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (30.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 35.3ms)
+
+
+  
+NoMethodError (undefined method `join' for nil:NilClass):
+  
+app/controllers/accounts_controller.rb:122:in `block (2 levels) in update'
+app/controllers/accounts_controller.rb:55:in `update'
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 23:26:43 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (20.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 256ms (Views: 249.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 23:33:05 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (48.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 259ms (Views: 245.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/accounts/1/edit?ac_id=1&student_id=1" for 127.0.0.1 at 2019-01-22 23:33:08 -0700
+Processing by AccountsController#edit as HTML
+  Parameters: {"ac_id"=>"1", "student_id"=>"1", "id"=>"1"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/edit.html.haml within layouts/application
+  [1m[36mDebt Load (0.4ms)[0m  [1m[34mSELECT `debts`.* FROM `debts`[0m
+  Rendered accounts/_form.html.haml (36.9ms)
+  Rendered accounts/edit.html.haml within layouts/application (43.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 222ms (Views: 215.2ms | ActiveRecord: 2.6ms)
+
+
+Started PATCH "/accounts/1" for 127.0.0.1 at 2019-01-22 23:33:20 -0700
+Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4LZJ1Jgm1SXxtW9j61FWonechpV2c5BSvNbf/BHd0HX369cSfGKlM5dy8hqAjwLDPA7MaH15UL07ErIsTLrj9w==", "amount1"=>"20", "razon"=>"Hello", "account"=>{"amount"=>"2060"}, "student_id"=>"1", "ac_id"=>"1", "commit"=>"Pagar", "id"=>"1"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`student_id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `accounts` SET `amount` = 2060.0, `updated_at` = '2019-01-23 06:33:20' WHERE `accounts`.`id` = 1[0m
+  [1m[35m (218.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/1
+Completed 302 Found in 233ms (ActiveRecord: 220.7ms)
+
+
+Started GET "/accounts/1" for 127.0.0.1 at 2019-01-22 23:33:20 -0700
+Processing by AccountsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  `accounts`.* FROM `accounts` WHERE `accounts`.`id` = 1 LIMIT 1[0m
+  Rendering accounts/show.html.haml within layouts/application
+  Rendered accounts/show.html.haml within layouts/application (4.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 212ms (Views: 207.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 23:35:54 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (51.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 264ms (Views: 249.1ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2019-01-22 23:38:28 -0700
+Processing by AccountsController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM(`accounts`.`amount`) FROM `accounts`[0m
+  Rendering accounts/index.html.haml within layouts/application
+  [1m[36mAccount Load (0.9ms)[0m  [1m[34mSELECT `accounts`.* FROM `accounts`[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 1 LIMIT 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`account_id` = 2 LIMIT 1[0m
+  Rendered accounts/index.html.haml within layouts/application (17.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 292ms (Views: 286.6ms | ActiveRecord: 2.6ms)
+
+

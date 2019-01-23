@@ -52,6 +52,10 @@
       =select_tag 'grupo', options_for_select(Group.all.collect{ |u| [u.name, u.id]}),{class: "form-tag"}
       =submit_tag("Asignar")
 
+
+
+
+
 :javascript
   $( "#dropdown" ).select2({
     theme: "bootstrap"
