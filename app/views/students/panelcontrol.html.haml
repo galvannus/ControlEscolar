@@ -25,14 +25,14 @@
   .col-md-6
     =form_tag("/panel", method: "get") do
       =label_tag :student, "Buscar"
-      =text_field_tag :student, params[:student]
+      =text_field_tag :student, params[:student], placeholder: "Apellido(s)"
       =submit_tag "Search", name: nil
 -#Student.all.each_with_index do |val,index|
   =# check_box_tag @studente, val.name, false , id: index
 
 = link_to 'Nuevo estudiante', new_student_path
 %br
-.row
+.row.mt-3
   .col-md-6
     %h3 Asignar materia
   .col-md-6
@@ -52,7 +52,18 @@
       =select_tag 'grupo', options_for_select(Group.all.collect{ |u| [u.name, u.id]}),{class: "form-tag"}
       =submit_tag("Asignar")
 
-
+.row.mt-3
+  .col-md-6
+    %h3 Asignar semestre
+  .col-md-6
+.row
+  .col-md-6
+    = form_tag  do
+      =select_tag 'student[]', options_for_select(Student.all.collect{ |u| [u.name_lastname, u.id]}),{class: "js-example-basic-single",multiple: "multiple"}
+      =hidden_field_tag 'asignar', 2
+      =select_tag 'semestre', options_for_select(Semester.all.collect{ |u| [u.number_semester, u.id]}),{class: "form-tag"}
+      =submit_tag("Asignar")
+  .col-md-6
 
 
 

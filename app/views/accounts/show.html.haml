@@ -1,9 +1,17 @@
 %p#notice= notice
+-if params[:razon].present?
+  = link_to 'Ticket', "/accounts/#{@account.id}.pdf?debts=#{params[:debts]}&razon=#{params[:razon]}", target: "_blank", id: "pdf"
+-else
+  = link_to 'Ticket', "/accounts/#{@account.id}.pdf?debts=#{params[:debts]}", target: "_blank", id: "pdf"
 
 %p
   %b Amount:
   = @account.amount
 
-= link_to 'Edit', edit_account_path(@account)
-\|
-= link_to 'Back', accounts_path
+=# link_to 'Edit', edit_account_path(@account)
+=# link_to 'Back', accounts_path
+
+:javascript
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('pdf').click();
+  }, false);

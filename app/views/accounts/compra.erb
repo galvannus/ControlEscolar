@@ -4,23 +4,36 @@
     </head>
     <body>
         <h1>Ticket</h1>
-        <h2><%=Date.today.strftime("%d/%m/%Y")%></h2>
-        <table>
+        <h3><%=Date.today.strftime("%d/%m/%Y")%></h3>
+        <table class="table table-hover">
             <tr>
-                <td><strong>Pago</strong></td>
+                <td><strong>Razon de pago</strong></td>
                 <td><strong>Cantidad</strong></td>
             </tr>
             
         
-            <%if params[:debts].present?%>
+            <%if !params[:razon].present?%>
+                <%-@total = 0%>
                 <%array = params[:debts].split("__")%>
                 <%array.each do |aquitoy|%>
                     <tr>
-                        <td><%=Debt.find(aquitoy.to_s).name%></td>
+                        <td><%=Debt.find(aquitoy.to_s).name %></td>
                         <td><%=Debt.find(aquitoy).amount.abs%></td>
+                        <%-@total = @total + Debt.find(aquitoy).amount.abs %>
                     </tr>
                     
                 <%end%>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><%="Total:"%></td>
+                    <td><%=@total%></td>
+                </tr>
+            <%else%>
+                <td><%=params[:razon]%></td>
+                <td><%=params[:debts]%></td>
             <%end%>
        </table>
         

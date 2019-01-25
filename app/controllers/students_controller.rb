@@ -36,6 +36,12 @@ class StudentsController < ApplicationController
           #@subjectscore.save
         end
       end
+    elsif params[:semestre].present?
+      redirect_to "/asignar?asignar=#{2}"
+      params[:student].each do |id_student|
+        estudiante = Student.find(id_student)
+        puts "Actualizado el semestre" if estudiante.update(semester_id: params[:semestre])
+      end
     end
 
   end
@@ -70,6 +76,12 @@ class StudentsController < ApplicationController
           @studentsubject.subject_id = params[:materia]
           @studentsubject.save
         end
+      end
+    elsif params[:semestre].present?
+      redirect_to "/panel"
+      params[:student].each do |id_student|
+        estudiante = Student.find(id_student)
+        puts "Actualizado el semestre" if estudiante.update(semester_id: params[:semestre])
       end
     end
     
@@ -157,7 +169,7 @@ class StudentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_params
-      params.require(:student).permit(:search, :discount, :group_id, :subject_id, :name, :lastname, :tel1, :tel2, :street, :numberhome, :suburb, :registrationnumber, :banknumber, :account_id)
+      params.require(:student).permit(:semester_id,:search, :discount, :group_id, :subject_id, :name, :lastname, :tel1, :tel2, :street, :numberhome, :suburb, :registrationnumber, :banknumber, :account_id)
     end
     def account_params
       params.require(:account).permit(:amount,:student_id)

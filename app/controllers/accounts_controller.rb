@@ -88,23 +88,22 @@ class AccountsController < ApplicationController
             @totalDebts = (@totalDebts + debt.amount.abs - @mensualidad)
             puts "@totalDebts #{@totalDebts}"
           end
-        
-          #Save record of payments
-          @recordpayment = Recordpayment.new
-          @recordpayment.amount = @totalDebts
-          @recordpayment.user_name = "#{current_user.name} #{current_user.last_name}"
-          @recordpayment.save
 
           @totalDebts = @totalDebts + @studentAccount
-          
         end
+
+        #Save record of payments
+        @recordpayment = Recordpayment.new
+        @recordpayment.amount = @totalDebts
+        @recordpayment.user_name = current_user.last_name
+        @recordpayment.save
 
         puts "***Account actualizado****" if @account.update(amount: @totalDebts)
 
         if params[:razon].present?
-          format.html { redirect_to @account, notice: "Student was successfully created." }
+          format.html { redirect_to "/accounts/#{params[:ac_id]}?debts=#{@totalDebts}&razon=#{params[:razon]}"}
         else
-          format.html { redirect_to "/accounts/#{params[:ac_id]}.pdf?debts=#{params[:amount_array].join("__")}", notice: 'Account was successfully updated.' }
+          format.html { redirect_to "/accounts/#{params[:ac_id]}?debts=#{params[:amount_array].join("__")}" }
         end
         format.json { render :show, status: :ok, location: @account }
       else

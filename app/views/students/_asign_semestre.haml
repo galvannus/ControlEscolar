@@ -1,0 +1,17 @@
+.row
+	.col-md-12
+		= form_tag  do
+			=select_tag 'student[]', options_for_select(Student.all.collect{ |u| [u.name_lastname, u.id]}),{class: "js-example-basic-single",multiple: "multiple"}
+			=hidden_field_tag 'asignar', 2
+			=select_tag 'semestre', options_for_select(Semester.all.collect{ |u| [u.number_semester, u.id]}),{class: "form-tag"}
+			=submit_tag("Asignar")
+
+
+
+:javascript
+	$( "#dropdown" ).select2({
+			theme: "bootstrap"
+	});
+	$(document).ready(function() {
+			$('.js-example-basic-single').select2();
+	});

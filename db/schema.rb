@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190122053935) do
+ActiveRecord::Schema.define(version: 20190125020805) do
 
   create_table "accounts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.float "amount", limit: 24
@@ -96,6 +96,7 @@ ActiveRecord::Schema.define(version: 20190122053935) do
     t.integer "discount"
     t.integer "subject_id"
     t.integer "semester_id"
+    t.decimal "average", precision: 10
     t.index ["account_id"], name: "index_students_on_account_id"
     t.index ["group_id"], name: "index_students_on_group_id"
     t.index ["semester_id"], name: "index_students_on_semester_id"
@@ -118,6 +119,7 @@ ActiveRecord::Schema.define(version: 20190122053935) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "student_id"
+    t.integer "user_id"
     t.index ["student_id"], name: "index_subjects_on_student_id"
   end
 

@@ -14,7 +14,7 @@
       %th Suburb
       %th Registrationnumber
       %th Banknumber
-      -#%th Amount
+      %th Semester
       %th
       %th
       %th
@@ -33,7 +33,7 @@
         %td= student.suburb
         %td= student.registrationnumber
         %td= student.banknumber
-        -#%td= student.account.amount
+        %td= student.semester.number_semester if student.semester.present?
         %td= link_to 'Show', student
         %td= link_to 'Edit', edit_student_path(student)
         %td= link_to "Pagar", edit_account_path(student.account.id,student_id: student.id,ac_id: student.account.id)
