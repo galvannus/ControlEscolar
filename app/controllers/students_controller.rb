@@ -1,6 +1,13 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
 
+  #check_authorization
+  load_and_authorize_resource 
+  rescue_from CanCan::AccessDenied do |exception|
+    flash.now[:notice] = "Usuario no Autorizado"
+    redirect_to root_url
+  end
+
   def assigment
     if params[:grupo].present?
       redirect_to "/asignar?asignar=#{3}"

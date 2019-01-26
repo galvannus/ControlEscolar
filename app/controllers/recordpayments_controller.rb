@@ -1,6 +1,14 @@
 class RecordpaymentsController < ApplicationController
   before_action :set_recordpayment, only: [:show, :edit, :update, :destroy]
 
+
+  #check_authorization
+  load_and_authorize_resource 
+  rescue_from CanCan::AccessDenied do |exception|
+    flash.now[:notice] = "Usuario no Autorizado"
+    redirect_to root_url
+  end
+
   # GET /recordpayments
   # GET /recordpayments.json
   def index

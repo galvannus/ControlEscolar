@@ -28,6 +28,7 @@ gem 'jquery-rails'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 gem 'activeadmin'
+gem 'cancancan', '~> 2.0'
 
 
 # Use CoffeeScript for .coffee assets and views

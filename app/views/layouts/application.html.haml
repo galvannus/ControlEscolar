@@ -21,6 +21,9 @@
 					%a.nav-item.nav-link{href: "/students"} Estudiantes
 					%a.nav-item.nav-link{href: "/panel"} Panel
 					%a.nav-item.nav-link{href: "/studentsubjects"} Calificaciones
+					%a.nav-item.nav-link{href: "javascript:acceso()"} Historial
+					%a{href:"/recordpayments", id: "historial"}
+					%a{href:"/admin/logout", id: "cerrar_sesion"}
 					-#%a.nav-item.nav-link{href: "/asignar?asignar=#{1}"}Asignar materia
 					-#%a.nav-item.nav-link{href: "/asignar?asignar=#{2}"}Asignar Semestre
 					-#%a.nav-item.nav-link{href: "/asignar?asignar=#{3}"}Asignar Grupo
@@ -38,7 +41,7 @@
 				= notice
 				= alert
 			= yield
-
+			
 	
 		
 
