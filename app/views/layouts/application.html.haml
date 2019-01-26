@@ -15,13 +15,15 @@
 				.navbar-nav
 					-if user_signed_in?
 						%a.nav-item.nav-link{"data-method" => "delete",href:"/admin/logout"} Cerrar sesión
-					-else
-						%a.nav-item.nav-link{href: "/users/sign_in"} Iniciar sesión
+					-#else
+						-#%a.nav-item.nav-link{href: "/users/sign_in"} Iniciar sesión
 					%a.nav-item.nav-link{href: "/accounts"} Accounts
 					%a.nav-item.nav-link{href: "/students"} Students
-					%a.nav-item.nav-link{href: "/asignar?asignar=#{1}"}Asignar materia
-					%a.nav-item.nav-link{href: "/asignar?asignar=#{2}"}Asignar Semestre
-					%a.nav-item.nav-link{href: "/asignar?asignar=#{3}"}Asignar Grupo
+					%a.nav-item.nav-link{href: "/panel"} Panel
+					%a.nav-item.nav-link{href: "/studentsubjects"} Calificaciones
+					-#%a.nav-item.nav-link{href: "/asignar?asignar=#{1}"}Asignar materia
+					-#%a.nav-item.nav-link{href: "/asignar?asignar=#{2}"}Asignar Semestre
+					-#%a.nav-item.nav-link{href: "/asignar?asignar=#{3}"}Asignar Grupo
 					-#.dropdown
 						-#%a#dropdownMenuLink.btn.btn-primary.dropdown-toggle{href: "/students",role: "button","data-toggle" => "dropdown","aria-haspopup" => "true","aria-expanded" => "false"} Students
 						-#.dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}

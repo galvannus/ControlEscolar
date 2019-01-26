@@ -110,6 +110,7 @@ ActiveRecord::Schema.define(version: 20190125020805) do
     t.datetime "updated_at", null: false
     t.decimal "firstsmodulescore", precision: 10
     t.decimal "secondmodulescore", precision: 10
+    t.integer "user_id"
     t.index ["student_id"], name: "index_studentsubjects_on_student_id"
     t.index ["subject_id"], name: "index_studentsubjects_on_subject_id"
   end
@@ -119,7 +120,6 @@ ActiveRecord::Schema.define(version: 20190125020805) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "student_id"
-    t.integer "user_id"
     t.index ["student_id"], name: "index_subjects_on_student_id"
   end
 

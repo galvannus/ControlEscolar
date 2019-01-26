@@ -12,8 +12,8 @@
           %th{scope: "col"}
 
       %tbody
-        -if @estudiante.present?
-          - @estudiante.each do |student|
+        -if @estudiantes.present?
+          - @estudiantes.each do |student|
             %tr
               %td= student.name
               %td= student.lastname
@@ -43,6 +43,7 @@
       =select_tag 'student[]', options_for_select(Student.all.collect{ |u| [u.name_lastname, u.id]}),{class: "js-example-basic-single",multiple: "multiple"}
       =hidden_field_tag 'asignar', 1
       =select_tag 'materia', options_for_select(Subject.all.collect{ |u| [u.name, u.id]}),{class: "form-tag"}
+      =select_tag 'profesor', options_for_select(User.where(role: "control").collect{ |u| [u.last_name, u.id]}),{class: "form-tag"}
       =submit_tag("Asignar")
 
   .col-md-6

@@ -48,7 +48,7 @@ class StudentsController < ApplicationController
   
   def panelcontrol
     if params[:student].present?
-      @estudiante = Student.search(params[:student])
+      @estudiantes = Student.search(params[:student])
     end
 
     if params[:grupo].present?
@@ -74,6 +74,7 @@ class StudentsController < ApplicationController
           @studentsubject = Studentsubject.new
           @studentsubject.student_id = id_student
           @studentsubject.subject_id = params[:materia]
+          @studentsubject.user_id = params[:profesor]
           @studentsubject.save
         end
       end
