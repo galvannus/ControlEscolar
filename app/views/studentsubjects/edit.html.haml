@@ -1,7 +1,8 @@
-%h1 Editing studentsubject
+%h3
+    ="Calificación de #{Student.find(@studentsubject.id).name_lastname}" 
 
 = render 'form'
 
-= link_to 'Show', @studentsubject
+=# link_to 'Show', @studentsubject
 \|
 = link_to 'Back', studentsubjects_path

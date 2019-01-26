@@ -12,35 +12,52 @@
   -#.field
     =# f.label :subject
     =# f.collection_select(:subjects, Subject.all, :id, :name,{})
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :lastname
-    = f.text_field :lastname
-  .field
-    = f.label :tel1
-    = f.text_field :tel1
-  .field
-    = f.label :tel2
-    = f.text_field :tel2
-  .field
-    = f.label :street
-    = f.text_field :street
-  .field
-    = f.label :numberhome
-    = f.text_field :numberhome
-  .field
-    = f.label :suburb
-    = f.text_field :suburb
-  .field
-    = f.label :discount
-    = f.number_field :discount
-  .field
-    = f.label :registrationnumber
-    = f.text_field :registrationnumber
-  .field
-    = f.label :banknumber
-    = f.text_field :banknumber
+  .row
+    .col-md-4
+      .field.form-group
+        = f.label :name, "Nombre"
+        = f.text_field :name, class: "form-control"
+    .col-md-4
+      .field.form-group
+        = f.label :lastname, "Apellido"
+        = f.text_field :lastname, class: "form-control"
+    .col-md-4
+      .field.form-group
+        = f.label :discount, "Descuento"
+        = f.number_field :discount, class: "form-control"
+  .row
+    .col-md-4
+      .field.form-group
+        = f.label :tel1, "Teléfono 1"
+        = f.text_field :tel1, class: "form-control"
+    .col-md-4
+      .field.form-group
+        = f.label :tel2, "Teléfono 2"
+        = f.text_field :tel2, class: "form-control"
+    .col-md-4
+      .field.form-group
+        = f.label :street, "Calle"
+        = f.text_field :street, class: "form-control"
+  .row
+    .col-md-4
+      .field.form-group
+        = f.label :numberhome, "Numero de casa"
+        = f.text_field :numberhome, class: "form-control"
+    .col-md-4
+      .field.form-group
+        = f.label :suburb, "Colonia"
+        = f.text_field :suburb, class: "form-control"
+    .col-md-4
+      .field.form-group
+        = f.label :registrationnumber, "Matricula"
+        = f.text_field :registrationnumber, class: "form-control"
+  .row
+    .col-md-4
+      .field.form-group
+        = f.label :banknumber, "Numero bancario"
+        = f.text_field :banknumber, class: "form-control"
+    .col-md-4
+    .col-md-4
+  
   .actions
-    = f.submit 'Save'
+    = f.submit 'Guardar', class: "btn btn-success"

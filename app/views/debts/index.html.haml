@@ -1,11 +1,10 @@
-%h1 Listing debts
+%h1 Pagos
 
-%table
+%table.table.table-hover
   %thead
-    %tr
-      %th Name
-      %th Amount
-      %th
+    %tr.bg-dark.text-light
+      %th{scope: "col"} Nombre
+      %th{scope: "col"} Cantidad
       %th
       %th
 
@@ -14,10 +13,9 @@
       %tr
         %td= debt.name
         %td= debt.amount
-        %td= link_to 'Show', debt
         %td= link_to 'Edit', edit_debt_path(debt)
         %td= link_to 'Destroy', debt, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
-= link_to 'New Debt', new_debt_path
+= link_to 'Nuevo pago', new_debt_path, class: "btn btn-warning"

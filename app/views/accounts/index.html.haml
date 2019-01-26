@@ -1,14 +1,11 @@
-%h1 
-  Listing accounts
-  %b{style: "color: red;"}
-    =@total_amounts
+%h1 Cuentas
 
-%table
+%table.table.table-hover
   %thead
-    %tr
-      %th Amount
-      %th Name
-      %th Last name
+    %tr.bg-dark.text-light
+      %th{scope: "col"} Cantidad
+      %th{scope: "col"} Nombre
+      %th{scope: "col"} Apellido
       -#%th
       %th
       -#%th

@@ -1,25 +1,36 @@
-%h1 Listing studentsubjects
+%h1 Asignar calificaciones
 
-%table
+-@studentsubjects.each do |links|
+  = link_to "#{links.subject.name}", "/studentsubjects?subject=#{links.subject.name}"
+    
+=# link_to 'New Studentsubject', new_studentsubject_path()
+
+=#select_tag 'profesor', options_for_select(Studentsubject.where(user_id: current_user.id).collect{ |u| [u.subject_id, u.id]}),{class: "form-tag"}
+=#Studentsubject.where(user_id: current_user.id).class
+-#current_user.studentsubjects.each do |subject|
+  =subject
+=#current_user.id
+%table.table.table-hover
   %thead
-    %tr
-      %th Subject
-      %th Student
-      %th Apellido
-      %th
-      %th
+    %tr.bg-dark.text-light
+      %th{scope: "col"} Materia
+      %th{scope: "col"} Estudiante
+      %th{scope: "col"} Apellido
       %th
 
   %tbody
     - @studentsubjects.each do |studentsubject|
       %tr
-        %td= studentsubject.subject.name
-        %td= studentsubject.student.name
-        %td= studentsubject.student.lastname
-        %td= link_to 'Show', studentsubject
-        %td= link_to 'Edit', edit_studentsubject_path(studentsubject)
-        %td= link_to 'Destroy', studentsubject, method: :delete, data: { confirm: 'Are you sure?' }
+        -if studentsubject.user_id == current_user.id and studentsubject.subject.name == params[:subject]
+          %td= studentsubject.subject.name
+          %td= studentsubject.student.name
+          %td= studentsubject.student.lastname
+          -#%td= studentsubject.user_id
+        
+          -#%td= link_to 'Show', studentsubject
+          %td= link_to 'Calificar', edit_studentsubject_path(studentsubject)
+          -#%td= link_to 'Destroy', studentsubject, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
-= link_to 'New Studentsubject', new_studentsubject_path
+=# link_to 'New Studentsubject', new_studentsubject_path
