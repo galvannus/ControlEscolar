@@ -1,12 +1,7 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
 
-  #check_authorization
-  load_and_authorize_resource 
-  rescue_from CanCan::AccessDenied do |exception|
-    flash.now[:notice] = "Usuario no Autorizado"
-    redirect_to root_url
-  end
+
 
   def assigment
     if params[:grupo].present?
@@ -56,6 +51,20 @@ class StudentsController < ApplicationController
   def panelcontrol
     if params[:student].present?
       @estudiantes = Student.search(params[:student])
+    end
+    if params[:imprimir]
+      @student_subject = Studentsubject.all
+      @professor = User.all
+
+      @professor.each do |profe|
+        puts "Profesor #{profe.nombre}"
+        @student_subject.each do |hello|
+          if (hello.firstsmodulescore.present? and hello.secondmodulescore.present?) and (hello.firstsmodulescore > 0 and hello.secondmodulescore > 0) and (hello.user_id == current_user.id)
+            @hee = hello.subject_id
+            puts Subject.find(@hee)
+          end
+        end
+      end
     end
 
     if params[:grupo].present?

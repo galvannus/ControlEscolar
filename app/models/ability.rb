@@ -8,8 +8,10 @@ class Ability
     alias_action :create, :read, :update, :delete, to: :crud
     alias_action :read, :update, to: :ru
 
-    if user.admin?
-      can :crud, :all
+    if user.role == "admin"
+      can :ru, Account
+    else
+      cannot :manage, :all
     end
    
 

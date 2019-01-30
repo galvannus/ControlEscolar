@@ -1,7 +1,13 @@
 %h1 Asignar calificaciones
 
+-@enlace = []
 -@studentsubjects.each do |links|
-  = link_to "#{links.subject.name}", "/studentsubjects?subject=#{links.subject.name}"
+  -@enlace << links.subject.name
+  
+-@enlace = @enlace.uniq
+-@enlace.each do |print|
+  = link_to "#{print}", "/studentsubjects?subject=#{print}"
+  -#@subject_name = links.subject.name
     
 =# link_to 'New Studentsubject', new_studentsubject_path()
 
