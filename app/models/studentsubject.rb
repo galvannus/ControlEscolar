@@ -16,19 +16,28 @@ class Studentsubject < ApplicationRecord
 
     @estudiante.each do |estudian|
       puts "Estudiante #{estudian.name} #{estudian.lastname}"
-      @scores =[]
+      @scores = []
+      @scores_comparation = []
+      @tmp = 0
       Studentsubject.where("student_id = ?", estudian.id).each do |relation|
         #puts  "Relation #{relation.student_id}"
         #puts "Estudian #{estudian.id}"
         #@subjectid = relation.subject_id
-        #puts Subject.find(relation.subject_id).name
-        #puts "Firstmodule #{relation.firstsmodulescore}"
-        #puts "Secondtmodule #{relation.secondmodulescore}"
-        @tmp = 0
-        @tmp = relation.firstsmodulescore #+ relation.secondmodulescore
-        @tmp = @tmp + relation.secondmodulescore
-        #puts @scores << @tmp
+        @materia = Subject.find(relation.subject_id).name
+        @scores_comparation << @materia
+
+        if relation.firstsmodulescore.to_f > 0 and relation.secondmodulescore.to_f > 0
+        
+          @scores << @materia
+          @tmp = relation.firstsmodulescore.to_f + relation.secondmodulescore.to_f
+          #@tmp.sum(relation.secondmodulescore)
+          puts @tmp
+          #puts @scores << @tmp
       end
+      puts "Cantidad #{@scores.size}"
+      if @scores.size == @scores_comparation.size
+        estudian.average = @tmp
+        estudian.reload
     end
 
     
