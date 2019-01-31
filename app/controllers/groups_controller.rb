@@ -1,12 +1,7 @@
 class GroupsController < ApplicationController
   before_action :set_group, only: [:show, :edit, :update, :destroy]
 
-  #check_authorization
-  load_and_authorize_resource 
-  rescue_from CanCan::AccessDenied do |exception|
-      flash.now[:notice] = "Usuario no Autorizado"
-      redirect_to root_url
-  end
+
   
   # GET /groups
   # GET /groups.json

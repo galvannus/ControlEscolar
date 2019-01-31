@@ -1,5 +1,6 @@
 class StudentsubjectsController < ApplicationController
   before_action :set_studentsubject, only: [:show, :edit, :update, :destroy]
+  
 
 
   # GET /studentsubjects
@@ -43,9 +44,9 @@ class StudentsubjectsController < ApplicationController
   def update
     respond_to do |format|
       if @studentsubject.update(studentsubject_params)
-        if @studentsubject.firstsmodulescore.present? and @studentsubject.secondmodulescore.present?
-          puts "Promedio"
-        end
+        #if @studentsubject.firstsmodulescore.present? and @studentsubject.secondmodulescore.present?
+          #puts "Promedio"
+        #end
         format.html { redirect_to @studentsubject, notice: 'Studentsubject was successfully updated.' }
         format.json { render :show, status: :ok, location: @studentsubject }
       else
