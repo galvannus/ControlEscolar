@@ -9,9 +9,25 @@ class Ability
     alias_action :read, :update, to: :ru
 
     if user.role == "admin"
-      can :ru, Account
-    else
-      cannot :manage, :all
+      can :update, Studentsubject
+      can :manage, User
+      can :manage, Student
+      can :manage, Account
+      can :manage, Debt
+      can :manage, Group
+      can :manage, Semester
+      can :manage, Subject
+      can :manage, Recordpayment
+    elsif user.role == "professor"
+      can :update, Studentsubject
+      cannot :manage, User
+      cannot :manage, Student
+      cannot :manage, Account
+      cannot :manage, Debt
+      cannot :manage, Group
+      cannot :manage, Semester
+      cannot :manage, Subject
+      cannot :manage, Recordpayment
     end
    
 
