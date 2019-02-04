@@ -2,11 +2,12 @@
 
 -@enlace = []
 -@studentsubjects.each do |links|
-  -@enlace << links.subject.name
+  -if links.user_id == current_user.id
+    -@enlace << links.subject.name
   
 -@enlace = @enlace.uniq
 -@enlace.each do |print|
-  = link_to "#{print}", "/studentsubjects?subject=#{print}"
+  = link_to "#{print}", "/studentsubjects?subject=#{print}", class: "btn btn-success"
   -#@subject_name = links.subject.name
     
 =# link_to 'New Studentsubject', new_studentsubject_path()

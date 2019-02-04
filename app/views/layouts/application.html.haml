@@ -17,13 +17,13 @@
 						%a.nav-item.nav-link{"data-method" => "delete",href:"/admin/logout"} Cerrar sesión
 					
 						-if current_user.role == "admin" or current_user.role == "control"
-							%a.nav-item.nav-link{href: "/accounts"} Cuentas
 							%a.nav-item.nav-link{href: "/students"} Estudiantes
 							%a.nav-item.nav-link{href: "/panel"} Panel
 						
 						-if current_user.role == "admin"
 							%a.nav-item.nav-link{href: "/admin"} Administrador
-							%a.nav-item.nav-link{href: "javascript:acceso()"} Historial
+							%a.nav-item.nav-link{href: "/accounts"} Cuentas
+							-#%a.nav-item.nav-link{href: "javascript:acceso()"} Historial
 							%a.nav-item.nav-link{href: "/debts"} Razones de pago
 							%a.nav-item.nav-link{href: "/groups"} Grupos
 							%a.nav-item.nav-link{href: "/subjects"} Materias
@@ -34,16 +34,7 @@
 					
 					%a{href:"/recordpayments", id: "historial"}
 					%a{href:"/admin/logout", id: "cerrar_sesion"}
-					-#%a.nav-item.nav-link{href: "/asignar?asignar=#{1}"}Asignar materia
-					-#%a.nav-item.nav-link{href: "/asignar?asignar=#{2}"}Asignar Semestre
-					-#%a.nav-item.nav-link{href: "/asignar?asignar=#{3}"}Asignar Grupo
-					-#.dropdown
-						-#%a#dropdownMenuLink.btn.btn-primary.dropdown-toggle{href: "/students",role: "button","data-toggle" => "dropdown","aria-haspopup" => "true","aria-expanded" => "false"} Students
-						-#.dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
-							-#%a.dropdown-item{href: "/students"}Student
-							-#%a.dropdown-item{href: "/asignar?asignar=#{1}"}Asignar materia
-							-#%a.dropdown-item{href: "/asignar?asignar=#{2}"}Asignar Semestre
-							-#%a.dropdown-item{href: "/asignar?asignar=#{3}"}Asignar Grupo
+					
 					
 
 		.container
@@ -51,7 +42,7 @@
 				= notice
 				= alert
 			= yield
-			
+		
 	
 		
 

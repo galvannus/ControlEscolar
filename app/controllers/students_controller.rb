@@ -2,6 +2,11 @@ class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
 
 
+  load_and_authorize_resource 
+  rescue_from CanCan::AccessDenied do |exception|
+    flash.now[:notice] = "Usuario no Autorizado"
+    redirect_to root_url
+  end
 
   def assigment
     if params[:grupo].present?
@@ -52,20 +57,6 @@ class StudentsController < ApplicationController
     if params[:student].present?
       @estudiantes = Student.search(params[:student])
     end
-    if params[:imprimir]
-      @student_subject = Studentsubject.all
-      @professor = User.all
-
-      @professor.each do |profe|
-        puts "Profesor #{profe.nombre}"
-        @student_subject.each do |hello|
-          if (hello.firstsmodulescore.present? and hello.secondmodulescore.present?) and (hello.firstsmodulescore > 0 and hello.secondmodulescore > 0) and (hello.user_id == current_user.id)
-            @hee = hello.subject_id
-            puts Subject.find(@hee)
-          end
-        end
-      end
-    end
 
     if params[:grupo].present?
       redirect_to "/panel"
@@ -106,7 +97,14 @@ class StudentsController < ApplicationController
   # GET /students
   # GET /students.json
   def index
-    @students = Student.all
+    
+    if params[:student].present?
+      @students = Student.search(params[:student])
+    elsif params[:group].present?
+      @students = Student.searchgroup(params[:group])
+    else
+      @students = Student.all
+    end
   end
 
   # GET /students/1
@@ -186,7 +184,7 @@ class StudentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_params
-      params.require(:student).permit(:semester_id,:search, :discount, :group_id, :subject_id, :name, :lastname, :tel1, :tel2, :street, :numberhome, :suburb, :registrationnumber, :banknumber, :account_id)
+      params.require(:student).permit(:group,:semester_id,:search, :discount, :group_id, :subject_id, :name, :lastname, :tel1, :tel2, :street, :numberhome, :suburb, :registrationnumber, :banknumber, :account_id)
     end
     def account_params
       params.require(:account).permit(:amount,:student_id)

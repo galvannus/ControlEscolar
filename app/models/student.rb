@@ -22,4 +22,16 @@ class Student < ApplicationRecord
     end
   end
 
+  def self.searchgroup(group)
+    @grupo = Group.where("name = ?", group)
+    @grupoH = 0 
+    @grupo.ids.each do |hello|
+      @grupoH = hello
+    end
+    
+    if group
+      where('group_id LIKE ?', "%#{@grupoH}%")
+    end
+  end
+
 end

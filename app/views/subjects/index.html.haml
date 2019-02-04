@@ -1,9 +1,9 @@
-%h1 Listing subjects
+%h1 Materias
 
-%table
+%table.table.table-hover
   %thead
-    %tr
-      %th Name
+    %tr.bg-dark.text-light
+      %th{scope: "col"} Materia
       %th
       %th
       %th
@@ -12,10 +12,9 @@
     - @subjects.each do |subject|
       %tr
         %td= subject.name
-        %td= link_to 'Show', subject
-        %td= link_to 'Edit', edit_subject_path(subject)
-        %td= link_to 'Destroy', subject, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to 'Modificar', edit_subject_path(subject)
+        %td= link_to 'Eliminar', subject, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
-= link_to 'New Subject', new_subject_path
+= link_to 'Nueva materia', new_subject_path, class: "btn btn-success"

@@ -1,6 +1,12 @@
 class PartialsController < ApplicationController
   before_action :set_partial, only: [:show, :edit, :update, :destroy]
 
+  load_and_authorize_resource 
+  rescue_from CanCan::AccessDenied do |exception|
+    flash.now[:notice] = "Usuario no Autorizado"
+    redirect_to root_url
+  end
+  
   # GET /partials
   # GET /partials.json
   def index

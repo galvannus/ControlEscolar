@@ -7,9 +7,10 @@ class Ability
     
     alias_action :create, :read, :update, :delete, to: :crud
     alias_action :read, :update, to: :ru
+    alias_action :create, :read, :update, to: :cru
 
     if user.role == "admin"
-      can :update, Studentsubject
+      can :manage, Studentsubject
       can :manage, User
       can :manage, Student
       can :manage, Account
@@ -19,7 +20,7 @@ class Ability
       can :manage, Subject
       can :manage, Recordpayment
     elsif user.role == "professor"
-      can :update, Studentsubject
+      can :ru, Studentsubject
       cannot :manage, User
       cannot :manage, Student
       cannot :manage, Account
@@ -28,6 +29,11 @@ class Ability
       cannot :manage, Semester
       cannot :manage, Subject
       cannot :manage, Recordpayment
+    elsif user.role == "control"
+      can :manage, Student
+      can :update, Account
+    elsif !user.present?
+      can :read, Main
     end
    
 

@@ -1,21 +1,39 @@
-%h1 Lista de estudiantes
+.row
+  .col-md-5
+    %h1 Lista de estudiantes
+  .col-md-2.mt-4
+    =label_tag :group, "Buscar por grupo"
+    =label_tag :student, "Buscar por apellido"
+  .col-md-5.mt-3
+    =form_tag("/students", method: "get") do
+      .row
+        .col-md-6
+          =text_field_tag :group, params[:group], placeholder: "Grupo", class: "form-control"
+        .col-md-6
+          =submit_tag "Search", name: nil, class: "btn btn-info mt-2"
+    =form_tag("/students", method: "get") do
+      .row
+        .col-md-6
+          
+          =text_field_tag :student, params[:student], placeholder: "Apellido(s)", class: "form-control"
+        .col-md-6
+          =submit_tag "Search", name: nil, class: "btn btn-info mt-2"
 
-%table
+%table.table.table-hover
   %thead
-    %tr
+    %tr.bg-dark.text-light
       -#%th Id
       -#%th Group
-      %th Name
-      %th Lastname
-      %th Tel1
-      %th Tel2
-      %th Street
-      %th Numberhome
-      %th Suburb
-      %th Registrationnumber
-      %th Banknumber
-      %th Semester
-      %th
+      %th{scope: "col"} Nombre
+      %th{scope: "col"} Apellido
+      %th{scope: "col"} Tel1
+      %th{scope: "col"} Calle
+      %th{scope: "col"} Numero domicilio
+      %th{scope: "col"} Colonia
+      %th{scope: "col"} Numero de control
+      %th{scope: "col"} Numero bancario
+      %th{scope: "col"} Semestre
+      %th{scope: "col"} Grupo
       %th
       %th
 
@@ -27,15 +45,14 @@
         %td= student.name
         %td= student.lastname
         %td= student.tel1
-        %td= student.tel2
         %td= student.street
         %td= student.numberhome
         %td= student.suburb
         %td= student.registrationnumber
         %td= student.banknumber
         %td= student.semester.number_semester if student.semester.present?
-        %td= link_to 'Show', student
-        %td= link_to 'Edit', edit_student_path(student)
+        %td= student.group.name
+        %td= link_to 'Mostrar', student
         %td= link_to "Pagar", edit_account_path(student.account.id,student_id: student.id,ac_id: student.account.id)
         -#%td= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }
 
@@ -43,4 +60,4 @@
 -#Student.all.each_with_index do |val,index|
   =# check_box_tag @studente, val.name, false , id: index
 
-= link_to 'Nuevo estudiante', new_student_path
+= link_to 'Nuevo estudiante', new_student_path, class: "btn btn-warning"

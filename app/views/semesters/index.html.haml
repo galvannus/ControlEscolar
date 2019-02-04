@@ -1,10 +1,9 @@
-%h1 Listing semesters
+%h1 Semestres
 
-%table
+%table.table.table-hover
   %thead
-    %tr
-      %th Number semester
-      %th
+    %tr.bg-dark.text-light
+      %th{scope: "col"} Semestre
       %th
       %th
 
@@ -12,10 +11,9 @@
     - @semesters.each do |semester|
       %tr
         %td= semester.number_semester
-        %td= link_to 'Show', semester
-        %td= link_to 'Edit', edit_semester_path(semester)
-        %td= link_to 'Destroy', semester, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to 'Modificar', edit_semester_path(semester)
+        %td= link_to 'Eliminar', semester, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
-= link_to 'New Semester', new_semester_path
+= link_to 'Nuevo semestre', new_semester_path, class: "btn btn-success"

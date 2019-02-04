@@ -1,11 +1,15 @@
-%h1 Pagos realizados
-= link_to 'Eliminar pagos', recordpayments_path(delete_records: 1)
-%table
+.row.mt-3
+  .col-md-4
+    %h1 Pagos realizados
+  .col-md-3
+    = link_to 'Eliminar pagos', recordpayments_path(delete_records: 1), class: "btn btn-danger"
+
+%table.table.table-hover
   %thead
-    %tr
-      %th Personal
-      %th Cantidad
-      %th Fecha y Hora
+    %tr.bg-dark.text-light
+      %th{scope: "col"} Personal
+      %th{scope: "col"} Cantidad
+      %th{scope: "col"} Fecha y Hora
 
   %tbody
     - @recordpayments.each do |recordpayment|

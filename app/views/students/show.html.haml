@@ -1,56 +1,67 @@
 %p#notice= notice
-
-%p
-  %b Group:
-  = @student.group.name if @student.group.present?
-%p
-  %b Name:
-  = @student.name
-%p
-  %b Lastname:
-  = @student.lastname
-%p
-  %b Tel1:
-  = @student.tel1
-%p
-  %b Tel2:
-  = @student.tel2
-%p
-  %b Street:
-  = @student.street
-%p
-  %b Numberhome:
-  = @student.numberhome
-%p
-  %b Suburb:
-  = @student.suburb
-%p
-  %b Registrationnumber:
-  = @student.registrationnumber
-%p
-  %b Banknumber:
-  = @student.banknumber
-%p
-  %b Tiene un descuento del:
-  ="#{@student.discount}%"
+.row
+  .col-md-3
+    %p
+      %b Group:
+      = @student.group.name if @student.group.present?
+  .col-md-3
+    %p
+      %b Name:
+      = @student.name
+  .col-md-3
+    %p
+      %b Lastname:
+      = @student.lastname
+.row
+  .col-md-3
+    %p
+      %b Tel1:
+      = @student.tel1
+  .col-md-3
+    %p
+      %b Tel2:
+      = @student.tel2
+  .col-md-3
+    %p
+      %b Street:
+      = @student.street
+  .col-md-3
+    %p
+      %b Numberhome:
+      = @student.numberhome
+.row
+  .col-md-3
+    %p
+      %b Suburb:
+      = @student.suburb
+  .col-md-3
+    %p
+      %b Registrationnumber:
+      = @student.registrationnumber
+  .col-md-3
+    %p
+      %b Banknumber:
+      = @student.banknumber
+  .col-md-3
+    %p
+      %b Tiene un descuento del:
+      ="#{@student.discount}%"
+.row
+  .col-md-3
+    %p
+      %b Promedio:
+      = @student.average
+  .col-md-3
+    %p
+      %b Materias:
+      -@student.subjects.each do |materia|
+        =materia.name
 -#%p
-  -#%b Adeudos a pagar:
-  -#@debt = Debt.all
-  -#@debt.each do |debt|
-    =#debt.name
-%p
-  %b Total a pagar:
-  = @student.account.amount
-%p
-  %b Materias:
-  -@student.subjects.each do |materia|
-    =materia.name
-%p
-  %b Total a pagar:
-  - @student.studentsubjects.each do |mod|
-    =mod.firstsmodulescore
+  -#%b Total a pagar:
+  -# @student.studentsubjects.each do |mod|
+    =#mod.firstsmodulescore
 
 
-= link_to 'Edit', edit_student_path(@student)
+= link_to 'Modificar', edit_student_path(@student),class: "btn btn-danger"
 \|
-= link_to 'Back', students_path
+= link_to 'Regresar', students_path,class: "btn btn-warning"

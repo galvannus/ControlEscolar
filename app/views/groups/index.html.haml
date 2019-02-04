@@ -1,10 +1,9 @@
-%h1 Listing groups
+%h1 Grupos
 
-%table
+%table.table.table-hover
   %thead
-    %tr
-      %th Name
-      %th
+    %tr.bg-dark.text-light
+      %th{scope: "col"} Grupo
       %th
       %th
 
@@ -12,10 +11,9 @@
     - @groups.each do |group|
       %tr
         %td= group.name
-        %td= link_to 'Show', group
-        %td= link_to 'Edit', edit_group_path(group)
-        %td= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to 'Modificar', edit_group_path(group)
+        %td= link_to 'Borrar', group, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
-= link_to 'New Group', new_group_path
+= link_to 'Nuevo grupo', new_group_path, class: "btn btn"
