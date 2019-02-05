@@ -16,10 +16,23 @@
                 <%-@total = 0%>
                 <%array = params[:debts].split("__")%>
                 <%array.each do |aquitoy|%>
+
                     <tr>
-                        <td><%=Debt.find(aquitoy.to_s).name %></td>
-                        <td><%=Debt.find(aquitoy).amount.abs%></td>
-                        <%-@total = @total + Debt.find(aquitoy).amount.abs %>
+                        <%if Debt.find(aquitoy.to_s).name == "Mensualidad"%>
+                            <td><%=Debt.find(aquitoy.to_s).name %></td>
+                            <%-@discount = (params[:descuento].to_f / 100) * Debt.find(aquitoy).amount.abs%>
+                            <td><%=@con_descuento = Debt.find(aquitoy).amount.abs - @discount%></td>
+                        <%else%>
+                            <td><%=Debt.find(aquitoy.to_s).name %></td>
+                            <td><%=Debt.find(aquitoy).amount.abs%></td>
+                        <%end%>
+                        
+                        <%if Debt.find(aquitoy.to_s).name == "Mensualidad"%>
+                            <%-@total = @total + @con_descuento %>
+                        <%else%>
+                            <%-@total = @total + Debt.find(aquitoy).amount.abs %>
+                        <%end%>
+                        
                     </tr>
                     
                 <%end%>

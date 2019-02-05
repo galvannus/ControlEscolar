@@ -1,6 +1,8 @@
 %p#notice= notice
 -if params[:razon].present?
   = link_to 'Ticket', "/accounts/#{@account.id}.pdf?debts=#{params[:debts]}&razon=#{params[:razon]}", target: "_blank", id: "pdf"
+-elsif params[:descuento].present?
+  = link_to 'Ticket', "/accounts/#{@account.id}.pdf?debts=#{params[:debts]}&razon=#{params[:razon]}&descuento=#{params[:descuento]}", target: "_blank", id: "pdf"
 -else
   = link_to 'Ticket', "/accounts/#{@account.id}.pdf?debts=#{params[:debts]}", target: "_blank", id: "pdf"
 

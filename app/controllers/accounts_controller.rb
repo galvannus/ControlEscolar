@@ -74,29 +74,48 @@ class AccountsController < ApplicationController
           @totalDebts = 0
           #Search  discount
           @discount = Student.find(params[:student_id]).discount.to_f
+          @promedio = Student.find(params[:student_id]).average.to_f
           
           #Get de array of amount and sum the values
           @paramsDebts = params[:amount_array]
           @paramsDebts.each do |allDebts|
 
             debt = Debt.find(allDebts)
-
-            if debt.name == "Mensualidad" && @discount.present?
+            if (Date.today.wday <= 17 || Date.today.wday >= 1) and (@promedio >= 9)
+              if debt.name == "Mensualidad"
+                @discount = 20
+                @mensualidad = debt.amount.abs
+                @mensualidad = (@discount.to_f / 100) * @mensualidad
+                @descuento_aplicado = 1
+                
+              end
+            elsif @promedio >= 9
+              if debt.name == "Mensualidad"
+                @discount = 10
+                @mensualidad = debt.amount.abs
+                @mensualidad = (@discount.to_f / 100) * @mensualidad
+                @descuento_aplicado = 1
+              end
+            elsif debt.name == "Mensualidad" && @discount.present?
               @mensualidad = debt.amount.abs
               puts "Mensualidad #{@mensualidad}"
-              #if promedio es => 9 discount + 10
               @mensualidad = (@discount / 100) * @mensualidad
               puts "#{debt.name} #{@mensualidad}"
+              @descuento_aplicado = 1
 
             elsif Date.today.wday <= 17 || Date.today.wday >= 1
-              @mensualidad = (@discount / 100) * @mensualidad
+              if debt.name == "Mensualidad"
+                @discount = 10
+                @mensualidad = (@discount.to_f / 100) * @mensualidad
+                @descuento_aplicado = 1
+              end
             end
 
             @totalDebts = (@totalDebts + debt.amount.abs - @mensualidad)
             puts "@totalDebts #{@totalDebts}"
           end
 
-          @totalDebts = @totalDebts + @studentAccount
+          #@totalDebts = @totalDebts + @studentAccount
         end
 
         #Save record of payments
@@ -104,11 +123,15 @@ class AccountsController < ApplicationController
         @recordpayment.amount = @totalDebts
         @recordpayment.user_name = current_user.last_name
         @recordpayment.save
+        @totalDebts = @totalDebts + @studentAccount
 
         puts "***Account actualizado****" if @account.update(amount: @totalDebts)
 
         if params[:razon].present?
           format.html { redirect_to "/accounts/#{params[:ac_id]}?debts=#{@totalDebts}&razon=#{params[:razon]}"}
+        elsif @descuento_aplicado.present?
+          puts "descuento"
+          format.html { redirect_to "/accounts/#{params[:ac_id]}?debts=#{params[:amount_array].join("__")}&descuento=#{@discount}" }
         else
           format.html { redirect_to "/accounts/#{params[:ac_id]}?debts=#{params[:amount_array].join("__")}" }
         end

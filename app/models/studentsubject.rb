@@ -30,17 +30,19 @@ class Studentsubject < ApplicationRecord
           @scores << @materia
           @tmp = relation.firstsmodulescore.to_f + relation.secondmodulescore.to_f
           #@tmp.sum(relation.secondmodulescore)
-          puts @tmp
+          #puts @tmp
           #puts @scores << @tmp
         end
       end
 
-      puts "Cantidad #{@scores.size}"
-      puts "Cantidad #{@scores_comparation.size}"
+      #puts "Cantidad #{@scores.size}"
+      #puts "Cantidad #{@scores_comparation.size}"
       if @scores.size == @scores_comparation.size
+        puts "Entro a Guadado de everage"
         @tmp = @tmp / @scores.size
-        estudian.average = @tmp
         estudian.reload
+        estudian.average = @tmp
+        estudian.save
       end
     end
 
